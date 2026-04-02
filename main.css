@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  --global-width: 1200px;
+  --font-size-header: 46px;
+  --font-size-subtitle: 34px;
+  --font-section-title: 36px;
+  --font-card-title: 22px;
+  --font-size-text: 28px;
+  --font-size-normal: 16px;
+  --border-radius: 30px;
+  --shadow: none;
+  --font-family: "Poppins";
+  margin: auto;
+  font-family: var(--font-family);
+  font-size: var(--font-size-normal);
+  font-weight: 200;
+  overflow-y: overlay;
+  overflow-x: hidden;
+  background: radial-gradient(1200px 600px at 20% -10%, rgba(37, 99, 235, .10), transparent 60%), radial-gradient(900px 500px at 80% 0%, rgba(124, 58, 237, .10), transparent 55%), #ffffff;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-clip: content-box;
+  background-color: #ee8030;
+  border: 4px solid transparent;
+  border-radius: 14px !important;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+input, button, a {
+  font-family: var(--font-family);
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #164785;
+  font-weight: 400;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  background-image: url(./image/check.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position-y: center;
+  padding-left: 30px;
+}
+
+li.checked {
+  background-image: url(./image/checkbox-marked.svg);
+  background-position-y: 0.9em;
+
+}
+
+
+li.unchecked {
+  visibility: hidden;
+}
+
+.price {
+  font-size: calc(var(--font-card-title) * 1.2);
+  font-weight: 600;
+}
+
+.new-price {
+  text-decoration: line-through;
+  color: #cbcbcb;
+}
+
+.stripe {
+  width: 12em;
+}
+
+/* Loader */
+
+zyllio-nav,
+zyllio-header,
+zyllio-section,
+zyllio-footer {
+  visibility: hidden;
+}
+
+/*  */
+
+@media (max-width: 1300px) {
+
+  body {
+    --global-width: 768px;
+    --font-size-header: 44px;
+    --font-size-subtitle: 36px;
+    --font-section-title: 32px;
+    --font-size-text: 17px;
+    --font-size-normal: 14px;
+    --font-card-title: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  body {
+    --global-width: 576px;
+    --font-size-header: 26px;
+    --font-size-subtitle: 20px;
+    --font-section-title: 28px;
+    --font-size-text: 15px;
+    --font-size-normal: 12px;
+    --font-card-title: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  body {
+    --global-width: 340px;
+    --font-size-header: 22px;
+    --font-size-subtitle: 17px;
+    --font-section-title: 26px;
+    --font-size-text: 15px;
+    --font-size-normal: 12px;
+    --font-card-title: 16px;
+  }
+}
+

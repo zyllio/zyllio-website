@@ -1,0 +1,15 @@
+input,
+button,
+a {
+  font-family: var(--font-family);
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}

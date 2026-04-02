@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Programme d'affiliation Zyllio pour partenaires, créateurs de contenu, agences et consultants no-code.">
+
+  <title>Zyllio - Affiliation</title>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="./components/components.module.mjs"></script>
+</head>
+
+<body>
+
+  <zyllio-nav always-overlaid>
+    <a href="index-fr.html" slot="link">Accueil</a>
+    <a href="features-fr.html" slot="link">Produit</a>
+    <a href="pricing-fr.html" slot="link">Tarifs</a>
+    <a href="support-fr.html" slot="link">Support</a>
+    <a href="blog-fr.html" slot="link">Blog</a>
+    <a href="affiliate-fr.html" slot="link">Affiliation</a>
+    <a href="index.html" slot="link"><zyllio-language-selector language="en"></zyllio-language-selector></a>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Se connecter</zyllio-sign-in>
+  </zyllio-nav>
+
+  <br>
+  <br>
+
+  <zyllio-section id="affiliate-hero" layout="column">
+    <zyllio-affiliate-hero slot="content">
+      <span slot="title">Un concept simple,</span>
+      <span slot="highlight">des revenus récurrents.</span>
+      <p slot="description">Recommandez Zyllio à vos clients et partenaires. Gagnez <b style="color:#4f46e5">20% de commission</b> sur leurs abonnements... chaque mois.</p>
+      <a class="cta-primary" id="affiliate-contact-trigger" slot="cta-primary" href="#">S'inscrire gratuitement</a>
+      <a class="cta-secondary" slot="cta-secondary" href="#affiliate-simulator">Calculer mes gains</a>
+    </zyllio-affiliate-hero>
+  </zyllio-section>
+
+  <br>
+
+  <zyllio-section id="affiliate-simulator" layout="column">
+    <zyllio-affiliate-simulator slot="content">
+      <span slot="heading">Gains mensuels par client</span>
+      <span slot="subheading">Des commissions identiques sur tous nos plans.</span>
+      <span slot="plan-starter">Professionel</span>
+      <span slot="plan-business">Entreprise</span>
+      <span slot="plan-agency">Entreprise +</span>
+      <span slot="commission-label">Votre commission (20%) :</span>
+      <span slot="recurring">Récurrent chaque mois</span>
+      <span slot="clients-label">Nombre de clients</span>
+      <span slot="subtotal">Sous-total</span>
+      <span slot="total-label">Total estimé :</span>
+      <span slot="month">mois</span>
+    </zyllio-affiliate-simulator>
+  </zyllio-section>
+
+  <br>
+  
+  <zyllio-section id="affiliate-for" layout="row wrap">
+
+    <h1 slot="title">Pour qui ?</h1>
+
+    <zyllio-card-icon slot="content" class="signature">
+      <h1>Agences</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="picture">
+      <h1>Freelances</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="notification">
+      <h1>Formateurs</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="scan">
+      <h1>Associations</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="community">
+      <h1>Communautés professionnelles</h1>
+    </zyllio-card-icon>
+
+  </zyllio-section>
+
+  <zyllio-section id="affiliate-faq" layout="column">
+
+    <h1 slot="title">FAQ</h1>
+
+    <zyllio-card class="style1" slot="content">
+      <zyllio-card-text>
+        <h1>Combien coûte l'inscription ?</h1>
+        <p>L'inscription au programme d'affiliation est gratuite.</p>
+
+        <h1>Qui peut postuler ?</h1>
+        <p>Les agences, freelances, formateurs, associations et communautés professionnelles.</p>
+
+        <h1>Quand suis-je payé ?</h1>
+        <p>Virement mensuel sur facture.</p>
+      </zyllio-card-text>
+    </zyllio-card>
+
+  </zyllio-section>
+
+  <zyllio-section id="affiliate-contact" layout="column">
+
+    <h1 slot="title">Prêt à démarrer ?</h1>
+
+    <div slot="content">
+      Écrivez-nous et nous vous répondrons rapidement avec les prochaines étapes.
+      <br><br>
+      <zyllio-sign-in id="affiliate-contact-trigger-bottom" href="#">Demander l'affiliation</zyllio-sign-in>
+      <zyllio-affiliate-contact-form
+        open-trigger="#affiliate-contact-trigger, #affiliate-contact-trigger-bottom"
+        close-label="Fermer le formulaire"
+        placeholder-last-name="Votre nom"
+        placeholder-first-name="Votre prénom"
+        placeholder-email="vous@entreprise.com"
+        placeholder-message="Parlez-nous de votre projet et de votre demande d'affiliation"
+        initial-message="Bonjour équipe Zyllio, je souhaite rejoindre votre programme d'affiliation."
+      >
+        <h2 slot="title">Prêt à démarrer ?</h2>
+        <p slot="intro">Écrivez-nous et nous vous répondrons rapidement avec les prochaines étapes.</p>
+        <span slot="label-last-name">Nom</span>
+        <span slot="label-first-name">Prénom</span>
+        <span slot="label-email">Email</span>
+        <span slot="label-message">Message</span>
+        <span slot="submit-label">Envoyer la demande</span>
+      </zyllio-affiliate-contact-form>
+    </div>
+
+  </zyllio-section>
+
+  <zyllio-footer>
+    <a href="terms-of-use-fr.html" target="_blank">Conditions d'utilisation</a> - <a href="privacy-fr.html" target="_blank">Politique de confidentialité</a> - <a href="gdpr-fr.html" target="_blank">RGPD</a> - <a href="legal-fr.html" target="_blank">Mentions légales</a>
+  </zyllio-footer>
+
+</body>
+
+</html>
+
+<script>
+  (function(){
+    const modal = document.querySelector('zyllio-affiliate-contact-form')
+    if (!modal) return
+
+    const openModal = (e) => {
+      e && e.preventDefault()
+      try { modal.open() } catch (err) { /* ignore */ }
+    }
+
+    const top = document.getElementById('affiliate-contact-trigger')
+    const bottom = document.getElementById('affiliate-contact-trigger-bottom')
+    if (top) top.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
+    if (bottom) bottom.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
+  })()
+</script>

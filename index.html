@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use Zyllio to create custom apps">
+
+  <title>Create custom apps</title>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="./components/components.module.mjs"></script>
+</head>
+
+<body>
+
+  <zyllio-nav>
+    <a href="index.html" slot="link">Home</a>
+    <a href="features.html" slot="link">Features</a>
+    <a href="pricing.html" slot="link">Pricing</a>
+    <a href="support.html" slot="link">Support</a>
+    <a href="blog.html" slot="link">Blog</a>
+    <a href="affiliate.html" slot="link">Affiliate</a>
+    <a href="index-fr.html" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
+  </zyllio-nav>
+
+  <zyllio-header id="home">
+    <h1 slot="title">Create custom apps</h1>
+    <h2 slot="sub-title">without coding</h2>
+    <h3 slot="message">You have the idea—bring it to life by leveraging your professional expertise</h3>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Start for free</zyllio-sign-in>
+    <zyllio-hosting-badge slot="hosting" label="Made in France"></zyllio-hosting-badge>
+  </zyllio-header>
+
+  <zyllio-section>
+    <h1 slot="title">Visually build with ease</h1>
+    <zyllio-demo slot="content"></zyllio-demo>
+  </zyllio-section>
+
+  <zyllio-section id="they-trust-us" >
+
+    <h1 slot="title">They trust us</h1>
+
+    <zyllio-marquee slot="content">
+
+      <zyllio-customer slot="content">
+        <img alt="dl" src="./image/customers/customer-dl.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="db-industrie" src="./image/customers/customer-db-industrie.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="leroy" src="./image/customers/customer-leroy.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="ubs" src="./image/customers/customer-ubs.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="c-possible" src="./image/customers/customer-c-possible.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="armee-du-salut" src="./image/customers/customer-armee-du-salut.png">
+      </zyllio-customer>
+      
+      <zyllio-customer slot="content">
+        <img alt="demenagement" src="./image/customers/customer-demenagement.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="design-data" src="./image/customers/customer-design-data.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="ccjm" src="./image/customers/customer-ccjm.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="resolocal" src="./image/customers/customer-resolocal.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="01mag" src="./image/customers/customer-marketorders.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="01mag" src="./image/customers/customer-01mag.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="radio ctn" src="./image/customers/customer-ctn.png">
+      </zyllio-customer>
+
+      <zyllio-customer slot="content">
+        <img alt="rehber" src="./image/customers/customer-rehber.png">
+      </zyllio-customer>
+
+    </zyllio-marquee>
+
+  </zyllio-section>
+
+  <zyllio-section id="business" layout="column">
+    <h1 slot="title">Who needs Zyllio ?</h1>
+
+    <zyllio-card class="style2" slot="content">
+      <div>
+        <zyllio-card-text>
+          <h1>Businesses</h1>
+          <span>Offer more services to your customers and employees, optimize your internal processes, and free yourself
+            from the constraints of complex software development.</span>
+        </zyllio-card-text>
+
+        <zyllio-card-text>
+          <h1>Startups</h1>
+          <span>Turn your idea into an application, create a first version ready to use,
+            test it on the market without draining your budget or your energy.</span>
+        </zyllio-card-text>
+
+        <zyllio-card-text>
+          <h1>Nonprofits</h1>
+          <span>Unite, inform, and engage your community. Organize your events, sell your products, collect donations,
+            and share your news all on a single platform.</span>
+        </zyllio-card-text>
+
+      </div>
+
+      <zyllio-card-image src="./image/business-owner.jpg"></zyllio-card-image>
+
+    </zyllio-card>
+
+    <zyllio-card class="style1" slot="content">
+
+      <zyllio-card-image src="./image/freelancer.jpg"></zyllio-card-image>
+
+      <zyllio-card-text>
+        <h1>No-Code freelancers</h1>
+        <ul>
+          <li>Make apps for your customers using No Code: learn Zyllio within days</li>
+          <li>Create, manage, publish and share apps for your customers</li>
+          <li>Increase your revenue and make best profit margin by proposing competitive services thanks to Zyllio
+            pricing</li>
+        </ul>
+      </zyllio-card-text>
+
+    </zyllio-card>
+
+  </zyllio-section>
+
+  <zyllio-section id="use-case" layout="column">
+
+    <h1 slot="title">Uses cases</h1>
+
+    <zyllio-carousel slot="content">
+
+      <zyllio-card id="property-app">
+        <zyllio-card-text>
+          <h1>Real estate</h1>
+          <ul>
+            <li>Search for properties based on location, price, size, and other criteria, either by browsing listings or
+              by using search filters</li>
+            <li>Users can view property details, including photos, floor plans, virtual tours, and descriptions of
+              features and amenities</li>
+            <li>Users can save properties to their favorites or watchlists, allowing them to easily access properties
+              they are interested in</li>
+            <li>Users who own or manage properties can manage their listings, update property information, and
+              communicate with tenants or clients</li>
+            <li>Receive alerts when new properties are listed that match their search criteria</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-property.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="purchase-app">
+        <zyllio-card-text>
+          <h1>Purchase</h1>
+          <ul>
+            <li>Users can make purchases directly from the app, choosing from a list of approved physical/digital
+              products</li>
+            <img alt="click-and-collect" src="./image/click-and-collect.png">
+            <img alt="home-delivery" src="./image/home/home-delivery.png">
+
+            <li>Track the status of your orders in real-time, from order placement to delivery</li>
+            <li>Update instantly your product details like prices and descriptions</li>
+            <li>Use out of box secure payment platforms like Stripe
+              <br><br><img class="stripe" alt="stripe" src="./image/stripe.png">
+            </li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-purchase.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="crm-app">
+        <zyllio-card-text>
+          <h1>CRM</h1>
+          <ul>
+            <li>Keep track of your customer information in one central location, including contact information,
+              communication history, purchase history, and other relevant details</li>
+            <li>Manage your sales pipeline by tracking leads, deals, and opportunities</li>
+            <li>Enhance customer service by managing customer support tickets, tracking customer issues, and resolving
+              problems quickly</li>
+            <li>Provide analytics tools that help understanding your customer base and make data-driven decisions</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-crm.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="inventory-app">
+        <zyllio-card-text>
+          <h1>Inventory</h1>
+          <ul>
+            <li>Monitor stock levels: users can track their inventory levels in real-time</li>
+            <li>Track stock movements from receipt to dispatch, ensuring that they have a clear audit trail</li>
+            <li>Manage orders and invoices, tracking orders from receipt to delivery, and generating invoices as needed
+            </li>
+            <li>Track sales by item, location, or time period, providing valuable insights into which products are
+              selling well</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-inventory.png"></zyllio-card-image> -->
+
+      </zyllio-card>
+
+      <zyllio-card id="projects-app">
+        <zyllio-card-text>
+          <h1>Tasks</h1>
+          <ul>
+            <li>Users can create tasks and projects with descriptions, deadlines, and other relevant details</li>
+            <li>Users can assign tasks to specific team members, ensuring that everyone knows what they are responsible
+              for</li>
+            <li>Track progress of tasks, seeing how much work has been completed and what still needs to be done</li>
+            <li>Set reminders and notifications to ensure that they don't miss important deadlines</li>
+            <li>Monitor users performance, tracking the time spent on tasks, and identifying areas where they can
+              improve productivity</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-project.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="events-app">
+        <zyllio-card-text>
+          <h1>Events</h1>
+          <ul>
+            <li>Access event information, including schedules, speaker bios, session descriptions, and maps of the venue
+            </li>
+            <li>Build a personalized agenda: schedule of sessions, events, and meetings users may want to attend</li>
+            <li>Users can receive updates about the event, such as changes to the schedule, venue, or other important
+              details</li>
+            <li>Users can provide feedback on sessions, speakers, and other aspects of the event, either through surveys
+              or by rating sessions</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-events.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="booking-app">
+        <zyllio-card-text>
+          <h1>Booking</h1>
+          <ul>
+            <li>Book services directly through the app, either by selecting available dates and times or by making a
+              request</li>
+            <li>Manage reservations, view upcoming appointments, cancel or reschedule bookings, and receive reminders
+              and notifications about their appointments</li>
+            <li>Users can pay for services directly, either by using a credit card or other payment method</li>
+            <li>Provide feedback on the service users received, either by rating the provider or by leaving a review
+            </li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-booking.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="restaurant-app">
+        <zyllio-card-text>
+          <h1>Restaurant</h1>
+          <ul>
+            <li>Search for restaurants based on location, cuisine, price, either by browsing listings or by using search
+              filters</li>
+            <li>Users can view restaurant menus, including prices, descriptions, and photos of dishes</li>
+            <li>Make reservations at restaurants, either by selecting available dates and times or by making a request
+              to the restaurant</li>
+            <li>Order food for delivery or pickup either by selecting menu items and placing an order</li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-restaurant.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+      <zyllio-card id="community-app">
+        <zyllio-card-text>
+          <h1>Community</h1>
+          <ul>
+            <li>Share information, news, and updates related to the community, either by posting messages or by sharing
+              content</li>
+            <li>Join quizzes and challenges related to various topics, either as individuals or as teams</li>
+            <li>Users can earn rewards, such as badges, points, or prizes, for participating in quizzes and challenges
+            </li>
+            <li>Receive notifications about community events, news, and updates, either through the app or through email
+            </li>
+          </ul>
+        </zyllio-card-text>
+
+        <!-- <zyllio-card-image src="./image/home/home-use-case-community.png"></zyllio-card-image> -->
+      </zyllio-card>
+
+    </zyllio-carousel>
+  </zyllio-section>
+
+  <zyllio-section id="features" layout="column">
+
+    <h1 slot="title">Features</h1>
+
+    <zyllio-masonry slot="content">
+
+    <zyllio-masonry-card class="style1">
+      <h3 slot="title">Build apps quickly</h3>
+      <div slot="subtitle">You don’t need to write code, you can focus on designing and customizing your project</div>
+      <img slot="image" src="./image/home/home-feature-1.png">
+    </zyllio-masonry-card>
+
+    <zyllio-masonry-card class="style3">
+      <h3 slot="title">Connect to your data</h3>
+      <div slot="subtitle">Connect your data using native connectors: Google Spreadsheet, Airtable, and TimeTonic
+        <br>Automate your workflows using native integrations: Make and Zapier</div>
+      <img slot="image" src="./image/home/home-feature-3.png">
+    </zyllio-masonry-card>
+    
+    <zyllio-masonry-card class="style6">
+      <h3 slot="title">Engage with your users</h3>
+      <div slot="subtitle">Allow public and private users to access
+        <br>Instantly notify your users via SMS, WhatsApp, Email, and push notifications</div>
+      <img slot="image" src="./image/home/home-feature-6.png">
+    </zyllio-masonry-card>
+
+    <zyllio-masonry-card class="style2">
+      <h3 slot="title">A seamless experience on all screens</h3>
+      <div slot="subtitle">Compatible with mobile, tablet, and desktop with optimized display for each device. 
+        <br>Use <b>Containers</b> and adaptive <b>Popups</b> to easily organize your content</div>
+      <img slot="image" src="./image/home/home-feature-2.png">
+    </zyllio-masonry-card>
+
+    <zyllio-masonry-card class="style4">
+      <h3 slot="title">Harness the power of AI</h3>
+      <div slot="subtitle">Build smarter and more efficient apps by generating text (ChatGPT) and images (DALL·E)</div>
+      <img slot="image" src="./image/home/home-feature-5.png">
+    </zyllio-masonry-card>
+
+    <zyllio-masonry-card class="style5">
+      <h3 slot="title">Publish and monitor your app</h3>
+      <div slot="subtitle">Publish your app instantly and share it with your users using the generated QR code</div>
+      <img slot="image" src="./image/home/home-feature-4.png">
+    </zyllio-masonry-card>
+
+  </zyllio-masonry>
+
+
+  </zyllio-section>
+
+  <zyllio-section id="feature-cards" layout="row wrap" >
+
+    <h1 slot="title">All the features you need</h1>
+
+      <zyllio-card-icon slot="content" class="signature">
+        <h1>Signature</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="picture">
+        <h1>Take picture</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="geolocation">
+        <h1>Geolocation</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="scan">
+        <h1>Scan barcode</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="micro">
+        <h1>Microphone</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="notification">
+        <h1>Push notification</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="offline">
+        <h1>Offline</h1>
+      </zyllio-card-icon>
+
+      <zyllio-card-icon slot="content" class="payment">
+        <h1>Payment</h1>
+      </zyllio-card-icon>
+
+  </zyllio-section>
+
+  <zyllio-section id="testimonials">
+
+    <h1 slot="title">Users are saying</h1>
+
+    <zyllio-carousel slot="content">
+
+      <zyllio-testimonial id="t8">
+        <h1>Drive Lady</h1>
+        <img slot="profile" src="./image/testimonials/testimonial8.png">
+        <h3 slot="name" >Margaux & Camille</h3>
+        <h4 slot="position" >Founders</h4>
+        <h2 slot="message">
+          We wanted to develop a carpooling app for women, but we had no knowledge of coding.
+          <br><br>
+          Zyllio turned out to be the perfect tool: we were able to create our app thanks to the intuitive platform and
+          the highly personalized support from the Zyllio expert, who believed in our project and guided us through its
+          development.
+          <br><br>
+          He was able to meet our expectations while adapting to Zyllio's capabilities 👌
+          <br><br>
+          We highly recommend Zyllio for its ease of use, great customer experience, and fast development! 🚀
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t6">
+
+        <h1>Brittany University</h1>
+        <img slot="profile" src="./image/testimonials/testimonial6.png">
+        <h3 slot="name" >Pascal Baudont</h3>
+        <h4 slot="position" >Lecturer at the University of Southern Brittany</h4>
+        <h2 slot="message">
+
+          I am fortunate to teach at the University of Southern Brittany, which has approved my proposal to teach
+          No-Code tools
+          to undergraduate students (students in management, life sciences, math, statistics, etc.).
+
+          <br><br>
+          When introducing app development, Zyllio's user-friendliness is truly impressive. Students quickly got
+          a handle on the software, creating their first applications in just a few hours with remarkable efficiency.
+          The "wow" effect is guaranteed! With features like data management, component integration, screen linking, a
+          high level of customization, and instant app publishing, Zyllio allows users to bring their ideas to life
+          without coding. Some students have even spontaneously shared personal project ideas they could soon implement
+          using Zyllio.          
+
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t5">
+
+        <h1>Leroi & Associés</h1>
+        <img slot="profile" src="./image/testimonials/testimonial5.png">
+        <h3 slot="name" >Fabrice Reynaud</h3>
+        <h4 slot="position" >Partner at Leroi & Associates</h4>
+        <h2 slot="message">
+
+          My judicial officer study wanted to provide its customers an application to facilitate the creation and
+          tracking of reports that they commission us to establish.
+          <br><br>
+
+          The great versatility of Zyllio, the possibilities it offers (including signature collection, photography,
+          etc.) naturally led me to choose Zyllio for the creation of the application, without any programming
+          knowledge.
+          <br><br>
+
+          The support is extremely responsive, and the possibilities go beyond what I initially imagined!          
+
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t4">
+
+        <h1>C’Possible</h1>
+        <img slot="profile" src="./image/testimonials/testimonial4.png">
+        <h3 slot="name" >Jacques Pradel</h3>
+        <h4 slot="position" >IT Manager</h4>
+        <h2 slot="message">
+
+          My organization wanted to provide its volunteers with a smartphone application, which was a challenge for me.
+
+          <br><br>
+          Without any knowledge of software development and at a very affordable cost compared to other market offers, I
+          was able to create an application that met our needs within a few weeks. This application will allow our 300
+          volunteers to directly enter data on their smartphones and access the resources they need (documents, videos,
+          news, etc.).
+
+          <br><br>
+          Zyllio is simple to use, offers a variety of components, and provides top-notch support!!
+
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t3">
+
+        <h1>Health and Wellness</h1>
+        <img slot="profile" src="./image/testimonials/testimonial3.png">
+        <h3 slot="name" >Christophe Kupriez</h3>
+        <h4 slot="position" >SAS Health and Wellness</h4>
+        <h2 slot="message">
+
+          Zyllio is an extraordinary platform for those who want an application for their activities.
+          <br><br>
+          Beyond offering excellent value for money, it's the attentiveness and availability of the team, as well as
+          their adaptability.
+          <br><br>
+          Personally, they developed features for me that were necessary for my project to grow under the best
+          conditions.
+          <br><br>
+          I recommend it 1000%!
+          
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t7">
+
+        <h1>Secret de peau</h1>
+        <img slot="profile" src="./image/testimonials/testimonial7.png">
+        <h3 slot="name" >Laurent Pan</h3>
+        <h4 slot="position" >Instragram, 673K followers</h4>
+        <h2 slot="message">
+
+          I created an application that diagnoses the benefits and issues of skincare products.
+
+          It is powered by a database of hundreds of thousands of products and, most importantly, by my secret algorithm
+          😉
+
+          <br><br>
+          I'm really glad I discovered Zyllio, it's a great tool for launching an app without requiring a huge
+          investment.
+
+          Special shoutout to the support team, super responsive, who even added new features during the development
+          process!
+
+          <br><br>
+          Highly recommended!
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t0">
+
+        <h1>Resolocal</h1>
+        <img slot="profile" src="./image/testimonials/testimonial0.png">
+        <h3 slot="name" >Yves Vaillant</h3>
+        <h4 slot="position" >Print and digital creation</h4>
+        <h2 slot="message">
+
+          After testing a good portion of the app builders on the market, I ultimately chose Zyllio for my 2
+          applications.
+
+          <br><br>
+
+          The best value for money on the market!
+
+          <br><br>
+
+          What I haven't found anywhere else is the availability and benevolent competence of the designer.
+
+          <br><br>
+
+          No code but not alone!
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t1">
+
+        <h1>MarketOrders</h1>
+        <img slot="profile" alt="testimonial1" src="./image/testimonials/testimonial1.png">
+        <h3 slot="name" >Ram</h3>
+        <h4 slot="position" >MarketOrders</h4>
+        <h2 slot="message">
+
+          Zyllio exceeded our expectations in service delivery!
+          <br><br>
+          We needed an app for our product launch and were recommended Zyllio.
+          <br><br>
+          It needed to be executed swiftly before our launch. Zyllio exceeded our expectations in service delivery!
+          Great personalised service & delivery within time frame.
+          
+        </h2>
+
+      </zyllio-testimonial>
+
+      <zyllio-testimonial id="t2">
+
+        <h1>CCJM</h1>
+        <img slot="profile" alt="testimonial2" src="./image/testimonials/testimonial2.png">
+        <h3 slot="name" >Ariane Eva Morin</h3>
+        <h4 slot="position" >CCJM Consulting Ltd.</h4>
+        <h2 slot="message">
+
+          Great app result and fantastic support!
+          <br><br>
+          I signed with Zyllio to create my mobile app
+          and within few weeks my mobile app was fully functional
+          ready to be tested and few weeks later launched!
+          <br><br>
+          Great support from Zyllio team every step of the way.          
+        </h2>
+
+      </zyllio-testimonial>
+    </zyllio-carousel>
+  </zyllio-section>
+
+  <zyllio-section id="community" layout="row space-between">
+
+    <h1 slot="title">Our community</h1>
+
+    <zyllio-stat slot="content">
+      <h1>5841</h1>
+      <h2>apps <br>created</h2>
+    </zyllio-stat>
+
+    <zyllio-stat slot="content">
+      <h1>3852</h1>
+      <h2>users</h2>
+    </zyllio-stat>
+
+    <zyllio-stat slot="content">
+      <h1>4203</h1>
+      <h2>community <br>members</h2>
+    </zyllio-stat>
+
+  </zyllio-section>
+
+  <zyllio-section id="integrations" layout="row space-around wrap">
+
+    <h1 slot="title">Integrated services</h1>
+
+    <zyllio-integration slot="content">
+      <img alt="twilio" src="./image/services/twilio.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="youtube" src="./image/services/youtube.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="facebook" src="./image/services/facebook.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="google-sheets" src="./image/services/google-sheets.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="airtable" src="./image/services/airtable.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="zapier" src="./image/services/zapier.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="gmail" src="./image/services/gmail.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="integromat" src="./image/services/integromat.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="vimeo" src="./image/services/vimeo.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="timetonic" src="./image/services/timetonic.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="xano" src="./image/services/xano.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="openai" src="./image/services/openai.png">
+    </zyllio-integration>
+
+    <zyllio-integration slot="content">
+      <img alt="maps" src="./image/services/osm.png">
+    </zyllio-integration>
+
+  </zyllio-section>
+
+  <zyllio-section id="get-started" layout="row">
+
+    <h1 slot="title">Get started</h1>
+
+    <div slot="content">
+
+      Sign in to create your custom app, no credit card required
+
+      <br><br>
+      <zyllio-sign-in href="https://www.zyllio.one">Sign in</zyllio-sign-in>
+    </div>
+
+  </zyllio-section>
+
+  <zyllio-section id="contact" layout="row space-around wrap">
+
+    <h1 slot="title">Reach us</h1>
+
+    <zyllio-contact slot="content">
+      <img slot="icon" alt="email" src="./image/icons/email.png">
+      <h2 slot="message">Feel free to ask any questions</h2>
+      <a slot="badge" id="contact-trigger-index" href="#">Send email</a>
+    </zyllio-contact>
+
+    <zyllio-contact slot="content">
+      <img slot="icon" alt="linkedin" src="./image/icons/linkedin.png">
+      <h2 slot="message">We post demonstrations, articles and technical details on daily basis</h2>
+      <a slot="badge" href="https://www.linkedin.com/company/zyllio/" target="_blank">Visit Linkedin</a>
+    </zyllio-contact>
+
+    <zyllio-contact slot="content">
+      <img slot="icon" alt="slack" src="./image/icons/slack.png">
+      <h2 slot="message">Join our slack to discuss with Zyllio users and experts</h2>
+      <a slot="badge" href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw"
+        target="_blank">Join Slack</a>
+    </zyllio-contact>
+
+  </zyllio-section>
+
+  <zyllio-footer>
+
+  <zyllio-contact-modal
+    open-trigger="#contact-trigger-index"
+    close-label="Close"
+    placeholder-last-name="Your last name"
+    placeholder-first-name="Your first name"
+    placeholder-email="you@company.com"
+    placeholder-message="Hey — I have a question"
+  >
+    <h2 slot="title">Contact us</h2>
+    <p slot="intro">Send a quick message and we'll reply shortly.</p>
+    <span slot="label-last-name">Last name</span>
+    <span slot="label-first-name">First name</span>
+    <span slot="label-email">Email</span>
+    <span slot="label-message">Message</span>
+    <span slot="submit-label">Send</span>
+  </zyllio-contact-modal>
+
+</body>
+
+</html>
+
+</html>

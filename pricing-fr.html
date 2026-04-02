@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Use Zyllio to create mobile apps in minutes">
+
+  <title>Zyllio - Pricing</title>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="./components/components.module.mjs"></script>
+</head>
+
+<body>
+
+  <zyllio-nav always-overlaid>
+    <a href="index-fr.html" slot="link">Accueil</a>
+    <a href="features-fr.html" slot="link">Produit</a>
+    <a href="pricing-fr.html" slot="link">Tarifs</a>
+    <a href="support-fr.html" slot="link">Support</a>
+    <a href="blog-fr.html" slot="link">Blog</a>
+    <a href="affiliate-fr.html" slot="link">Affiliation</a>
+    <a href="index.html" slot="link"><zyllio-language-selector language="en"></zyllio-language-selector></a>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Se connecter</zyllio-sign-in>
+  </zyllio-nav>
+
+  <br>
+  <br>
+
+  <zyllio-section id="pricing" layout="row space-between wrap">
+
+    <h1 slot="title">Tarifs</h1>
+
+    <zyllio-price-plan index="0" slot="content">
+      <h1>Découverte</h1>
+      <h2><span class="price">0 €</span></h2>
+
+      <zyllio-price-plan-content>
+
+        <h1>Experimentez vos idées</h1>
+        <ul>
+          <li class="checked"><b>Apps illimitées</b></li>
+          <li class="checked"><b>200 lignes de données</b></li>
+          <li class="checked"><b>Utilisateurs illimités</b></li>
+          <li class="checked">Open AI</li>
+          <li class="checked">Google Sheet</li>
+          <li class="checked">Airtable</li>
+          <li class="checked">TimeTonic</li>
+          <li class="checked"><b>Branding Zyllio</b></li>
+        </ul>
+        <zyllio-sign-in href="https://www.zyllio.one">Commencer</zyllio-sign-in>
+      </zyllio-price-plan-content>
+
+    </zyllio-price-plan>
+
+    <zyllio-price-plan index="1" slot="content">
+      <h1>Professionnel</h1>
+      <h2><span class="new-price">49 €</span><span class="price">39 €</span> TTC / mois</h2>
+
+      <zyllio-price-plan-content>
+
+        <h1>Lancez votre app</h1>
+        <h2>Toute l'offre Découverte</h2>
+        <ul>
+          <li class="checked"><b>5 000 lignes de données</b></li>
+          <li class="checked"><b>Suppression branding</b></li>
+          <li class="checked"><b>Domaine personnalisé</b></li>
+          <li class="checked">SEO</li>
+          <li class="checked">Envoyer emails via Gmail</li>
+          <li class="checked">SMS et Whatsapp via Twilio</li>
+          <li class="checked">Jusqu'à 1 Go de stockage</li>
+          <li class="checked">Support pendant heures de travail</li>
+        </ul>
+        <zyllio-sign-in href="https://www.zyllio.one">Commencer</zyllio-sign-in>
+      </zyllio-price-plan-content>
+    </zyllio-price-plan>
+
+    <zyllio-price-plan index="2" slot="content">
+      <h1>Entreprise</h1>
+      <h2><span class="new-price">89 €</span><span class="price">79 €</span> TTC / mois</h2>
+
+      <zyllio-price-plan-content>
+        <h1>Boostez votre app</h1>
+        <h2>Toute l'offre Professionnel</h2>
+        <ul>
+          <li class="checked"><b>50 000 lignes de données</b></li>
+          <li class="checked"><b>Notifications Push</b></li>
+          <li class="checked">API REST</li>
+          <li class="checked">Envoyer emails via Outlook</li>
+          <li class="checked">Audience (Analytics)</li>
+          <li class="checked"><b>Monétisez vos apps</b></li>
+          <li class="checked"><b>Paiements Stripe<br>(Pas de commission)</b></li>
+          <li class="checked"><b>Automatisation Make / Zapier</b></li>
+          <li class="checked">Support 24h/24</li>
+        </ul>
+        <zyllio-sign-in href="https://www.zyllio.one">Commencer</zyllio-sign-in>
+      </zyllio-price-plan-content>
+
+    </zyllio-price-plan>
+
+    <zyllio-price-plan-plus slot="content">
+      <h2>Entreprise Plus</h2>
+      <p>Virement possible • Onboarding sur demande • SLA contractuel</p>
+
+      <span slot="chip">10M lignes</span>
+      <span slot="chip">SSO SAML2</span>
+      <span slot="chip">Equipes</span>
+      <span slot="chip">Kit de développement</span>
+      <span slot="chip">SLA</span>
+
+      <div slot="right">
+        <p class="price">À partir de 289€ <span class="price">TTC/mois</span></p>
+        <p class="small">Contactez-nous, réponse sous 24h ouvrées</p>
+      </div>
+
+      <zyllio-sign-in slot="cta" id="contact-trigger-pricing-fr" href="#">contact@zyllio.fr</zyllio-sign-in>
+    </zyllio-price-plan-plus>
+
+  </zyllio-section>
+
+  <zyllio-section id="comparison" layout="column">
+
+    <h1 slot="title">Comparaison des fonctionnalités</h1>
+
+    <zyllio-pricing-details slot="content">
+
+      <table class="pricing-details">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="plan-header starter-header">Starter</th>
+            <th class="plan-header pro-header">Professionnel</th>
+            <th class="plan-header enterprise-header">Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="feature-category">
+            <td colspan="4">Utilisation</td>
+          </tr>
+          <tr>
+            <td>Utilisateurs</td>
+            <td>Illimités</td>
+            <td>Illimités</td>
+            <td>Illimités</td>
+          </tr>
+          <tr>
+            <td>Applications</td>
+            <td>Illimitées</td>
+            <td>Illimitées</td>
+            <td>Illimitées</td>
+          </tr>
+          <tr>
+            <td>Applications publiées</td>
+            <td>Illimitées</td>
+            <td>Illimitées</td>
+            <td>Illimitées</td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Données et stockage</td>
+          </tr>
+          <tr>
+            <td>Lignes de données</td>
+            <td>200</td>
+            <td>5 000</td>
+            <td>50 000</td>
+          </tr>
+          <tr>
+            <td>Stockage de fichiers</td>
+            <td>100 Mo</td>
+            <td>1 Go</td>
+            <td>5 Go</td>
+          </tr>
+          <tr>
+            <td>Composants</td>
+            <td>73</td>
+            <td>73</td>
+            <td>73</td>
+          </tr>
+          <tr>
+            <td>Actions</td>
+            <td>60</td>
+            <td>60</td>
+            <td>60</td>
+          </tr>
+          <tr>
+            <td>Plugins</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Composants</td>
+          </tr>
+          <tr>
+            <td>Web embed</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Signature</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Scan de code-barres</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Sources de données</td>
+          </tr>
+          <tr>
+            <td>Tables Zyllio</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Airtable</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Timetonic</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Google Sheets</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Intégrations</td>
+          </tr>
+          <tr>
+            <td>Intégrations</td>
+            <td>4</td>
+            <td>7</td>
+            <td>14</td>
+          </tr>
+          <tr>
+            <td>Open AI</td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Gmail</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>SMS</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Domaine personnalisé</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Notifications Push</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Stripe</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Zapier</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Make</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>REST API</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Fonctionnalités avancées</td>
+          </tr>
+          <tr>
+            <td>Analytique</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Mode hors ligne</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr>
+            <td>Polices Google</td>
+            <td><span class="cross">-</span></td>
+            <td><span class="cross">-</span></td>
+            <td><span class="check">✓</span></td>
+          </tr>
+          <tr class="feature-category">
+            <td colspan="4">Support</td>
+          </tr>
+          <tr>
+            <td>Niveau de support</td>
+            <td>Communauté</td>
+            <td>Heures ouvrables</td>
+            <td>24h/24</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </zyllio-pricing-details>
+  </zyllio-section>
+
+  <zyllio-section id="faq" layout="column">
+
+    <h1 slot="title">Questions fréquentes</h1>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Est-ce que Zyllio propose un plan gratuit ?</h1>
+
+        <br>
+        Oui. Nous proposons un plan entièrement gratuit que vous pouvez utiliser aussi longtemps que vous le souhaitez
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Est-ce que Zyllio a besoin de ma carte de crédit pour m'inscrire au plan gratuit ?</h1>
+
+        <br>
+        Non, Zyllio ne demande pas de carte de crédit pour s'inscrire au plan gratuit.
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Puis-je passer à un abonnement payant ultérieurement ?</h1>
+
+        <br>
+        Oui, vous pouvez passer à un abonnement payant à tout moment si vous avez besoin de fonctionnalités plus
+        avancées ou si
+        vous souhaitez supprimer les limitations qui accompagnent l'abonnement gratuit
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Y a-t-il un engagement de durée pour l’abonnement ?</h1>
+
+        <br>
+        Non, notre abonnement est sans engagement de durée.
+        Vous êtes libre d’interrompre votre abonnement à tout moment,
+        sans frais supplémentaires ni contraintes
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Zyllio propose-t-il des applications illimitées ?</h1>
+
+        <br>
+        Oui, notre produit offre des applications illimitées avec une politique d'utilisation équitable. La politique
+        d'utilisation équitable garantit
+        que Zyllio est utilisé de manière raisonnable et non abusive. Cela signifie que nous nous réservons le droit
+        d'agir si nous détectons une activité
+        jugée excessive, inhabituelle ou non autorisée
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Que se passe-t-il lorsque les limites d'utilisation sont atteintes ?</h1>
+
+        <br>
+        Lorsque vous atteignez la limite de votre plan, Zyllio limite la quantité de données affichées sur les appareils
+        mobiles. Cela signifie que vous ne pourrez
+        voir qu'un sous-ensemble de vos données, en fonction du plan auquel vous êtes actuellement abonné
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Puis je installer mon application Zyllio sur l'app Store et Google Play ?</h1>
+
+        <br>
+        Non, les applications Zyllio sont accessibles depuis un lien Internet (QR Code). Ne pas publier sur les app
+        stores vous rend indépendant
+        et simplifie le processus de publication qui devient instantané
+
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+    <zyllio-card slot="content">
+      <zyllio-card-text>
+        <h1>Comment accéder aux tarifs pour les agences ?</h1>
+
+        <br>
+        Nous pouvons personnaliser le plan tarifaire pour répondre à vos besoins spécifiques. Veuillez nous contacter
+        pour discuter de vos besoins
+
+      </zyllio-card-text>
+    </zyllio-card>
+
+  </zyllio-section>
+
+  <zyllio-footer>
+    <a href="terms-of-use-fr.html" target="_blank">Conditions d'utilisation</a> - <a href="privacy-fr.html"
+      target="_blank">Politique de confidentialité</a> - <a href="gdpr-fr.html" target="_blank">RGPD</a> - <a
+      href="legal-fr.html" target="_blank">Mentions légales</a>
+  </zyllio-footer>
+
+  <zyllio-contact-modal
+    open-trigger="#contact-trigger-pricing-fr"
+    close-label="Fermer"
+    placeholder-last-name="Votre nom"
+    placeholder-first-name="Votre prénom"
+    placeholder-email="vous@entreprise.com"
+    placeholder-message="Question concernant les tarifs"
+  >
+    <h2 slot="title">Contactez-nous</h2>
+    <p slot="intro">Des questions sur les tarifs ? Envoyez-nous un message.</p>
+    <span slot="label-last-name">Nom</span>
+    <span slot="label-first-name">Prénom</span>
+    <span slot="label-email">Email</span>
+    <span slot="label-message">Message</span>
+    <span slot="submit-label">Envoyer</span>
+  </zyllio-contact-modal>
+
+</body>
+
+</html>

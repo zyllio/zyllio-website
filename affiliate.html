@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zyllio affiliate program for partners, content creators, agencies and no-code consultants.">
+
+  <title>Zyllio - Affiliate</title>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="./components/components.module.mjs"></script>
+</head>
+
+<body>
+
+  <zyllio-nav always-overlaid>
+    <a href="index.html" slot="link">Home</a>
+    <a href="features.html" slot="link">Product</a>
+    <a href="pricing.html" slot="link">Pricing</a>
+    <a href="support.html" slot="link">Support</a>
+    <a href="blog.html" slot="link">Blog</a>
+    <a href="affiliate.html" slot="link">Affiliate</a>
+    <a href="index-fr.html" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
+  </zyllio-nav>
+
+  <br>
+  <br>
+
+  <zyllio-section id="affiliate-hero" layout="column">
+    <zyllio-affiliate-hero slot="content">
+      <span slot="title">A simple concept,</span>
+      <span slot="highlight">recurring revenue.</span>
+      <p slot="description">Recommend Zyllio to your clients and partners. Earn <b style="color:#4f46e5">20% commission</b> on their subscriptions... every month.</p>
+      <a class="cta-primary" id="affiliate-contact-trigger" slot="cta-primary" href="#">Sign up for free</a>
+      <a class="cta-secondary" slot="cta-secondary" href="#affiliate-simulator">Calculate my earnings</a>
+    </zyllio-affiliate-hero>
+  </zyllio-section>
+
+  <br>
+
+  <zyllio-section id="affiliate-simulator" layout="column">
+    <zyllio-affiliate-simulator slot="content">
+      <span slot="heading">Monthly earnings per client</span>
+      <span slot="subheading">Identical commissions across all our plans.</span>
+      <span slot="plan-starter">Professional</span>
+      <span slot="plan-business">Enterprise</span>
+      <span slot="plan-agency">Enterprise +</span>
+      <span slot="commission-label">Your commission (20%):</span>
+      <span slot="recurring">Recurring every month</span>
+      <span slot="clients-label">Number of clients</span>
+      <span slot="subtotal">Subtotal</span>
+      <span slot="total-label">Estimated total:</span>
+      <span slot="month">month</span>
+    </zyllio-affiliate-simulator>
+  </zyllio-section>
+
+  <br>
+  
+  <zyllio-section id="affiliate-for" layout="row wrap">
+
+    <h1 slot="title">Who is it for?</h1>
+
+    <zyllio-card-icon slot="content" class="signature">
+      <h1>Agencies</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="picture">
+      <h1>Freelancers</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="notification">
+      <h1>Trainers</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="scan">
+      <h1>Associations</h1>
+    </zyllio-card-icon>
+
+    <zyllio-card-icon slot="content" class="community">
+      <h1>Professional communities</h1>
+    </zyllio-card-icon>
+
+  </zyllio-section>
+
+  <zyllio-section id="affiliate-faq" layout="column">
+
+    <h1 slot="title">FAQ</h1>
+
+    <zyllio-card class="style1" slot="content">
+      <zyllio-card-text>
+        <h1>How much does it cost to join?</h1>
+        <p>Joining the affiliate program is free.</p>
+
+        <h1>Who can apply?</h1>
+        <p>Agencies, freelancers, trainers, associations and professional communities.</p>
+
+        <h1>When do I get paid?</h1>
+        <p>Monthly bank transfer upon invoice.</p>
+      </zyllio-card-text>
+    </zyllio-card>
+
+  </zyllio-section>
+
+  <zyllio-section id="affiliate-contact" layout="column">
+
+    <h1 slot="title">Ready to get started?</h1>
+
+    <div slot="content">
+      Write to us and we'll get back to you quickly with the next steps.
+      <br><br>
+      <zyllio-sign-in id="affiliate-contact-trigger-bottom" href="#">Apply for the program</zyllio-sign-in>
+      <zyllio-affiliate-contact-form
+        open-trigger="#affiliate-contact-trigger, #affiliate-contact-trigger-bottom"
+        close-label="Close contact form"
+        placeholder-last-name="Your last name"
+        placeholder-first-name="Your first name"
+        placeholder-email="you@company.com"
+        placeholder-message="Tell us about your project and affiliate request"
+        initial-message="Hello Zyllio team, I would like to join your affiliate program."
+      >
+        <h2 slot="title">Ready to get started?</h2>
+        <p slot="intro">Write to us and we'll get back to you quickly with the next steps.</p>
+        <span slot="label-last-name">Last name</span>
+        <span slot="label-first-name">First name</span>
+        <span slot="label-email">Email</span>
+        <span slot="label-message">Message</span>
+        <span slot="submit-label">Send request</span>
+      </zyllio-affiliate-contact-form>
+    </div>
+
+  </zyllio-section>
+
+  <zyllio-footer>
+    <a href="terms-of-use.html" target="_blank">Terms of use</a> - <a href="privacy.html" target="_blank">Privacy policy</a> - <a href="gdpr.html" target="_blank">GDPR</a> - <a href="legal.html" target="_blank">Legal notice</a>
+  </zyllio-footer>
+
+</body>
+
+</html>
+
+<script>
+  (function(){
+    const modal = document.querySelector('zyllio-affiliate-contact-form')
+    if (!modal) return
+
+    const openModal = (e) => {
+      e && e.preventDefault()
+      try { modal.open() } catch (err) { /* ignore */ }
+    }
+
+    const top = document.getElementById('affiliate-contact-trigger')
+    const bottom = document.getElementById('affiliate-contact-trigger-bottom')
+    if (top) top.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
+    if (bottom) bottom.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
+  })()
+</script>
