@@ -2,80 +2,86 @@
 const css = `
 
   @import "./components/global.css";
-  
+
   :host {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
-    max-width: 25%;
-    text-align: center;
-    place-content: space-around;
-    place-items: center;
-    background-color: white;
-    border-radius: var(--border-radius);
-    padding: 10px;
-    border: 1px solid #e6e6e6;
-    padding: 1em;
-
-        background: #ffffff;
+    gap: 16px;
+    flex: 1;
+    min-width: 220px;
+    max-width: 340px;
+    background: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 18px;
     box-shadow: 0 10px 25px rgba(2, 8, 23, 0.08);
+    padding: 1.6em;
   }
 
-  .container {
+  .icon-wrapper {
     display: flex;
-    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    background: var(--icon-bg, #EEF2FF);
+    flex-shrink: 0;
+  }
+
+  ::slotted(img) {
+    display: block;
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
   }
 
   ::slotted(h1) {
     margin: 0;
-    color: #154785;
-    font-weight: bold;
-    font-size: var(--font-size-text);
-    margin: 0.1em 0;
+    font-weight: 700;
+    font-size: 1.1em;
+    color: #1a1a2e;
   }
 
   ::slotted(h2) {
     margin: 0;
-    font-weight: 200;
-    font-size: calc(var(--font-size-normal) * 0.8);
+    font-weight: 400;
+    font-size: 0.88em;
+    color: #64748b;
+    line-height: 1.55;
+    flex: 1;
   }
 
   ::slotted(a) {
     display: inline-block;
-    border-radius: 20px;
-    padding: 0.6em;
-    font-size: calc(var(--font-size-normal) * 0.80);
-    color: #000;
+    font-size: 0.78em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--link-color, #4F6AD4);
+    text-decoration: none !important;
+    margin-top: auto;
+  }
+
+  ::slotted(a:hover) {
     text-decoration: underline !important;
   }
 
-  ::slotted(img) {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-  }
-
-
   @media (max-width: 576px) {
-
     :host {
       width: 100%;
       max-width: 100%;
-      margin: 10px;
     }
   }
 
-  
 `
 
 const html = `
-  <div class="container" >
+  <div class="icon-wrapper">
     <slot name="icon"></slot>
-    <slot name="message" ></slot>
   </div>
+  <slot name="title"></slot>
+  <slot name="message"></slot>
   <slot name="badge"></slot>
 `
 
