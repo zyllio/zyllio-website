@@ -102,6 +102,7 @@ const css = `
   }
 
   ::slotted(a) {
+    display: flex;
     padding: 0.5em 0.65em;
     font-size: var(--font-size-normal);
     font-weight: 600;
