@@ -137,10 +137,10 @@ const css = `
 `
 
 const html = `
-  <zyllio-header-stat value="5841" label="apps" variant="yellow" left="5%" top="22%"></zyllio-header-stat>
-  <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="10%" bottom="20%"></zyllio-header-stat>
-  <zyllio-header-stat value="3852" label="créateurs d’apps" variant="purple" right="9%" top="16%"></zyllio-header-stat>
-  <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="5%" bottom="16%"></zyllio-header-stat>
+  <zyllio-header-stat value="5841" label="apps" variant="yellow" left="calc(5% + 300px)" top="22%"></zyllio-header-stat>
+  <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="calc(10% + 300px)" bottom="20%"></zyllio-header-stat>
+  <zyllio-header-stat value="3852" label="créateurs d’apps" variant="purple" right="calc(9% + 300px)" top="16%"></zyllio-header-stat>
+  <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="calc(5% + 300px)" bottom="16%"></zyllio-header-stat>
 
   <div class="main">
     <div class="container" >
