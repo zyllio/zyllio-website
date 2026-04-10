@@ -10,10 +10,8 @@ const css = `
     gap: 20px;
     width: var(--global-width);
     background: #ffffff;
-    /*border: 1px solid #e2e8f0;
-    border-radius: 18px;
-    box-shadow: 0 10px 25px rgba(2, 8, 23, 0.08);
-    padding: 1em;*/
+    padding: 1em;
+    border-radius: 20px;
   }
 
   :host(.horizontal) {

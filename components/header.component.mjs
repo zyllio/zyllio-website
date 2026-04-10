@@ -10,11 +10,7 @@ const css = `
     margin: 0;
     padding: 300px 0 164px;
     overflow: hidden;
-    background:
-      radial-gradient(1100px 520px at 50% -8%, rgba(255, 255, 255, .92) 0%, rgba(255, 255, 255, 0) 62%),
-      radial-gradient(900px 440px at 12% 18%, rgba(59, 130, 246, .12) 0%, rgba(59, 130, 246, 0) 58%),
-      radial-gradient(760px 380px at 88% 14%, rgba(251, 146, 60, .10) 0%, rgba(251, 146, 60, 0) 56%),
-      linear-gradient(135deg, #f8fbff 0%, #eef4fb 42%, #f9f5ef 100%);
+    background: transparent;
     text-align: center;
     color: #0f172a;
   }
