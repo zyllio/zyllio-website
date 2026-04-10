@@ -9,9 +9,22 @@ const css = `
     width: 100%;
     margin: 0;
     padding: 300px 0 164px;
-    background: #ffffff;
+    overflow: hidden;
+    background:
+      radial-gradient(1100px 520px at 50% -8%, rgba(255, 255, 255, .92) 0%, rgba(255, 255, 255, 0) 62%),
+      radial-gradient(900px 440px at 12% 18%, rgba(59, 130, 246, .12) 0%, rgba(59, 130, 246, 0) 58%),
+      radial-gradient(760px 380px at 88% 14%, rgba(251, 146, 60, .10) 0%, rgba(251, 146, 60, 0) 56%),
+      linear-gradient(135deg, #f8fbff 0%, #eef4fb 42%, #f9f5ef 100%);
     text-align: center;
     color: #0f172a;
+  }
+
+  :host::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, .18), rgba(255, 255, 255, 0) 28%, rgba(255, 255, 255, .18) 100%);
   }
 
   .main {
@@ -24,6 +37,8 @@ const css = `
   }
 
   .container {
+    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -122,6 +137,11 @@ const css = `
 `
 
 const html = `
+  <zyllio-header-stat value="5841" label="apps" variant="yellow" left="5%" top="22%"></zyllio-header-stat>
+  <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="10%" bottom="20%"></zyllio-header-stat>
+  <zyllio-header-stat value="3852" label="créateurs d’apps" variant="purple" right="9%" top="16%"></zyllio-header-stat>
+  <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="5%" bottom="16%"></zyllio-header-stat>
+
   <div class="main">
     <div class="container" >
       <slot name="title" ></slot>
@@ -132,11 +152,6 @@ const html = `
         <slot name="hosting" ></slot>
       </div>
     </div>    
-
-    <zyllio-header-stat value="5841" label="apps" variant="yellow" left="10%" top="23%"></zyllio-header-stat>
-    <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="17%" bottom="22%"></zyllio-header-stat>
-    <zyllio-header-stat value="3852" label="créateurs d’apps" variant="purple" right="15%" top="17%"></zyllio-header-stat>
-    <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="12%" bottom="18%"></zyllio-header-stat>
 
     <div class="illustration" >
       <!-- <img src="./image/dashboard.png" > -->
