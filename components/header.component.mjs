@@ -5,43 +5,37 @@ const css = `
 
   :host {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+    display: block;
     width: 100%;
-    height: 650px;  
-    --align: center;  
-    background: radial-gradient(900px 520px at 90% 10%, rgba(249, 115, 22, .12), transparent 55%), radial-gradient(700px 420px at 12% 18%, rgba(29, 78, 216, .12), transparent 58%), radial-gradient(800px 380px at 62% 85%, rgba(13, 148, 136, .12), transparent 60%), linear-gradient(180deg, #ffffff, #e3cee6);
-  }
-
-  :host::after {
-    content: "";
-    position: absolute;
-    inset: -20% -5% -10% -5%;
-    pointer-events: none;
-    opacity: .6;
-    background: radial-gradient(350px 200px at 20% 30%, rgba(29, 78, 216, .16), transparent 60%), radial-gradient(300px 200px at 85% 25%, rgba(249, 115, 22, .18), transparent 60%), radial-gradient(260px 180px at 60% 80%, rgba(16, 185, 129, .16), transparent 60%);
+    margin: 0;
+    padding: 300px 0 164px;
+    background: #ffffff;
+    text-align: center;
+    color: #0f172a;
   }
 
   .main {
     display: flex;
-    justify-content: var(--align);
-    /*justify-content: space-between;*/
-    width: var(--global-width);    
-    margin-left: 0;
-    margin-top: 170px;
+    justify-content: center;
+    width: min(920px, 92vw);
+    margin: 0 auto;
+    margin-top: 0;
     color: #000;
   }
 
   .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 8px;
   }
 
   .buttons {
     display: flex;
     gap: 10px;
-    justify-content: var(--align);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
   }
 
   img {
@@ -52,80 +46,77 @@ const css = `
   }
 
   ::slotted(zyllio-sign-in) {
-    align-self: var(--align);
+    align-self: center;
   }
 
   ::slotted(h1) {
-    font-size: var(--font-size-header);
+    font-size: clamp(30px, 4vw, 52px);
+    line-height: 1.1;
     margin: 0 !important;
     color: #154785;
-    text-align: var(--align);
-    font-weight: 600;
+    text-align: center;
+    font-weight: 700;
   }
 
   ::slotted(h2) {
-    font-size: var(--font-size-subtitle);
+    font-size: clamp(30px, 3.8vw, 52px);
+    line-height: 1.1;
     margin: 0 !important;
     color: #ee8030;
-    text-align: var(--align);
-    font-weight: 600;
+    text-align: center;
+    font-weight: 700;
   }
 
   ::slotted(h3) {
-    font-size: var(--font-size-normal);
+    max-width: 760px;
+    font-size: clamp(15px, 1.5vw, 24px);
+    line-height: 1.45;
     margin: 0 !important;
-    margin-top: 10px !important;
-    color: #00000069;
-    text-align: var(--align);
+    margin-top: 12px !important;
+    color: #334155;
+    text-align: center;
     font-weight: 600;
-  }  
+  }
 
   @media (max-width: 1300px) {
-      
     :host {
-      height: 458px;
+      padding-top: 162px;
     }
-  
-    .main {
-      margin-top: 128px;
-    }  
 
-    img {
+    img, zyllio-header-stat {
       display: none;
     }
-    
   }
 
   @media (max-width: 768px) {
 
     :host {
-      height: 353px;
-    }
-  
-    .main {
-      margin-top: 84px;
+      padding-top: 108px;
     }
 
     img, zyllio-header-stat {
       display: none;
+    }
+
+    .buttons {
+      margin-top: 16px;
     }
   }
 
   @media (max-width: 576px) {
 
     :host {
-      height: 347px;
+      padding-top: 84px;
     }
-  
+
     .main {
-      margin-top: 120px;
+      width: min(340px, 92vw);
       text-align: center;
     }
 
     img, zyllio-header-stat {
       display: none;
     }
-    
   }
 
 `
@@ -136,7 +127,6 @@ const html = `
       <slot name="title" ></slot>
       <slot name="sub-title" ></slot>
       <slot name="message" ></slot>
-      <br><br>
       <div class="buttons" >
         <slot name="sign-in" class="sign-in"></slot>
         <slot name="hosting" ></slot>
