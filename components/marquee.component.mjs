@@ -8,6 +8,9 @@ const css = `
     height: 100px;
     width: 100vw;
     overflow: hidden;
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 20px;
   }
 
   :host(.big) {
