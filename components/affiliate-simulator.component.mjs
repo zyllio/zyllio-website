@@ -72,8 +72,21 @@ const css = `
 
   .label {
     margin: 0;
-    color: #64748b;
+    color: #444e5d;
     font-size: 13px;
+  }
+
+  .price-vat {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 500;
+    color: #94a3b8;
+  }
+
+  .commission-note {
+    margin: 2px 0 0;
+    color: #94a3b8;
+    font-size: 11px;
   }
 
   .commission {
@@ -240,9 +253,11 @@ const html = (t) => `
       <article class="card" data-plan="starter">
         <h3 class="plan">${t.plans.starter}</h3>
         <p class="price">39 <span class="per">${t.currencySymbol}/${t.month}</span></p>
+        <p class="price-vat">${t.priceVat}</p>
         <hr class="sep">
         <p class="label">${t.commissionLabel}</p>
         <p class="commission" data-commission="starter"></p>
+        <p class="commission-note">${t.commissionNote}</p>
         <p class="recurring">${t.recurring}</p>
         <div class="clients">
           <div class="slider-header">
@@ -257,9 +272,11 @@ const html = (t) => `
       <article class="card" data-plan="business">
         <h3 class="plan">${t.plans.business}</h3>
         <p class="price">79 <span class="per">${t.currencySymbol}/${t.month}</span></p>
+        <p class="price-vat">${t.priceVat}</p>
         <hr class="sep">
         <p class="label">${t.commissionLabel}</p>
         <p class="commission" data-commission="business"></p>
+        <p class="commission-note">${t.commissionNote}</p>
         <p class="recurring">${t.recurring}</p>
         <div class="clients">
           <div class="slider-header">
@@ -274,9 +291,11 @@ const html = (t) => `
       <article class="card" data-plan="agency">
         <h3 class="plan">${t.plans.agency}</h3>
         <p class="price">289 <span class="per">${t.currencySymbol}/${t.month}</span></p>
+        <p class="price-vat">${t.priceVat}</p>
         <hr class="sep">
         <p class="label">${t.commissionLabel}</p>
         <p class="commission" data-commission="agency"></p>
+        <p class="commission-note">${t.commissionNote}</p>
         <p class="recurring">${t.recurring}</p>
         <div class="clients">
           <div class="slider-header">
@@ -303,9 +322,9 @@ class ZyllioAffiliateSimulator extends HTMLElement {
     this.attachShadow({ mode: 'open' })
 
     this.planCommissions = {
-      starter: 7.8,
-      business: 15.8,
-      agency: 57.8
+      starter: 6.50,
+      business: 13.17,
+      agency: 48.17
     }
   }
 
@@ -325,6 +344,8 @@ class ZyllioAffiliateSimulator extends HTMLElement {
       subtotal:        s('subtotal'),
       totalLabel:      s('total-label'),
       month:           s('month'),
+      priceVat:        s('price-vat'),
+      commissionNote:  s('commission-note'),
       locale:          document.documentElement.lang === 'fr' ? 'fr-FR' : 'en-US',
       currency:        document.documentElement.lang === 'fr' ? 'EUR' : 'USD',
       currencySymbol:  document.documentElement.lang === 'fr' ? '€' : '$',
