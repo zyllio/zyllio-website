@@ -9,7 +9,7 @@ const css = `
     place-items: center;
     color: white;
     height: 5em;
-    background-color: #ee8030;
+    background-color: #154785;
     padding: 0 1em;
   }
 
