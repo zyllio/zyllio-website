@@ -7,18 +7,22 @@ const css = `
     display: block;
     background-color: white;
     text-align: center;
-    width: 30%;
+    width: 23%;
     border-radius: 20px;
     box-shadow: 0 10px 26px rgba(2, 6, 23, .10);
     overflow: hidden;
   }
 
   :host(.i0) {
-    border: 1px solid #cacaca;;
+    border: 1px solid #cacaca;
   }
 
   :host(.i1) {
-    border: 1px solid #cacaca;;
+    border: 1px solid #cacaca;
+  }
+
+  :host(.i3) {
+    border: 1px solid #cacaca;
   }
 
   :host(.i2) {
