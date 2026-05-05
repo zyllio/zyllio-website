@@ -60,7 +60,7 @@ const css = `
   :host(.i2) ::slotted(h1), :host(.i2) ::slotted(h2) {    
   }
 
-  @media (max-width: 576px) {
+  @media (max-width: 768px) {
     :host {
       width: 100%;
       margin-bottom: 2em;

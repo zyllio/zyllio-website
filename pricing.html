@@ -100,23 +100,25 @@
 
     </zyllio-price-plan>
 
-    <zyllio-price-plan-plus slot="content">
-      <h2>Enterprise Plus</h2>
-      <p>Invoice & bank transfer available • Onboarding on request • Contractual SLA</p>
+    <zyllio-price-plan index="3" slot="content">
+      <h1>Enterprise Plus</h1>
+      <h2><span class="price">289 EUR</span> / month</h2>
 
-      <span slot="chip">10M rows</span>
-      <span slot="chip">SAML2 SSO</span>
-      <span slot="chip">Teams</span>
-      <span slot="chip">Developer kit</span>
-      <span slot="chip">SLA</span>
+      <zyllio-price-plan-content>
+        <h1>Scale up</h1>
+        <h2>All Enterprise features</h2>
+        <ul>
+          <li class="checked"><b>10 Million rows</b></li>
+          <li class="checked"><b>SAML2 SSO</b></li>
+          <li class="checked"><b>Teams</b></li>
+          <li class="checked"><b>Developer kit</b></li>
+          <li class="checked"><b>SLA</b></li>
+        </ul>
+        <zyllio-sign-in id="contact-trigger-pricing" href="#">contact@zyllio.com</zyllio-sign-in>
+        <p class="small">Contact us, reply within 24 business hours</p>
+      </zyllio-price-plan-content>
 
-      <div slot="right">
-        <p class="price">Starting at €289 <span class="price">/ month</span></p>
-        <p class="small">Contact us — reply within 1 business day</p>
-      </div>
-
-      <zyllio-sign-in slot="cta" id="contact-trigger-pricing" href="#">contact@zyllio.com</zyllio-sign-in>
-    </zyllio-price-plan-plus>
+    </zyllio-price-plan>
 
 
   </zyllio-section>

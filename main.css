@@ -115,7 +115,8 @@ li.unchecked {
   color: #cbcbcb;
 }
 
-#contact-trigger-pricing-fr {
+#contact-trigger-pricing-fr,
+#contact-trigger-pricing {
   --sign-in-bg: #1e60b4;
   --sign-in-hover-bg: #2a6fc7;
 }
