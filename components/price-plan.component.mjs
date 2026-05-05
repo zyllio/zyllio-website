@@ -6,11 +6,15 @@ const css = `
   :host {
     display: block;
     background-color: white;
+    color: #0f172a;
     text-align: center;
     width: 23%;
     border-radius: 20px;
     box-shadow: 0 10px 26px rgba(2, 6, 23, .10);
     overflow: hidden;
+    --plan-title-color: inherit;
+    --plan-subtitle-color: inherit;
+    --plan-body-color: inherit;
   }
 
   :host(.i0) {
@@ -22,7 +26,12 @@ const css = `
   }
 
   :host(.i3) {
-    border: 1px solid #cacaca;
+    background-color: #103564;
+    color: white;
+    border: 4px solid #103564;
+    --plan-title-color: white;
+    --plan-subtitle-color: rgba(255, 255, 255, 0.85);
+    --plan-body-color: white;
   }
 
   :host(.i2) {
@@ -34,6 +43,7 @@ const css = `
     font-weight: 400;
     padding: 10px 10px 0 10px;
     margin: 0;
+    color: var(--plan-title-color);
   }
     
   ::slotted(h2) {
@@ -41,6 +51,7 @@ const css = `
     font-weight: 400;
     padding: 4px 20px 6px 20px;
     margin: 0;
+    color: var(--plan-subtitle-color);
   }
 
   :host(.i0) ::slotted(h1), :host(.i0) ::slotted(h2) {    

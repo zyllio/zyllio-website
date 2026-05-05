@@ -85,9 +85,19 @@ li {
 }
 
 li.checked {
-  background-image: url(./image/checkbox-marked.svg);
-  background-position-y: 0.9em;
+  position: relative;
+  background-image: none;
+}
 
+li.checked::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  color: currentColor;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
 }
 
 
@@ -103,6 +113,11 @@ li.unchecked {
 .new-price {
   text-decoration: line-through;
   color: #cbcbcb;
+}
+
+#contact-trigger-pricing-fr {
+  --sign-in-bg: #1e60b4;
+  --sign-in-hover-bg: #2a6fc7;
 }
 
 .stripe {

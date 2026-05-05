@@ -14,11 +14,11 @@ const css = `
     outline: none;
     text-align: center;
     transition: all .2s ease;
-    background-color: #164785
+    background-color: var(--sign-in-bg, #164785)
   }
 
   :host(:hover) {
-    background-color: #1d58a5
+    background-color: var(--sign-in-hover-bg, #1d58a5)
   }
   
   :host(.disabled) {
@@ -49,7 +49,13 @@ class ZyllioSignIn extends HTMLElement {
 
     const href = this.getAttribute('href')
 
-    this.onclick = () => window.open(href, '_blank')
+    this.onclick = () => {
+      if (!href || href === '#') {
+        return
+      }
+
+      window.open(href, '_blank')
+    }
   }
 }
 
