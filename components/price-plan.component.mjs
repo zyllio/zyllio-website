@@ -34,6 +34,14 @@ const css = `
     --plan-body-color: white;
   }
 
+  :host(.enterprise-plus-custom) {
+    background-color: #0c1f38;
+    border: none;
+    --plan-title-color: white;
+    --plan-subtitle-color: rgba(255, 255, 255, 0.85);
+    --plan-body-color: white;
+  }
+
   :host(.i2) {
     border: 4px solid #103564;
   }
