@@ -38,7 +38,7 @@ const css = `
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 21px;
   }
 
   .buttons {
@@ -54,6 +54,10 @@ const css = `
     border: 1px solid #00000038;
     box-shadow: 2px 2px 8px 2px #0000001f;
     width: 400px;
+  }
+
+  zyllio-header-stat {
+    display: none;
   }
 
   ::slotted(zyllio-sign-in) {
@@ -89,6 +93,14 @@ const css = `
     font-weight: 600;
   }
 
+  ::slotted(zyllio-ai-prompt) {
+    display: block;
+    width: min(532px, 64vw);
+    margin-top: 70px;
+    position: relative;
+    z-index: 2;
+  }
+
   @media (max-width: 1300px) {
     :host {
       padding-top: 162px;
@@ -112,6 +124,11 @@ const css = `
     .buttons {
       margin-top: 16px;
     }
+
+    ::slotted(zyllio-ai-prompt) {
+      width: min(420px, 66vw);
+      margin-top: 44px;
+    }
   }
 
   @media (max-width: 576px) {
@@ -125,6 +142,11 @@ const css = `
       text-align: center;
     }
 
+    ::slotted(zyllio-ai-prompt) {
+      width: 100%;
+      margin-top: 28px;
+    }
+
     img, zyllio-header-stat {
       display: none;
     }
@@ -134,9 +156,9 @@ const css = `
 
 const html = `
   <zyllio-header-stat value="5841" label="apps" variant="yellow" left="calc(5% + 300px)" top="22%"></zyllio-header-stat>
-  <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="calc(10% + 300px)" bottom="20%"></zyllio-header-stat>
+  <zyllio-header-stat value="42" unit="k" label="utilisateurs finaux" variant="green" left="calc(max(18px, 3vw) + 100px)" bottom="20%"></zyllio-header-stat>
   <zyllio-header-stat value="3852" label="créateurs d’apps" variant="purple" right="calc(9% + 300px)" top="16%"></zyllio-header-stat>
-  <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="calc(5% + 300px)" bottom="16%"></zyllio-header-stat>
+  <zyllio-header-stat value="154" unit="k" label="requêtes / mois" variant="rose" right="calc(max(18px, 3vw) + 100px)" bottom="16%"></zyllio-header-stat>
 
   <div class="main">
     <div class="container" >
@@ -144,9 +166,9 @@ const html = `
       <slot name="sub-title" ></slot>
       <slot name="message" ></slot>
       <div class="buttons" >
-        <slot name="sign-in" class="sign-in"></slot>
         <slot name="hosting" ></slot>
       </div>
+      <slot name="ai-prompt" ></slot>
     </div>    
 
     <div class="illustration" >

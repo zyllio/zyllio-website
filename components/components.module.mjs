@@ -30,6 +30,7 @@ const modules = [
   './affiliate-hero.component.mjs',
   './affiliate-simulator.component.mjs',
   './affiliate-contact-form.component.mjs',
+  './ai-prompt.component.mjs',
   './contact-modal.component.mjs'
 ]
 

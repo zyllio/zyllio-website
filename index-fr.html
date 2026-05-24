@@ -28,6 +28,11 @@
     <h1 slot="title">Créez des apps sur mesure</h1>
     <h2 slot="sub-title">sans coder grâce à l'IA</h2>
     <h3 slot="message">Vous avez l'idée, réalisez-la en vous appuyant sur vos compétences métier</h3>
+    <zyllio-ai-prompt
+      slot="ai-prompt"
+      label="Décrivez l’application que vous voulez créer"
+      placeholder="Ex : Je veux une app pour gérer les réservations, les paiements et les rappels clients."
+      button-label="Tester mon idée"></zyllio-ai-prompt>
     <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Commencez gratuitement</zyllio-sign-in>
     <zyllio-hosting-badge slot="hosting" label="Made in France"></zyllio-hosting-badge>
   </zyllio-header>
@@ -147,7 +152,7 @@
 
   </zyllio-section>
 
-  <zyllio-section id="use-case" layout="column" >
+  <zyllio-section id="use-case" layout="column" hidden>
 
     <h1 slot="title">Cas d'usage</h1>
 

@@ -10,6 +10,10 @@ const css = `
     transition: opacity 0.5s 0.25s ease-out;    
   }  
 
+  :host([hidden]) {
+    display: none !important;
+  }
+
   :host(.small-title) {
     background-color: unset;
     padding-bottom: 0;

@@ -29,6 +29,11 @@
     <h1 slot="title">Create custom apps</h1>
     <h2 slot="sub-title">without coding</h2>
     <h3 slot="message">You have the idea—bring it to life by leveraging your professional expertise</h3>
+    <zyllio-ai-prompt
+      slot="ai-prompt"
+      label="Describe the app you want to build"
+      placeholder="Example: I want an app to manage bookings, payments, and customer reminders."
+      button-label="Test my idea"></zyllio-ai-prompt>
     <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Start for free</zyllio-sign-in>
     <zyllio-hosting-badge slot="hosting" label="Made in France"></zyllio-hosting-badge>
   </zyllio-header>
@@ -151,7 +156,7 @@
 
   </zyllio-section>
 
-  <zyllio-section id="use-case" layout="column">
+  <zyllio-section id="use-case" layout="column" hidden>
 
     <h1 slot="title">Uses cases</h1>
 
@@ -442,7 +447,7 @@
           to undergraduate students (students in management, life sciences, math, statistics, etc.).
 
           <br><br>
-          When introducing app development, Zyllio's user-friendliness is truly impressive. Students quickly got
+    <zyllio-section id="use-case" layout="column" hidden>
           a handle on the software, creating their first applications in just a few hours with remarkable efficiency.
           The "wow" effect is guaranteed! With features like data management, component integration, screen linking, a
           high level of customization, and instant app publishing, Zyllio allows users to bring their ideas to life
