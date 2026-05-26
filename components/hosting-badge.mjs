@@ -3,14 +3,17 @@ const css = `
   @import "./components/global.css";
 
   :host { 
-    display: inline-block; 
+    display: inline-flex; 
   }
 
   .badge{
     display: inline-flex; 
     align-items: center; 
     gap: 10px;
-    padding: 0.6em 1.2em;
+    height: 46px;
+    padding: 0 1.2em;
+    box-sizing: border-box;
+    white-space: nowrap;
     border-radius: var(--border-radius);
     background: #ffffff; 
     border: 1px solid #e2e8f0; 
@@ -31,7 +34,7 @@ const css = `
 const html = `
   <div class="badge" >
     <span class="flag" ></span>
-    <span class="label"</span>
+    <span class="label" ></span>
   </div>
 `;
 

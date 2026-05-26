@@ -220,7 +220,7 @@ class ZyllioAiPrompt extends HTMLElement {
       }
 
       const params = new URLSearchParams({ prompt });
-      const targetUrl = `https://www.zyllio.one/?${params.toString()}`;
+      const targetUrl = `https://studio.zyllio.com/?${params.toString()}`;
 
       window.open(targetUrl, '_blank');
     });

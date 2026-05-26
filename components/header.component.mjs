@@ -26,7 +26,9 @@ const css = `
   .main {
     display: flex;
     justify-content: center;
-    width: min(920px, 92vw);
+    align-items: center;
+    gap: clamp(24px, 4vw, 48px);
+    width: min(1180px, 92vw);
     margin: 0 auto;
     margin-top: 0;
     color: #000;
@@ -37,14 +39,25 @@ const css = `
     z-index: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 21px;
+    flex: 1;
+    max-width: 620px;
+  }
+
+  .prompt {
+    flex: 1;
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .buttons {
     display: flex;
     gap: 10px;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
     margin-top: 20px;
   }
@@ -61,7 +74,7 @@ const css = `
   }
 
   ::slotted(zyllio-sign-in) {
-    align-self: center;
+    align-self: flex-start;
   }
 
   ::slotted(h1) {
@@ -69,7 +82,7 @@ const css = `
     line-height: 1.1;
     margin: 0 !important;
     color: #154785;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
   }
 
@@ -78,7 +91,7 @@ const css = `
     line-height: 1.1;
     margin: 0 !important;
     color: #ee8030;
-    text-align: center;
+    text-align: left;
     font-weight: 700;
   }
 
@@ -89,14 +102,14 @@ const css = `
     margin: 0 !important;
     margin-top: 12px !important;
     color: #334155;
-    text-align: center;
+    text-align: left;
     font-weight: 600;
   }
 
   ::slotted(zyllio-ai-prompt) {
     display: block;
-    width: min(532px, 64vw);
-    margin-top: 70px;
+    width: 100%;
+    margin-top: 0;
     position: relative;
     z-index: 2;
   }
@@ -117,17 +130,40 @@ const css = `
       padding-top: 108px;
     }
 
+    .main {
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      width: min(640px, 92vw);
+    }
+
+    .container {
+      align-items: center;
+      max-width: 100%;
+    }
+
+    .prompt {
+      max-width: 100%;
+      justify-content: center;
+    }
+
+    ::slotted(h1),
+    ::slotted(h2),
+    ::slotted(h3) {
+      text-align: center;
+    }
+
     img, zyllio-header-stat {
       display: none;
     }
 
     .buttons {
+      justify-content: center;
       margin-top: 16px;
     }
 
     ::slotted(zyllio-ai-prompt) {
-      width: min(420px, 66vw);
-      margin-top: 44px;
+      width: min(420px, 92vw);
     }
   }
 
@@ -144,7 +180,6 @@ const css = `
 
     ::slotted(zyllio-ai-prompt) {
       width: 100%;
-      margin-top: 28px;
     }
 
     img, zyllio-header-stat {
@@ -166,13 +201,13 @@ const html = `
       <slot name="sub-title" ></slot>
       <slot name="message" ></slot>
       <div class="buttons" >
+        <slot name="sign-in" ></slot>
         <slot name="hosting" ></slot>
       </div>
-      <slot name="ai-prompt" ></slot>
-    </div>    
+    </div>
 
-    <div class="illustration" >
-      <!-- <img src="./image/dashboard.png" > -->
+    <div class="prompt" >
+      <slot name="ai-prompt" ></slot>
     </div>
   </div>
   

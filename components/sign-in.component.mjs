@@ -4,12 +4,18 @@ const css = `
   @import "./components/global.css";
 
   :host {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
     color: white;
     font-size: var(--font-size-normal);
-    padding: 0.6em 1.2em;
+    height: 44px;
+    padding: 0 1.2em;
     border-radius: var(--border-radius);
+    box-sizing: border-box;
+    line-height: 1;
+    white-space: nowrap;
     cursor: pointer;
     outline: none;
     text-align: center;
