@@ -8,7 +8,7 @@ const css = `
     display: block;
     width: 100%;
     margin: 0;
-    padding: 300px 0 164px;
+    padding: 250px 0 120px;
     overflow: hidden;
     background: transparent;
     text-align: center;
@@ -40,7 +40,7 @@ const css = `
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 21px;
+    gap: 10px;
     flex: 1;
     max-width: 620px;
   }
