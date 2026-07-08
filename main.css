@@ -116,7 +116,8 @@ li.unchecked {
 }
 
 #contact-trigger-pricing-fr,
-#contact-trigger-pricing {
+#contact-trigger-pricing,
+#contact-trigger-pricing-fr-agency {
   --sign-in-bg: #1e60b4;
   --sign-in-hover-bg: #2a6fc7;
 }

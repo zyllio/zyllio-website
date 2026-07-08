@@ -148,6 +148,48 @@
 
   </zyllio-section>
 
+  <zyllio-section id="agency-partner" layout="column">
+
+    <h1 slot="title">Partenaire Agence Zyllio</h1>
+
+    <zyllio-card class="style1" slot="content">
+      <zyllio-card-text>
+        <h1>Créez les apps de vos clients avec Zyllio</h1>
+
+        <br>
+        Vous êtes une agence no-code et souhaitez créer des applications pour vos clients avec Zyllio ?
+
+        <h1>Bénéfices</h1>
+      <ul>
+          <li>Livrez des applications clients plus rapidement avec le No-Code et l'IA.</li>
+          <li>Gardez la maîtrise de votre relation commerciale et de vos prestations.</li>
+          <li>Générez des revenus récurrents sur les clients apportés.</li>
+        </ul>
+
+        <h1>Inclus</h1>
+        <ul>
+          <li>Jusqu'à 5 seats agence inclus.</li>
+          <li>Accès aux fonctionnalités du plan Entreprise Plus pour créer et configurer vos projets clients.</li>
+          <li>Support prioritaire pour vos projets.</li>
+          <li>Aide au cadrage des cas clients.</li>
+        </ul>
+
+        <h1>Abonnement client final</h1>
+        <p>Pour utiliser une application en production, chaque client final doit souscrire à l'abonnement Zyllio adapté
+          à ses besoins : volume de données, stockage, intégrations, automatisations, API, mode hors ligne, SSO ou
+          niveau de support.</p>
+
+        <h1>Tarif</h1>
+        <p><b>79 € HT/mois</b> par agence</p>
+        <p>Seats additionnels : <b>+19 € HT/mois / utilisateur</b></p>
+
+        <br>
+        <zyllio-sign-in id="contact-trigger-pricing-fr-agency" href="#">Devenir Partenaire Agence</zyllio-sign-in>
+      </zyllio-card-text>
+    </zyllio-card>
+
+  </zyllio-section>
+
   <zyllio-section id="comparison" layout="column">
 
     <h1 slot="title">Comparaison des fonctionnalités</h1>
@@ -488,7 +530,7 @@
   </zyllio-footer>
 
   <zyllio-contact-modal
-    open-trigger="#contact-trigger-pricing-fr"
+    open-trigger="#contact-trigger-pricing-fr, #contact-trigger-pricing-fr-agency"
     close-label="Fermer"
     placeholder-last-name="Votre nom"
     placeholder-first-name="Votre prénom"
