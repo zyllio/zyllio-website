@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zyllio Agency Partner offer for no-code agencies building applications for clients">
+
+  <title>Zyllio - Agency Partner</title>
+  <link rel="icon" type="image/png" href="./image/icon.png" />
+  <link rel="stylesheet" href="main.css">
+  <script type="module" src="./components/components.module.mjs"></script>
+</head>
+
+<body>
+
+  <zyllio-nav always-overlaid>
+    <a href="features.html" slot="link">Features</a>
+    <a href="pricing.html" slot="link">Pricing</a>
+    <a href="partner.html" slot="link">Partner</a>
+    <a href="support.html" slot="link">Support</a>
+    <a href="blog.html" slot="link">Blog</a>
+    <a href="affiliate.html" slot="link">Affiliate</a>
+    <a href="partner-fr.html" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
+    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
+  </zyllio-nav>
+
+  <br>
+  <br>
+
+  <zyllio-section id="partner-hero" layout="column">
+    <zyllio-partner-hero
+      slot="content"
+      headline="Zyllio Agency Partner"
+      subtitle="Build your clients apps with Zyllio"
+      description="Speed up delivery with an offer designed for agencies that want to ship faster, better, and with more recurring revenue"
+      primary-label="Become an Agency Partner"
+    ></zyllio-partner-hero>
+  </zyllio-section>
+
+  <zyllio-section id="partner-offer-section" layout="column">
+    <h1 slot="title">Agency Partner Offer</h1>
+    <zyllio-partner-offer
+      slot="content"
+      price="139 €"
+      period="excl. VAT / month"
+      extra-seats="Additional seats: +19 EUR excl. VAT / month / user"
+      benefits-title="Your benefits"
+      benefit-1="Deliver client applications faster with no-code and AI"
+      benefit-2="Keep full control of your client relationship and service delivery"
+      benefit-3="Generate recurring revenue from the clients you bring in"
+      included-title="What is included"
+      included-1="Up to 5 seats included"
+      included-1-highlight="5 seats"
+      included-2="Access to Enterprise Plus features to design client projects"
+      included-2-highlight="Enterprise Plus"
+      included-3="Priority support for your projects"
+      included-4="Help scoping client use cases"
+      included-5="Support reviewing quotes and occasional participation in prospect calls"
+      included-6="Agency listing on the Zyllio website after partner approval"
+      note-title="End-client subscription"
+      note="To run an application in production, each end client must subscribe to the Zyllio plan that matches their needs: data volume, storage, integrations, automations, API, offline mode, SSO, or support level"
+    ></zyllio-partner-offer>
+  </zyllio-section>
+
+  <zyllio-section id="partner-contact" layout="column">
+    <h1 slot="title">Ready to accelerate client delivery?</h1>
+
+    <div slot="content">
+      Tell us about your agency and we will get back to you quickly to discuss the Agency Partner offer
+      <br><br>
+      We can help you shape your positioning, your client delivery model, and your rollout plan with Zyllio
+      <br><br>
+      <zyllio-sign-in id="partner-contact-trigger-bottom" href="#">Talk to the Zyllio team</zyllio-sign-in>
+    </div>
+  </zyllio-section>
+
+  <zyllio-footer>
+    <a href="terms-of-use.html" target="_blank">Terms of use</a> - <a href="privacy.html" target="_blank">Privacy policy</a> - <a href="gdpr.html" target="_blank">GDPR</a> - <a href="legal.html" target="_blank">Legal notice</a> - <a href="affiliate-program.html" target="_blank">Affiliate Program</a>
+  </zyllio-footer>
+
+  <zyllio-contact-modal
+    open-trigger="#partner-contact-trigger-bottom"
+    close-label="Close"
+    placeholder-last-name="Your last name"
+    placeholder-first-name="Your first name"
+    placeholder-email="you@company.com"
+    placeholder-message="Tell us about your agency and your client projects"
+    initial-message="Hello Zyllio team, I would like to learn more about the Agency Partner program"
+  >
+    <h2 slot="title">Become an Agency Partner</h2>
+    <p slot="intro">Tell us about your agency and what you want to build, we will get back to you shortly</p>
+    <span slot="label-last-name">Last name</span>
+    <span slot="label-first-name">First name</span>
+    <span slot="label-email">Email</span>
+    <span slot="label-message">Message</span>
+    <span slot="submit-label">Send</span>
+  </zyllio-contact-modal>
+
+</body>
+
+</html>
+
+<script>
+  (function () {
+    const modal = document.querySelector('zyllio-contact-modal')
+    if (!modal) return
+
+    document.addEventListener('partner-contact-request', () => {
+      try { modal.open() } catch (err) { /* ignore */ }
+    })
+  })()
+</script>

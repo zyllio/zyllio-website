@@ -90,7 +90,7 @@ const css = `
 
   ::slotted([slot="intro"]) {
     margin: 0;
-    color: #334155;
+    color: #000000;
     font-size: 15px;
     line-height: 1.6;
   }
@@ -190,7 +190,7 @@ const css = `
     min-height: 22px;
     font-size: 14px;
     line-height: 1.5;
-    color: #334155;
+    color: #000000;
   }
 
   .status[data-state="success"] {

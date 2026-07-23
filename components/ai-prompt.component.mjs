@@ -101,7 +101,7 @@ const css = `
   }
 
   .prompt-area::placeholder {
-    color: #64748b;
+    color: #000000;
     font-weight: 400;
   }
 

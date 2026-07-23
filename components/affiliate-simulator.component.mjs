@@ -25,7 +25,7 @@ const css = `
 
   .heading p {
     margin: 10px 0 0;
-    color: #64748b;
+    color: #000000;
     font-size: clamp(13px, 1.2vw, 16px);
   }
 
@@ -61,7 +61,7 @@ const css = `
   .per {
     font-size: 16px;
     font-weight: 500;
-    color: #64748b;
+    color: #000000;
   }
 
   .sep {
@@ -116,7 +116,7 @@ const css = `
   }
 
   .clients label {
-    color: #334155;
+    color: #000000;
     font-weight: 500;
     font-size: 16px;
   }
@@ -200,7 +200,7 @@ const css = `
   }
 
   .total-label {
-    color: #334155;
+    color: #000000;
     font-size: 15px;
     font-weight: 500;
   }

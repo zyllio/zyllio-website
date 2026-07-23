@@ -26,7 +26,7 @@ const css = `
     max-width: 760px;
     font-size: clamp(15px, 1.5vw, 24px);
     line-height: 1.45;
-    color: #334155;
+    color: #000000;
   }
 
   p b {
@@ -46,7 +46,7 @@ const css = `
     max-width: 760px;
     font-size: clamp(15px, 1.5vw, 24px);
     line-height: 1.45;
-    color: #334155;
+    color: #000000;
   }
 
   ::slotted(.cta-primary),
@@ -75,7 +75,7 @@ const css = `
   }
 
   ::slotted(.cta-secondary) {
-    color: #334155 !important;
+    color: #000000 !important;
     background: #f8fafc;
     border: 1px solid #d0d7e3;
     text-decoration: none !important;

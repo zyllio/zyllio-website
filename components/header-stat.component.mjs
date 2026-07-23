@@ -40,7 +40,7 @@ const css = `
     font-weight: 600;
     font-size: 13px;
     line-height: 1.1;
-    color: #475569;
+    color: #000000;
     text-transform: lowercase;
   }
 

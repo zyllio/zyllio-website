@@ -37,7 +37,7 @@ const css = `
 
     ::slotted(p){
       margin:8px 0 0;
-      color:#475569;
+      color:#000000;
     }
 
     /* Pills */
@@ -75,7 +75,7 @@ const css = `
 
     ::slotted(.small) {
       margin:6px 0 0;
-      color:#475569;
+      color:#000000;
       font-size:13px;
     }
 

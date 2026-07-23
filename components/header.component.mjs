@@ -101,7 +101,7 @@ const css = `
     line-height: 1.45;
     margin: 0 !important;
     margin-top: 12px !important;
-    color: #334155;
+    color: #000000;
     text-align: left;
     font-weight: 600;
   }

@@ -47,7 +47,7 @@ const css = `
     margin: 0;
     font-weight: 400;
     font-size: 0.88em;
-    color: #64748b;
+    color: #000000;
     line-height: 1.55;
     flex: 1;
   }
