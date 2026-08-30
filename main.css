@@ -101,6 +101,40 @@ li.checked::before {
 }
 
 
+li.addon {
+  position: relative;
+  background-image: none;
+  color: inherit;
+}
+
+li.addon::before {
+  content: "★";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  color: currentColor;
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+li.addon .addon-badge {
+  display: inline-block;
+  padding: 0.1rem 0.35rem;
+  border: 1px solid #1e60b4;
+  border-radius: 999px;
+  color: #1e60b4;
+  font-size: 0.68rem;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.enterprise-plus-custom li.addon .addon-badge {
+  border-color: currentColor;
+  color: currentColor;
+}
+
 li.unchecked {
   visibility: hidden;
 }
