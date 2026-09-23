@@ -1,85 +1,54 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentions légales</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <style>
-    @font-face {
-      font-family: "Montserrat";
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format("woff2");
-    }
-
-    body {
-      font-family: "Montserrat";
-      font-size: 18px;
-      background-color: white;
-      margin: 40px 10%;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    h1,
-    h2 {
-      color: #154785;
-    }
-
-    h2:after {
-      display: block;
-      content: "";
-      position: relative;
-      left: 2px;
-      top: 0px;
-      max-width: 65px;
-      height: 6px;
-      background-color: #ee8030;
-      border-radius: 4px;
-    }
-  </style>
+  <meta name="description" content="Mentions légales de Zyllio.">
+  <title>Mentions légales — Zyllio</title>
+  <link rel="icon" type="image/png" href="./image/icon.png">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="legal-document.css">
 </head>
-
 <body>
+  <header class="legal-header">
+    <a class="legal-brand" href="index-fr.html" aria-label="Accueil Zyllio"><img src="./image/logo-light.png" alt="Zyllio"></a>
+    <nav aria-label="Documents légaux">
+      <a href="terms-of-use-fr.html">Conditions</a>
+      <a href="privacy-fr.html">Confidentialité</a>
+      <a href="gdpr-fr.html">RGPD</a>
+      <a href="affiliate-program-fr.html">Affiliation</a>
+      <a href="legal-fr.html" aria-current="page">Mentions légales</a>
+    </nav>
+  </header>
 
-  <h1>Mentions légales</h1>
-  <br><br>
+  <main class="legal-shell">
+    <nav class="legal-toc" aria-label="Sommaire">
+      <strong>Sommaire</strong>
+      <a href="#presentation">Présentation</a>
+      <a href="#coordonnees">Coordonnées</a>
+      <a href="#entreprise">Entreprise</a>
+      <a href="#contact">Contactez-nous</a>
+    </nav>
 
-  <h2>Présentation</h2>
-  La société Zyllio, Française, est spécialisée dans les services informatiques et se distingue par le développement 
-  et l'édition d'une solution innovante No-Code. 
+    <article class="legal-document">
+      <h1>Mentions légales</h1>
+      <p class="legal-meta"><strong>Dernière mise à jour :</strong> 23 septembre 2026</p>
 
-  <br><br>
-  
-  Cette solution permet à nos clients de créer et de déployer rapidement des applications professionnelles, 
-  sans nécessiter de compétences techniques en programmation. 
-  
-  <br><br>
+      <h2 id="presentation">Présentation</h2>
+      <p>La société Zyllio, française, est spécialisée dans les services informatiques et se distingue par le développement et l'édition d'une solution innovante no-code.</p>
+      <p>Cette solution permet à nos clients de créer et de déployer rapidement des applications professionnelles, sans nécessiter de compétences techniques en programmation.</p>
+      <p>Grâce à notre plateforme intuitive, les entreprises peuvent concevoir des outils sur mesure pour automatiser leurs processus, améliorer leur productivité et répondre efficacement à leurs besoins spécifiques, tout en réduisant les délais et les coûts de développement.</p>
+      <p>Notre engagement envers l'innovation et la simplicité fait de Zyllio un acteur clé du no-code en France.</p>
 
-  Grâce à notre plateforme intuitive, les entreprises peuvent concevoir des outils sur mesure pour automatiser leurs processus, 
-  améliorer leur productivité et répondre efficacement à leurs besoins spécifiques, 
-  tout en réduisant les délais et les coûts de développement. 
-  
-  <br><br>
-  Notre engagement envers l'innovation et la simplicité fait de Zyllio un acteur clé du No-Code en France.  
+      <h2 id="coordonnees">Coordonnées</h2>
+      <p>Zyllio est située en France, à Limours (Essonne).</p>
 
-  <h2>Coordonnées</h2>
+      <h2 id="entreprise">Entreprise</h2>
+      <p>Zyllio est une SASU française immatriculée sous le numéro SIREN 994 131 274.</p>
 
-  Zyllio est situé en France à Limours (Essonne)
-
-  <h2>Entreprise</h2>
-
-  Zyllio est une SASU Française enregistrée sous ce numéro Siren: 994131274
-
-  <h2>Contactez-nous</h2>
-  Si vous avez des questions, veuillez nous contacter à l'adresse suivante :
-  contact@zyllio.com
-
+      <h2 id="contact">Contactez-nous</h2>
+      <p>Pour toute question, contactez-nous à <a href="mailto:contact@zyllio.com">contact@zyllio.com</a>.</p>
+    </article>
+  </main>
 </body>
-
 </html>
