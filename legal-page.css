@@ -1,4 +1,4 @@
-/* Pages juridiques FR au nouveau design (les pages EN utilisent encore legal-document.css) */
+/* Pages juridiques (FR et EN) */
 .l-head{margin-top:-76px;padding:136px 0 48px;background:radial-gradient(70% 90% at 50% -10%,#dce8fb 0%,#eef4fd 40%,transparent 75%),#fff;border-bottom:1px solid var(--line)}
 .l-docs{display:flex;flex-wrap:wrap;gap:6px 22px;margin-bottom:22px}
 .l-docs a{padding:2px 0;border-bottom:2px solid transparent;font-size:13.5px;font-weight:500;color:var(--muted);transition:border-color .2s,color .2s}
