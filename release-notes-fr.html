@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Notes de version | Zyllio</title>
+<meta name="description" content="Les notes de version du Studio Zyllio, semaine par semaine : nouveautés, améliorations et corrections."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/release-notes-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/release-notes.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/release-notes-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/release-notes.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./legal-page.css"/>
+<link rel="stylesheet" href="./release-notes.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <div class="nav-item">
+        <a href="features-fr.html">Produit</a>
+        <div class="sub">
+          <a href="features-fr.html#ia">Créer avec l’IA</a>
+          <a href="features-fr.html#studio">Le Studio NoCode</a>
+          <a href="features-fr.html#scenarios">Automatisations</a>
+          <a href="features-fr.html#donnees">Données et intégrations</a>
+          <a href="features-fr.html#natives">Applications natives</a>
+          <a href="features-fr.html#terrain">Sur le terrain</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="pricing-fr.html">Tarifs</a>
+        <div class="sub">
+          <a href="pricing-fr.html#offres">Les offres</a>
+          <a href="pricing-fr.html#accompagnement">Accompagnement</a>
+          <a href="pricing-fr.html#comparatif">Comparatif détaillé</a>
+          <a href="pricing-fr.html#faq">Questions fréquentes</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="partner-fr.html">Agences</a>
+        <div class="sub">
+          <a href="partner-fr.html#offre">L’offre partenaire</a>
+          <a href="partner-fr.html#fonctionnement">Fonctionnement</a>
+          <a href="partner-fr.html#faq">Questions fréquentes</a>
+        </div>
+      </div>
+      <a href="blog-fr.html">Blog</a>
+      <div class="nav-item">
+        <a href="support-fr.html">Support</a>
+        <div class="sub">
+          <a href="support-fr.html#aide">Aide et contact</a>
+          <a href="support-fr.html#videos">Vidéos</a>
+          <a href="release-notes-fr.html">Notes de version</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="affiliate-fr.html">Affiliation</a>
+        <div class="sub">
+          <a href="affiliate-fr.html#simulateur">Simulateur de gains</a>
+          <a href="affiliate-fr.html#fonctionnement">Fonctionnement</a>
+          <a href="affiliate-fr.html#faq">Questions fréquentes</a>
+        </div>
+      </div>
+      <a class="m-only" href="release-notes.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
+    </nav>
+    <div class="side">
+      <div class="lang"><a class="lang-btn" tabindex="0" role="button" aria-haspopup="true" aria-label="Langue : Français"><img src="./flags/fr.png" alt="" width="18" height="12"/>FR</a><div class="lang-menu"><a class="lang-opt" aria-current="true"><img src="./flags/fr.png" alt="" width="18" height="12"/>Français</a><a class="lang-opt" href="release-notes.html" hreflang="en" lang="en"><img src="./flags/en.png" alt="" width="18" height="12"/>English</a></div></div>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="l-head" aria-labelledby="page-t">
+  <div class="wrap">
+    <h1 id="page-t">Notes de version</h1>
+    <p class="l-meta"><strong>Dernière mise à jour :</strong> 1er novembre 2026</p>
+    <p class="l-note">Les nouveautés du Studio Zyllio, semaine par semaine. Les grandes annonces sont aussi sur le <a href="blog-fr.html">blog</a>.</p>
+  </div>
+</section>
+
+<div class="wrap l-shell">
+  <nav class="l-toc" aria-label="Sommaire">
+    <strong>Semaines</strong>
+    <span class="rn-month">Octobre 2026</span>
+    <a href="#s-2026-10-26">26 octobre</a>
+    <a href="#s-2026-10-19">19 octobre</a>
+    <a href="#s-2026-10-12">12 octobre</a>
+    <a href="#s-2026-10-05">5 octobre</a>
+    <span class="rn-month">Septembre 2026</span>
+    <a href="#s-2026-09-28">28 septembre</a>
+    <a href="#s-2026-09-21">21 septembre</a>
+    <a href="#s-2026-09-14">14 septembre</a>
+    <a href="#s-2026-09-07">7 septembre</a>
+    <span class="rn-month">Août 2026</span>
+    <a href="#s-2026-08-31">31 août</a>
+    <a href="#s-2026-08-24">24 août</a>
+    <a href="#s-2026-08-17">17 août</a>
+    <a href="#s-2026-08-10">10 août</a>
+    <a href="#s-2026-08-03">3 août</a>
+  </nav>
+  <article class="l-doc">
+      <section class="rn-week" aria-labelledby="s-2026-10-26">
+      <h2 id="s-2026-10-26">Semaine du 26 octobre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Pièces jointes dans le composant Chatbot</strong> : les utilisateurs de vos applications peuvent désormais joindre un fichier à leur message (PDF, texte, CSV, images JPEG/PNG/WebP). Le chatbot en tient compte dans sa réponse.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Assistant IA du studio</strong> : en cas d'échec d'une demande, un message d'erreur clair s'affiche avec un bouton <strong>Réessayer</strong>, sans avoir à retaper votre demande.</li>
+      <li><strong>Génération d'écrans par l'IA</strong> : meilleure gestion des titres et des marges des images.</li>
+      </ul>
+      <h3 class="rn-tag rn-fix">Corrections</h3>
+      <ul>
+      <li>Corrections de stabilité sur le chatbot et l'assistant IA.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-19">
+      <h2 id="s-2026-10-19">Semaine du 19 octobre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Nouvel Assistant IA dans le studio</strong> : un panneau unique, accessible depuis le design et la base de données, remplace l'ancien générateur. Décrivez ce que vous voulez créer ou modifier (écrans, tables, composants personnalisés, fonctionnalités…) et l'assistant s'en charge. L'application se recharge automatiquement pour afficher ses modifications.</li>
+      <li><strong>Composant Chatbot</strong> : ajoutez un chatbot IA dans vos applications. Configurez-le dans <strong>Paramètres &gt; Intégrations &gt; Chatbot</strong> :
+      <ul>
+      <li>choix du fournisseur (OpenAI, Mistral AI, Claude) et du modèle ;</li>
+      <li>permissions par table (lecture, création, modification) pour contrôler les données accessibles au chatbot.</li>
+      </ul></li>
+      <li><strong>Fonctionnalité Chatbot installable</strong> : l'assistant peut ajouter un écran de chatbot prêt à l'emploi.</li>
+      <li><strong>Paramètres de requête REST</strong> : dans les intégrations REST, vous pouvez définir des paramètres de requête avec une valeur d'exemple.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Création d'application avec l'IA</strong> : parcours simplifié. Décrivez votre besoin et l'IA construit votre application ; l'étape de choix du nom et du thème disparaît.</li>
+      <li><strong>Tables distantes</strong> : il est maintenant possible de supprimer une table distante importée.</li>
+      </ul>
+      <h3 class="rn-tag rn-change">Changements</h3>
+      <ul>
+      <li>Le composant <strong>En-tête</strong> n'a plus d'option d'icône de retour personnalisée.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-12">
+      <h2 id="s-2026-10-12">Semaine du 12 octobre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Nouvel écran de création d'application</strong> : trois façons de démarrer :
+      <ul>
+      <li>partir d'une page blanche ;</li>
+      <li>créer avec l'IA ;</li>
+      <li>choisir un modèle.</li>
+      </ul></li>
+      <li><strong>Sélecteur de modèles</strong> : parcourez les modèles d'applications par catégorie (Business, Éducation, Santé, Jeux…) et par fonctionnalité (Authentification, Chat, Géolocalisation, Hors ligne…), avec un aperçu avant la création.</li>
+      <li><strong>Actions de zoom</strong> : trois nouvelles actions, <strong>Zoom avant</strong>, <strong>Zoom arrière</strong> et <strong>Réinitialiser le zoom</strong>, pour agrandir ou réduire l'écran courant.</li>
+      <li><strong>Fonction « Nom de l'application »</strong> : récupère le nom de l'application en cours d'exécution.</li>
+      <li><strong>Conditions d'authentification</strong> : nouvelles conditions <strong>L'utilisateur est authentifié</strong> et <strong>L'utilisateur n'est pas authentifié</strong>.</li>
+      <li><strong>Éditeur d'actions</strong> : nouveau bouton dans la barre d'outils pour afficher les identifiants des étapes.</li>
+      <li><strong>Composant Statistique</strong> : nouvelle option de taille (Grande, Moyenne, Petite).</li>
+      <li><strong>Assistant IA</strong> : l'assistant peut maintenant :
+      <ul>
+      <li>créer, modifier et supprimer des composants personnalisés ;</li>
+      <li>importer des tables Airtable et TimeTonic ;</li>
+      <li>installer des fonctionnalités prêtes à l'emploi (authentification, chat, commentaires).</li>
+      </ul></li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li>Espacements des composants harmonisés dans toute la bibliothèque.</li>
+      <li>Thèmes prédéfinis : le thème « Futur » est remplacé par « Lavande ».</li>
+      </ul>
+      <h3 class="rn-tag rn-change">Changements</h3>
+      <ul>
+      <li>Les composants <strong>Commentaire</strong> et <strong>Message</strong> n'ont plus d'option d'image de fond.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-05">
+      <h2 id="s-2026-10-05">Semaine du 5 octobre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Dossiers d'applications</strong> : organisez vos applications en dossiers depuis le menu principal (créer, renommer, supprimer un dossier vide).</li>
+      <li><strong>Indicateur « Composant tronqué »</strong> : dans le design, un composant coupé par les limites de l'écran est désormais signalé.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Notifications push</strong> : les statistiques d'abonnés sont maintenant réparties par navigateur (<strong>Chrome</strong> / <strong>Safari</strong>) au lieu d'Android / iOS.</li>
+      <li><strong>Listes en mode profil</strong> : nouvel affichage de l'avatar, qui s'adapte même sans image.</li>
+      <li><strong>Boîtes de dialogue</strong> : les messages sont différenciés visuellement (erreur, avertissement, information). Les erreurs de géolocalisation s'affichent par exemple comme des avertissements.</li>
+      </ul>
+      <h3 class="rn-tag rn-fix">Corrections</h3>
+      <ul>
+      <li><strong>Mises à jour des données</strong> : les modifications successives d'une même ligne sont maintenant appliquées dans l'ordre, ce qui évite les pertes de données lors d'enregistrements rapides.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-28">
+      <h2 id="s-2026-09-28">Semaine du 28 septembre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Suivi des modifications faites par un assistant externe</strong> : quand ChatGPT ou Claude modifie votre application via MCP, le studio affiche en direct les étapes en cours (création d'écrans, de tables, mise à jour du thème…). Il s'actualise automatiquement une fois les modifications prêtes.</li>
+      <li><strong>Le serveur MCP couvre plus de besoins</strong> : votre assistant IA peut maintenant :
+      <ul>
+      <li>créer, lire, modifier et supprimer des écrans ;</li>
+      <li>lire et modifier le thème et l'icône de l'application ;</li>
+      <li>publier l'application ;</li>
+      <li>supprimer une table.</li>
+      </ul></li>
+      <li><strong>Action « Télécharger des fichiers »</strong> : télécharge un fichier, ou regroupe plusieurs fichiers dans une archive ZIP.</li>
+      <li><strong>Panneau d'actions</strong> : un fil d'Ariane indique où vous vous trouvez dans les actions imbriquées.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li>Nouvel affichage des avatars de profil dans les listes, le chat et les commentaires.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-21">
+      <h2 id="s-2026-09-21">Semaine du 21 septembre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Cinq nouveaux graphiques</strong> : barres, courbes, secteurs (camembert), anneau et radar.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Publication Android</strong> : instructions pas à pas pour importer l'application dans Google Play Console et la tester en interne sur votre mobile.</li>
+      <li><strong>Page d'accueil</strong> : une annonce présente la nouvelle publication sur l'App Store et le Google Play Store.</li>
+      <li><strong>Cartes</strong> : meilleur affichage quand une position ne peut pas être localisée.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-14">
+      <h2 id="s-2026-09-14">Semaine du 14 septembre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Connexion à ChatGPT et Claude via MCP</strong> : la page d'intégration MCP propose des étapes guidées pour connecter votre application à ChatGPT ou à Claude. Chaque utilisateur se connecte avec son compte Zyllio et garde ses droits sur l'application.</li>
+      <li><strong>L'assistant IA gère votre base de données</strong> : depuis ChatGPT ou Claude, il peut créer, renommer et lire des tables, ajouter, renommer ou supprimer des colonnes, créer des relations, gérer les lignes, importer des images et consulter les statistiques d'usage.</li>
+      <li><strong>Copier-coller de formules</strong> : copiez une formule et collez-la dans une autre propriété.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Formulaires</strong> : nouveau message « Le champ … est obligatoire » pour les champs requis laissés vides.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-07">
+      <h2 id="s-2026-09-07">Semaine du 7 septembre 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Trois nouveaux indicateurs de progression</strong> : barre, cercle et icônes répétées (par exemple ★★★☆☆).</li>
+      <li><strong>Composant Segments</strong> : un choix unique présenté sous forme de boutons accolés.</li>
+      <li><strong>Filtres et conditions repensés</strong> : chaque critère se compose d'un champ, d'un opérateur et d'une valeur. Les critères se combinent avec <strong>ET</strong> / <strong>OU</strong>.</li>
+      <li><strong>Connexion MCP simplifiée</strong> : vous n'avez plus de clé API à copier, chaque utilisateur s'authentifie avec son compte Zyllio.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Bibliothèque d'icônes</strong> : recherche par nom.</li>
+      <li><strong>Composant Navigation</strong> : quand il y a trop d'écrans, ceux qui ne tiennent pas dans la barre sont regroupés sous un bouton <strong>Plus</strong>.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-31">
+      <h2 id="s-2026-08-31">Semaine du 31 août 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Accessibilité ARIA (RGAA)</strong> : nouvelle intégration qui applique automatiquement les attributs ARIA aux composants compatibles. Nous recommandons le thème Contrast pour une meilleure lisibilité.</li>
+      <li><strong>Notification de mise à jour du studio</strong> : un message vous prévient quand une nouvelle version est disponible, avec un bouton <strong>Actualiser</strong>.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Glisser-déposer des composants</strong> : déplacement des composants entièrement revu, plus précis, avec un meilleur repérage de la zone de dépôt.</li>
+      <li><strong>Publication sur les stores</strong> : informations claires sur les comptes développeur requis (Google Play : 25 USD, paiement unique ; Apple : 99 USD par an), avec des liens pour les créer.</li>
+      <li>Le composant de barre de navigation en bas d'écran s'appelle désormais <strong>Navigation</strong>.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-24">
+      <h2 id="s-2026-08-24">Semaine du 24 août 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Option de publication sur les stores</strong> : débloquez la publication sur l'Apple App Store et le Google Play Store pour une application, et gérez l'abonnement correspondant.</li>
+      <li><strong>Composant Note latérale</strong> : une note contextuelle avec titre, texte et bordure gauche marquée.</li>
+      <li><strong>Fonction « Taille de fichier »</strong> et nouveau <strong>format Taille de fichier</strong> (o, Ko, Mo, Go) pour afficher le poids des fichiers.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Générateur IA</strong> : vous pouvez ajouter un composant IA existant au contexte de votre demande.</li>
+      <li><strong>Composants IA</strong> : une confirmation est demandée avant de supprimer un composant.</li>
+      <li><strong>Publication</strong> : messages explicites quand aucune construction ou publication n'est encore disponible.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-17">
+      <h2 id="s-2026-08-17">Semaine du 17 août 2026</h2>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li>Travail de fond sur la bibliothèque de composants (boutons, textes, images, contacts, formulaires, tableaux de bord…) pour préparer l'accessibilité et la génération par l'IA. Aucun changement de comportement attendu pour vos applications.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-10">
+      <h2 id="s-2026-08-10">Semaine du 10 août 2026</h2>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li>Travaux d'infrastructure sur le stockage des applications et des fichiers. Aucun changement visible.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-03">
+      <h2 id="s-2026-08-03">Semaine du 3 août 2026</h2>
+      <h3 class="rn-tag rn-new">Nouveautés</h3>
+      <ul>
+      <li><strong>Publication sur iOS</strong> : construction de l'application et envoi sur <strong>TestFlight</strong> directement depuis le studio.</li>
+      <li><strong>Vérification des accès aux stores</strong> : un bouton teste que votre configuration Google Play ou App Store Connect est correcte avant de publier.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Améliorations</h3>
+      <ul>
+      <li><strong>Écrans de publication repensés</strong> (Web, Android, iOS) : statut de chaque construction et publication (Prête, En cours, Publiée, Échouée), avec date, version et taille.</li>
+      <li><strong>Suivi de la construction en temps réel</strong> : les étapes de la construction native s'affichent au fur et à mesure.</li>
+      <li><strong>Configuration App Store Connect</strong> : guide pas à pas (Team ID, création de la fiche, identifiant de lot).</li>
+      </ul>
+      </section>
+  </article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support-fr.html" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="index-fr.html#comment">Comment ça marche</a></li><li><a href="index-fr.html#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="release-notes-fr.html">Notes de version</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Sommaire : section en cours */
+  var tocLinks = $$('.l-toc a')
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        tocLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) })
+      })
+    }, { rootMargin: '-90px 0px -70% 0px' })
+    heads.forEach(function (h) { tio.observe(h) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
+</body>
+</html>

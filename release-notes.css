@@ -1,0 +1,15 @@
+/* Notes de version (FR et EN), en complément de legal-page.css */
+.rn-week{padding-bottom:8px;border-bottom:1px solid var(--line)}
+.rn-week:last-child{border-bottom:0}
+.l-doc .rn-week h2{margin-top:48px}
+.l-doc .rn-week:first-child h2{margin-top:0}
+.l-doc h3.rn-tag{display:inline-block;margin:22px 0 6px;padding:3px 10px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;line-height:1.6}
+.rn-new{background:var(--sky-t);color:var(--blue)}
+.rn-improve{background:var(--paper2);color:var(--ink2)}
+.rn-fix{background:#e8f5ee;color:#1f6b43}
+.rn-change{background:#fdf3e1;color:#8a5a12}
+.l-doc .rn-week ul ul{margin:6px 0 4px}
+.l-toc .rn-month{margin:14px 0 4px;padding-left:12px;font-size:12px;font-weight:650;color:var(--ink2)}
+@media (max-width:900px){
+  .l-toc .rn-month{flex-basis:100%;margin:6px 0 0;padding:0}
+}

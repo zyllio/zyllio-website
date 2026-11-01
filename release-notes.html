@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<script>
+/* Langue : un navigateur en français bascule sur la version française, sauf si le visiteur a choisi l'anglais */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}});var c=null;try{c=localStorage.getItem(k)}catch(x){}var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(c!=='en'&&!/[?&]lang=en(&|$)/.test(location.search)&&(c==='fr'||/^fr\b/i.test(l)))location.replace('release-notes-fr.html'+location.hash)})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Release notes | Zyllio</title>
+<meta name="description" content="Zyllio Studio release notes, week by week: new features, improvements and fixes."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/release-notes.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/release-notes.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/release-notes-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/release-notes.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./legal-page.css"/>
+<link rel="stylesheet" href="./release-notes.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Main navigation">
+      <div class="nav-item">
+        <a href="features.html">Product</a>
+        <div class="sub">
+          <a href="features.html#ia">Build with AI</a>
+          <a href="features.html#studio">The NoCode Studio</a>
+          <a href="features.html#scenarios">Automations</a>
+          <a href="features.html#donnees">Data and integrations</a>
+          <a href="features.html#natives">Native apps</a>
+          <a href="features.html#terrain">In the field</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="pricing.html">Pricing</a>
+        <div class="sub">
+          <a href="pricing.html#offres">Plans</a>
+          <a href="pricing.html#accompagnement">Expert services</a>
+          <a href="pricing.html#comparatif">Detailed comparison</a>
+          <a href="pricing.html#faq">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="partner.html">Agencies</a>
+        <div class="sub">
+          <a href="partner.html#offre">Partner offer</a>
+          <a href="partner.html#fonctionnement">How it works</a>
+          <a href="partner.html#faq">FAQ</a>
+        </div>
+      </div>
+      <a href="blog.html">Blog</a>
+      <div class="nav-item">
+        <a class="on" href="support.html">Support</a>
+        <div class="sub">
+          <a href="support.html#aide">Help and contact</a>
+          <a href="support.html#videos">Videos</a>
+          <a href="release-notes.html" aria-current="page">Release notes</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="affiliate.html">Affiliates</a>
+        <div class="sub">
+          <a href="affiliate.html#simulateur">Earnings simulator</a>
+          <a href="affiliate.html#fonctionnement">How it works</a>
+          <a href="affiliate.html#faq">FAQ</a>
+        </div>
+      </div>
+      <a class="m-only" href="release-notes-fr.html" hreflang="fr" lang="fr">Version française</a>
+      <a class="m-only" href="https://www.zyllio.one">Log in</a>
+    </nav>
+    <div class="side">
+      <div class="lang"><a class="lang-btn" tabindex="0" role="button" aria-haspopup="true" aria-label="Language: English"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a><div class="lang-menu"><a class="lang-opt" href="release-notes-fr.html" hreflang="fr" lang="fr"><img src="./flags/fr.png" alt="" width="18" height="12"/>Français</a><a class="lang-opt" aria-current="true"><img src="./flags/en.png" alt="" width="18" height="12"/>English</a></div></div>
+      <a class="login" href="https://www.zyllio.one">Log in</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Start for free</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Open menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="l-head" aria-labelledby="page-t">
+  <div class="wrap">
+    <h1 id="page-t">Release notes</h1>
+    <p class="l-meta"><strong>Last updated:</strong> November 1, 2026</p>
+    <p class="l-note">What's new in Zyllio Studio, week by week. Major announcements are also on the <a href="blog.html">blog</a>.</p>
+  </div>
+</section>
+
+<div class="wrap l-shell">
+  <nav class="l-toc" aria-label="Contents">
+    <strong>Weeks</strong>
+    <span class="rn-month">October 2026</span>
+    <a href="#s-2026-10-26">October 26</a>
+    <a href="#s-2026-10-19">October 19</a>
+    <a href="#s-2026-10-12">October 12</a>
+    <a href="#s-2026-10-05">October 5</a>
+    <span class="rn-month">September 2026</span>
+    <a href="#s-2026-09-28">September 28</a>
+    <a href="#s-2026-09-21">September 21</a>
+    <a href="#s-2026-09-14">September 14</a>
+    <a href="#s-2026-09-07">September 7</a>
+    <span class="rn-month">August 2026</span>
+    <a href="#s-2026-08-31">August 31</a>
+    <a href="#s-2026-08-24">August 24</a>
+    <a href="#s-2026-08-17">August 17</a>
+    <a href="#s-2026-08-10">August 10</a>
+    <a href="#s-2026-08-03">August 3</a>
+  </nav>
+  <article class="l-doc">
+      <section class="rn-week" aria-labelledby="s-2026-10-26">
+      <h2 id="s-2026-10-26">Week of October 26, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>File attachments in the Chatbot component</strong>: users of your apps can now attach a file to their message (PDF, text, CSV, JPEG/PNG/WebP images). The chatbot takes it into account in its answer.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Studio AI assistant</strong>: when a request fails, a clear error message is shown with a <strong>Retry</strong> button, so you don't have to type your request again.</li>
+      <li><strong>AI screen generation</strong>: better handling of image titles and spacing.</li>
+      </ul>
+      <h3 class="rn-tag rn-fix">Fixes</h3>
+      <ul>
+      <li>Stability fixes for the chatbot and the AI assistant.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-19">
+      <h2 id="s-2026-10-19">Week of October 19, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>New AI assistant in the Studio</strong>: a single panel, available from the design and database views, replaces the former generator. Describe what you want to create or change (screens, tables, custom components, features…) and the assistant takes care of it. The app reloads automatically to show its changes.</li>
+      <li><strong>Chatbot component</strong>: add an AI chatbot to your apps. Configure it in <strong>Settings &gt; Integrations &gt; Chatbot</strong>:
+      <ul>
+      <li>choice of provider (OpenAI, Mistral AI, Claude) and model;</li>
+      <li>per-table permissions (read, create, update) to control which data the chatbot can access.</li>
+      </ul></li>
+      <li><strong>Installable Chatbot feature</strong>: the assistant can add a ready-to-use chatbot screen.</li>
+      <li><strong>REST query parameters</strong>: in REST integrations, you can define query parameters with an example value.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Create an app with AI</strong>: simpler flow. Describe your need and the AI builds your app; the name and theme selection step is gone.</li>
+      <li><strong>Remote tables</strong>: you can now delete an imported remote table.</li>
+      </ul>
+      <h3 class="rn-tag rn-change">Changes</h3>
+      <ul>
+      <li>The <strong>Header</strong> component no longer has a custom back icon option.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-12">
+      <h2 id="s-2026-10-12">Week of October 12, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>New app creation screen</strong>: three ways to get started:
+      <ul>
+      <li>start from a blank page;</li>
+      <li>create with AI;</li>
+      <li>pick a template.</li>
+      </ul></li>
+      <li><strong>Template picker</strong>: browse app templates by category (Business, Education, Health, Games…) and by feature (Authentication, Chat, Geolocation, Offline…), with a preview before creating.</li>
+      <li><strong>Zoom actions</strong>: three new actions, <strong>Zoom in</strong>, <strong>Zoom out</strong> and <strong>Reset zoom</strong>, to enlarge or shrink the current screen.</li>
+      <li><strong>“Application name” function</strong>: returns the name of the running app.</li>
+      <li><strong>Authentication conditions</strong>: new <strong>User is authenticated</strong> and <strong>User is not authenticated</strong> conditions.</li>
+      <li><strong>Action editor</strong>: new toolbar button to show step IDs.</li>
+      <li><strong>Statistic component</strong>: new size option (Large, Medium, Small).</li>
+      <li><strong>AI assistant</strong>: the assistant can now:
+      <ul>
+      <li>create, update and delete custom components;</li>
+      <li>import Airtable and TimeTonic tables;</li>
+      <li>install ready-to-use features (authentication, chat, comments).</li>
+      </ul></li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li>Consistent component spacing across the whole library.</li>
+      <li>Predefined themes: the “Futur” theme is replaced by “Lavande”.</li>
+      </ul>
+      <h3 class="rn-tag rn-change">Changes</h3>
+      <ul>
+      <li>The <strong>Comment</strong> and <strong>Message</strong> components no longer have a background image option.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-10-05">
+      <h2 id="s-2026-10-05">Week of October 5, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>App folders</strong>: organize your apps into folders from the main menu (create, rename, delete an empty folder).</li>
+      <li><strong>“Truncated component” indicator</strong>: in the design view, a component cut off by the screen edges is now flagged.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Push notifications</strong>: subscriber statistics are now broken down by browser (<strong>Chrome</strong> / <strong>Safari</strong>) instead of Android / iOS.</li>
+      <li><strong>Lists in profile mode</strong>: new avatar display that adapts even without an image.</li>
+      <li><strong>Dialogs</strong>: messages are visually distinguished (error, warning, information). Geolocation errors, for example, are shown as warnings.</li>
+      </ul>
+      <h3 class="rn-tag rn-fix">Fixes</h3>
+      <ul>
+      <li><strong>Data updates</strong>: successive changes to the same row are now applied in order, which prevents data loss when saving quickly.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-28">
+      <h2 id="s-2026-09-28">Week of September 28, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>Track changes made by an external assistant</strong>: when ChatGPT or Claude edits your app through MCP, the Studio shows the steps in progress live (creating screens, tables, updating the theme…). It refreshes automatically once the changes are ready.</li>
+      <li><strong>The MCP server covers more needs</strong>: your AI assistant can now:
+      <ul>
+      <li>create, read, update and delete screens;</li>
+      <li>read and update the app theme and icon;</li>
+      <li>publish the app;</li>
+      <li>delete a table.</li>
+      </ul></li>
+      <li><strong>“Download files” action</strong>: downloads a file, or bundles several files into a ZIP archive.</li>
+      <li><strong>Actions panel</strong>: a breadcrumb shows where you are in nested actions.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li>New profile avatar display in lists, chat and comments.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-21">
+      <h2 id="s-2026-09-21">Week of September 21, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>Five new charts</strong>: bar, line, pie, doughnut and radar.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Android publishing</strong>: step-by-step instructions to upload the app to Google Play Console and test it internally on your phone.</li>
+      <li><strong>Home page</strong>: an announcement introduces the new App Store and Google Play publishing.</li>
+      <li><strong>Maps</strong>: better display when a location cannot be found.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-14">
+      <h2 id="s-2026-09-14">Week of September 14, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>Connect to ChatGPT and Claude via MCP</strong>: the MCP integration page offers guided steps to connect your app to ChatGPT or Claude. Each user signs in with their Zyllio account and keeps their rights on the app.</li>
+      <li><strong>The AI assistant manages your database</strong>: from ChatGPT or Claude, it can create, rename and read tables, add, rename or delete columns, create relations, manage rows, upload images and view usage statistics.</li>
+      <li><strong>Copy and paste formulas</strong>: copy a formula and paste it into another property.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Forms</strong>: new “The field … is required” message for required fields left empty.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-09-07">
+      <h2 id="s-2026-09-07">Week of September 7, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>Three new progress indicators</strong>: bar, circle and repeated icons (for example ★★★☆☆).</li>
+      <li><strong>Segments component</strong>: a single choice shown as connected buttons.</li>
+      <li><strong>Redesigned filters and conditions</strong>: each criterion is made of a field, an operator and a value. Criteria are combined with <strong>AND</strong> / <strong>OR</strong>.</li>
+      <li><strong>Simpler MCP connection</strong>: no more API key to copy, each user signs in with their Zyllio account.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Icon library</strong>: search by name.</li>
+      <li><strong>Navigation component</strong>: when there are too many screens, those that don't fit in the bar are grouped under a <strong>More</strong> button.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-31">
+      <h2 id="s-2026-08-31">Week of August 31, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>ARIA accessibility (RGAA)</strong>: new integration that automatically applies ARIA attributes to compatible components. We recommend the Contrast theme for better readability.</li>
+      <li><strong>Studio update notification</strong>: a message lets you know when a new version is available, with a <strong>Refresh</strong> button.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Component drag and drop</strong>: moving components has been fully reworked, with more precision and a clearer drop target.</li>
+      <li><strong>Store publishing</strong>: clear information about the required developer accounts (Google Play: USD 25, one-time; Apple: USD 99 per year), with links to create them.</li>
+      <li>The bottom-of-screen navigation bar component is now called <strong>Navigation</strong>.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-24">
+      <h2 id="s-2026-08-24">Week of August 24, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>Store publishing option</strong>: unlock publishing to the Apple App Store and Google Play Store for an app, and manage the matching subscription.</li>
+      <li><strong>Side Note component</strong>: a contextual note with a title, text and a highlighted left border.</li>
+      <li><strong>“File size” function</strong> and new <strong>File size format</strong> (B, KB, MB, GB) to display file sizes.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>AI generator</strong>: you can add an existing AI component to the context of your request.</li>
+      <li><strong>AI components</strong>: a confirmation is requested before deleting a component.</li>
+      <li><strong>Publishing</strong>: explicit messages when no build or publication is available yet.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-17">
+      <h2 id="s-2026-08-17">Week of August 17, 2026</h2>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li>Groundwork on the component library (buttons, texts, images, contacts, forms, dashboards…) to prepare for accessibility and AI generation. No behavior change expected in your apps.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-10">
+      <h2 id="s-2026-08-10">Week of August 10, 2026</h2>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li>Infrastructure work on app and file storage. No visible change.</li>
+      </ul>
+      </section>
+      <section class="rn-week" aria-labelledby="s-2026-08-03">
+      <h2 id="s-2026-08-03">Week of August 3, 2026</h2>
+      <h3 class="rn-tag rn-new">New</h3>
+      <ul>
+      <li><strong>iOS publishing</strong>: build the app and send it to <strong>TestFlight</strong> directly from the Studio.</li>
+      <li><strong>Store access check</strong>: a button checks that your Google Play or App Store Connect configuration is correct before publishing.</li>
+      </ul>
+      <h3 class="rn-tag rn-improve">Improvements</h3>
+      <ul>
+      <li><strong>Redesigned publishing screens</strong> (Web, Android, iOS): status of each build and publication (Ready, In progress, Published, Failed), with date, version and size.</li>
+      <li><strong>Real-time build tracking</strong>: native build steps are displayed as they happen.</li>
+      <li><strong>App Store Connect setup</strong>: step-by-step guide (Team ID, creating the listing, bundle ID).</li>
+      </ul>
+      </section>
+  </article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>The French AI + NoCode platform for building your business applications.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio on LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Zyllio community on Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support.html" class="js-contact" aria-label="Contact us"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="index.html#comment">How it works</a></li><li><a href="index.html#agent">Zyllio agent</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li><li><a href="release-notes.html">Release notes</a></li><li><a href="partner.html">Partner agencies</a></li><li><a href="affiliate.html">Affiliates</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="terms-of-use.html">Terms of use</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="legal.html">Legal notice</a></li><li><a href="affiliate-program.html">Affiliate program</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. All rights reserved.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Designed and hosted in France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Close"
+  placeholder-last-name="Your last name"
+  placeholder-first-name="Your first name"
+  placeholder-email="you@company.com"
+  placeholder-message="Hello, I have a question"
+>
+  <h2 slot="title">Contact us</h2>
+  <p slot="intro">Send us a message and we’ll reply within 24 business hours.</p>
+  <span slot="label-last-name">Last name</span>
+  <span slot="label-first-name">First name</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Send</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Sommaire : section en cours */
+  var tocLinks = $$('.l-toc a')
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        tocLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) })
+      })
+    }, { rootMargin: '-90px 0px -70% 0px' })
+    heads.forEach(function (h) { tio.observe(h) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
+</body>
+</html>
