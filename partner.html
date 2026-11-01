@@ -1,113 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Agency Partner offer for no-code agencies building applications with Zyllio for clients">
+<meta charset="utf-8"/>
+<script>
+/* Langue : un navigateur en français bascule sur la version française, sauf si le visiteur a choisi l'anglais */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}});var c=null;try{c=localStorage.getItem(k)}catch(x){}var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(c!=='en'&&!/[?&]lang=en(&|$)/.test(location.search)&&(c==='fr'||/^fr\b/i.test(l)))location.replace('partner-fr.html'+location.hash)})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Agency partner program | Zyllio</title>
+<meta name="description" content="Agencies and integrators: build your clients’ applications with Zyllio. Enterprise Plus features, 5 seats included, priority support and recurring revenue."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/partner.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/partner.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/partner-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/partner.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zyllio"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:title" content="Agency partner program | Zyllio"/>
+<meta property="og:description" content="Build your clients’ applications with Zyllio: deliver faster and generate recurring revenue."/>
+<meta property="og:url" content="https://zyllio.com/partner.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Agency partner program | Zyllio"/>
+<meta name="twitter:description" content="Build your clients’ applications with Zyllio: deliver faster and generate recurring revenue."/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+<style>
+/* ---------- Page Agences ---------- */
+.links a.on{color:var(--blue);background:var(--sky-t)}
 
-  <title>Zyllio - Agency Partner</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+/* En-tête de page */
+.p-hero{position:relative;overflow:hidden;text-align:center;margin-top:-76px;padding:150px 0 112px;background:radial-gradient(70% 60% at 50% -5%,#dce8fb 0%,#eef4fd 38%,transparent 72%),#fff}
+.p-hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#16478510 1px,transparent 1px),linear-gradient(90deg,#16478510 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%)}
+.p-hero .wrap{position:relative;z-index:1}
+.p-hero .eyebrow{justify-content:center}
+.p-hero h1{font-size:clamp(36px,4.6vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.045em;max-width:900px;margin:0 auto 22px}
+.p-hero h1 .s{display:block;padding-bottom:.06em}
+.p-hero .lead{max-width:660px;margin:0 auto;font-size:19px}
+.p-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+
+
+/* Offre */
+.offer-sec{padding:0 0 112px}
+.offer{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);border-radius:24px;border:1px solid var(--navy);box-shadow:0 0 0 1px var(--navy),0 30px 60px #16478521;background:#fff;overflow:hidden}
+.offer-main{padding:40px}
+.offer .k{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.offer h2{font-size:30px;margin:10px 0 0}
+.amount{margin:22px 0 4px}
+.amount b{font-size:46px;line-height:1;letter-spacing:-.05em;font-weight:700}
+.amount span{margin-left:6px;font-size:14px;color:var(--muted)}
+.extra{margin:0 0 26px;font-size:14px;color:var(--muted)}
+.incl{list-style:none;margin:0 0 30px;padding:24px 0 0;border-top:1px solid var(--line);display:grid;gap:12px;font-size:15px;line-height:1.5;color:var(--ink2)}
+.incl li{display:grid;grid-template-columns:18px 1fr;gap:12px}
+.incl svg{width:18px;height:18px;margin-top:2px;color:var(--ok)}
+.incl b{color:var(--ink);font-weight:650}
+.offer-side{padding:40px;background:var(--paper);border-left:1px solid var(--line);display:grid;gap:26px;align-content:center}
+.ben{display:grid;grid-template-columns:44px 1fr;gap:16px}
+.ben i{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#fff;border:1px solid var(--line);color:var(--blue)}
+.ben i svg{width:20px;height:20px}
+.ben h3{font-size:17px;margin:2px 0 4px}
+.ben p{margin:0;font-size:14.5px;line-height:1.55;color:var(--muted)}
+
+/* Étapes */
+.how .steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+.how .foot-link{margin:48px 0 0;text-align:center}
+.faq-sec{background:#fff}
+
+@media (max-width:1080px){
+  .offer{grid-template-columns:1fr}
+  .offer-side{border-left:0;border-top:1px solid var(--line)}
+  .how .steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .p-hero{margin-top:-68px;padding:110px 0 80px}
+  .p-hero h1{font-size:clamp(32px,8.6vw,44px)}
+  .p-hero .lead{font-size:17px}
+  .p-cta .btn{width:100%}
+  .offer-sec{padding-bottom:80px}
+  .offer-main,.offer-side{padding:28px 22px}
+  .offer .btn{width:100%}
+  .how .steps{grid-template-columns:1fr}
+}
+</style>
 </head>
-
 <body>
+<a class="skip" href="#contenu">Skip to content</a>
 
-  <zyllio-nav always-overlaid>
-    <a href="features.html" slot="link">Features</a>
-    <a href="pricing.html" slot="link">Pricing</a>
-    <a href="partner.html" slot="link">Agency</a>
-    <a href="support.html" slot="link">Support</a>
-    <a href="blog.html" slot="link">Blog</a>
-    <a href="affiliate.html" slot="link">Affiliate</a>
-    <a href="partner-fr.html" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
-  </zyllio-nav>
-
-  <br>
-  <br>
-
-  <zyllio-section id="partner-hero" layout="column">
-    <zyllio-partner-hero
-      slot="content"
-      headline="Agency Partner"
-      subtitle="Build your clients apps with Zyllio"
-      description="Speed up delivery with an offer designed for agencies that want to ship faster, better, and with more recurring revenue"
-      primary-label="Become an Agency Partner"
-    ></zyllio-partner-hero>
-  </zyllio-section>
-
-  <zyllio-section id="partner-offer-section" layout="column">
-    <h1 slot="title">Agency Partner Offer</h1>
-    <zyllio-partner-offer
-      slot="content"
-      price="139 €"
-      period="excl. VAT / month"
-      extra-seats="Additional seats: +19 EUR excl. VAT / month / user"
-      benefits-title="Your benefits"
-      benefit-1="Deliver client applications faster with no-code and AI"
-      benefit-2="Keep full control of your client relationship and service delivery"
-      benefit-3="Generate recurring revenue from the clients you bring in"
-      included-title="What is included"
-      included-1="Up to 5 seats included"
-      included-1-highlight="5 seats"
-      included-2="Access to Enterprise Plus features to design client projects"
-      included-2-highlight="Enterprise Plus"
-      included-3="Priority support for your projects"
-      included-4="Help scoping client use cases"
-      included-5="Support reviewing quotes and occasional participation in prospect calls"
-      included-6="Agency listing on the Zyllio website after partner approval"
-      note-title="End-client subscription"
-      note="To run an application in production, each end client must subscribe to the Zyllio plan that matches their needs: data volume, storage, integrations, automations, API, offline mode, SSO, or support level"
-    ></zyllio-partner-offer>
-  </zyllio-section>
-
-  <zyllio-section id="partner-contact" layout="column">
-    <h1 slot="title">Ready to accelerate client delivery?</h1>
-
-    <div slot="content">
-      Tell us about your agency and we will get back to you quickly to discuss the Agency Partner offer
-      <br><br>
-      We can help you shape your positioning, your client delivery model, and your rollout plan with Zyllio
-      <br><br>
-      <zyllio-sign-in id="partner-contact-trigger-bottom" href="#">Talk to the Zyllio team</zyllio-sign-in>
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Main navigation">
+      <a href="features.html">Product</a>
+      <a href="pricing.html">Pricing</a>
+      <a class="on" href="partner.html" aria-current="page">Agencies</a>
+      <a href="blog.html">Blog</a>
+      <a href="support.html">Support</a>
+      <a href="affiliate.html">Affiliates</a>
+      <a class="m-only" href="partner-fr.html" hreflang="fr" lang="fr">Version française</a>
+      <a class="m-only" href="https://www.zyllio.one">Log in</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="partner-fr.html" hreflang="fr" lang="fr" aria-label="Version française"><img src="./flags/fr.png" alt="" width="18" height="12"/>FR</a>
+      <a class="login" href="https://www.zyllio.one">Log in</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Start for free</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Open menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
-  </zyllio-section>
+  </div>
+</header>
 
-  <zyllio-footer>
-    <a href="terms-of-use.html" target="_blank">Terms of use</a> - <a href="privacy.html" target="_blank">Privacy policy</a> - <a href="gdpr.html" target="_blank">GDPR</a> - <a href="legal.html" target="_blank">Legal notice</a> - <a href="affiliate-program.html" target="_blank">Affiliate Program</a>
-  </zyllio-footer>
+<main id="contenu">
 
-  <zyllio-contact-modal
-    open-trigger="#partner-contact-trigger-bottom"
-    close-label="Close"
-    placeholder-last-name="Your last name"
-    placeholder-first-name="Your first name"
-    placeholder-email="you@company.com"
-    placeholder-message="Tell us about your agency and your client projects"
-    initial-message="Hello Zyllio team, I would like to learn more about the Agency Partner program"
-  >
-    <h2 slot="title">Become an Agency Partner</h2>
-    <p slot="intro">Tell us about your agency and what you want to build, we will get back to you shortly</p>
-    <span slot="label-last-name">Last name</span>
-    <span slot="label-first-name">First name</span>
-    <span slot="label-email">Email</span>
-    <span slot="label-message">Message</span>
-    <span slot="submit-label">Send</span>
-  </zyllio-contact-modal>
+<!-- En-tête -->
+<section class="p-hero" aria-labelledby="page-t">
+  <div class="wrap">
+    <p class="eyebrow">Agency partner</p>
+    <h1 id="page-t">Build your clients’ applications <span class="s">with Zyllio.</span></h1>
+    <p class="lead">A program designed for agencies and integrators who want to deliver faster, better, and with more recurring revenue.</p>
+    <div class="p-cta">
+      <button class="btn btn-navy js-contact" type="button">Become a partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a class="btn btn-line" href="pricing.html">See client pricing</a>
+    </div>
+  </div>
+</section>
 
-</body>
+<!-- Offre -->
+<section class="offer-sec" id="offre" aria-labelledby="offer-t">
+  <div class="wrap">
+    <div class="offer rv">
+      <div class="offer-main">
+        <span class="k">Agency partner program</span>
+        <h2 id="offer-t">Everything to deliver your client projects</h2>
+        <div class="amount"><b>€139</b><span>excl. VAT/mo</span></div>
+        <p class="extra">Additional seat: €19 excl. VAT per user per month</p>
+        <ul class="incl"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Up to 5 agency seats</b> included</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Enterprise Plus</b> plan features for your client projects</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Priority support</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Help scoping your client projects</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Support with your quotes and occasional participation in your prospect meetings</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Your agency listed on the Zyllio website, once the partnership is approved</span></li></ul>
+        <button class="btn btn-navy js-contact" type="button">Become a partner <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="offer-side">
+        <div class="ben"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></i><div><h3>Deliver faster</h3><p>NoCode and AI cut the time it takes to build your clients’ applications.</p></div></div>
+        <div class="ben"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 00-3-3.9M16 3.1a4 4 0 010 7.8"/></svg></i><div><h3>Stay in control</h3><p>You keep ownership of your client relationship and your services.</p></div></div>
+        <div class="ben"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></i><div><h3>Recurring revenue</h3><p>Earn recurring revenue on the clients you bring in.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-</html>
+<!-- Fonctionnement -->
+<section class="sec how" id="fonctionnement" aria-labelledby="how-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">How it works</p><h2 id="how-t">A simple <span class="s">partnership.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">You design the application; your client runs it on the plan that fits their needs.</p>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="num">1</span><h3>You join the program</h3><p>We talk about your agency and your projects, then approve the partnership.</p></li>
+      <li class="rv" style="--d:.08s"><span class="num">2</span><h3>You design</h3><p>You build your client’s application with all Enterprise Plus features.</p></li>
+      <li class="rv" style="--d:.16s"><span class="num">3</span><h3>Your client subscribes</h3><p>To go into production, your client picks the Zyllio plan that fits their needs.</p></li>
+    </ol>
+    <p class="foot-link rv"><a class="arrow-link" href="pricing.html">See client plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq-sec" id="faq" aria-labelledby="faq-t">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <p class="eyebrow">Frequently asked questions</p>
+      <h2 id="faq-t">Your questions <span class="s">about the partnership.</span></h2>
+      <p class="lead">Another question? Our team replies within 24 business hours.</p>
+      <div class="help"><button class="btn btn-navy btn-sm js-contact" type="button">Contact us</button></div>
+    </div>
+    <div class="faq rv" style="--d:.08s">
+      <details name="faq" open><summary>Who pays for the client application’s subscription?</summary><p>Your client. To run an application in production, each client subscribes to the Zyllio plan that fits their needs: data volume, storage, integrations, automations or support level.</p></details>
+      <details name="faq"><summary>Can I set my own prices for my services?</summary><p>Yes. You stay in control of your client relationship: you set your own prices for design, deployment and maintenance services.</p></details>
+      <details name="faq"><summary>How am I paid for the clients I bring in?</summary><p>You earn recurring revenue on the subscriptions of the clients you bring in. The terms are presented to you when the partnership is approved.</p></details>
+      <details name="faq"><summary>How many seats are included?</summary><p>Up to 5 agency seats are included. Each additional seat costs €19 excl. VAT per month.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>The French AI + NoCode platform for building your business applications.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio on LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Zyllio community on Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support.html" class="js-contact" aria-label="Contact us"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="index.html#comment">How it works</a></li><li><a href="index.html#agent">Zyllio agent</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li><li><a href="partner.html">Partner agencies</a></li><li><a href="affiliate.html">Affiliates</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="terms-of-use.html">Terms of use</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="legal.html">Legal notice</a></li><li><a href="affiliate-program.html">Affiliate program</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. All rights reserved.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Designed and hosted in France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Close"
+  placeholder-last-name="Your last name"
+  placeholder-first-name="Your first name"
+  placeholder-email="you@agency.com"
+  placeholder-message="Tell us about your agency and your client projects"
+  initial-message="Hello, I’d like to learn more about the Agency partner program."
+>
+  <h2 slot="title">Become a partner</h2>
+  <p slot="intro">Tell us about your agency and your projects, and we’ll reply within 24 business hours.</p>
+  <span slot="label-last-name">Last name</span>
+  <span slot="label-first-name">First name</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Send</span>
+</zyllio-contact-modal>
 
 <script>
-  (function () {
-    const modal = document.querySelector('zyllio-contact-modal')
-    if (!modal) return
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-    document.addEventListener('partner-contact-request', () => {
-      try { modal.open() } catch (err) { /* ignore */ }
-    })
-  })()
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
 </script>
+</body>
+</html>

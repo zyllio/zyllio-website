@@ -1,49 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Zyllio Affiliate Program terms.">
-  <title>Affiliate Program — Zyllio</title>
-  <link rel="icon" type="image/png" href="./image/icon.png">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="legal-document.css">
+<meta charset="utf-8"/>
+<script>
+/* Langue : un navigateur en français bascule sur la version française, sauf si le visiteur a choisi l'anglais */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}});var c=null;try{c=localStorage.getItem(k)}catch(x){}var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(c!=='en'&&!/[?&]lang=en(&|$)/.test(location.search)&&(c==='fr'||/^fr\b/i.test(l)))location.replace('affiliate-program-fr.html'+location.hash)})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Affiliate program terms | Zyllio</title>
+<meta name="description" content="Terms of the Zyllio affiliate program."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/affiliate-program.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/affiliate-program.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/affiliate-program-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/affiliate-program.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./legal-page.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
 </head>
 <body>
-  <header class="legal-header">
-    <a class="legal-brand" href="index.html" aria-label="Zyllio home"><img src="./image/logo-light.png" alt="Zyllio"></a>
-    <nav aria-label="Legal documents">
-      <a href="terms-of-use.html">Terms</a><a href="privacy.html">Privacy</a><a href="gdpr.html">Data Processing Agreement</a><a href="affiliate-program.html" aria-current="page">Affiliate Program</a><a href="legal.html">Legal Notice</a>
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Main navigation">
+      <a href="features.html">Product</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="partner.html">Agencies</a>
+      <a href="blog.html">Blog</a>
+      <a href="support.html">Support</a>
+      <a href="affiliate.html">Affiliates</a>
+      <a class="m-only" href="affiliate-program-fr.html" hreflang="fr" lang="fr">Version française</a>
+      <a class="m-only" href="https://www.zyllio.one">Log in</a>
     </nav>
-  </header>
-  <main class="legal-shell">
-    <nav class="legal-toc" aria-label="Table of contents"><strong>Contents</strong><a href="#overview">1. Overview</a><a href="#definitions">2. Definitions</a><a href="#purpose">3. Purpose</a><a href="#status">4. Status of the parties</a><a href="#joining">5. Joining the program</a><a href="#commissions">6. Commissions</a><a href="#lead-validation">7. Lead validation</a><a href="#payment">8. Payment</a><a href="#obligations">9. Partner obligations</a><a href="#ip">10. Intellectual property</a><a href="#liability">11. Liability</a><a href="#confidentiality">12. Confidentiality</a><a href="#term">13. Term and termination</a><a href="#law">14. Governing law</a><a href="#contact">15. Contact</a></nav>
-    <article class="legal-document">
-      <h1>Zyllio Affiliate Program</h1>
-      <p class="legal-meta"><strong>Last updated:</strong> April 13, 2026</p>
-      <h2 id="overview">1. Overview</h2>
+    <div class="side">
+      <a class="lang" href="affiliate-program-fr.html" hreflang="fr" lang="fr" aria-label="Version française"><img src="./flags/fr.png" alt="" width="18" height="12"/>FR</a>
+      <a class="login" href="https://www.zyllio.one">Log in</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Start for free</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Open menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="l-head" aria-labelledby="page-t">
+  <div class="wrap">
+    <nav class="l-docs" aria-label="Legal documents"><a href="terms-of-use.html">Terms of use</a><a href="privacy.html">Privacy</a><a href="gdpr.html">Data processing (DPA)</a><a href="affiliate-program.html" aria-current="page">Affiliate program</a><a href="legal.html">Legal notice</a></nav>
+    <h1 id="page-t">Zyllio affiliate program</h1>
+    <p class="l-meta"><strong>Last updated:</strong> April 13, 2026</p>
+    <p class="l-note">This English translation is provided for convenience only. In case of discrepancy, the <a href="affiliate-program-fr.html" hreflang="fr" lang="fr">French version</a> prevails.</p>
+  </div>
+</section>
+
+<div class="wrap l-shell">
+  <nav class="l-toc" aria-label="Contents">
+    <strong>Contents</strong>
+    <a href="#1-presentation">1. Overview</a>
+    <a href="#2-definitions">2. Definitions</a>
+    <a href="#3-objet">3. Purpose</a>
+    <a href="#4-statut-des-parties">4. Status of the parties</a>
+    <a href="#5-modalites-d-affiliation">5. Affiliation terms</a>
+    <a href="#6-commissions">6. Commissions</a>
+    <a href="#7-conditions-de-validation-des-leads">7. Lead validation</a>
+    <a href="#8-paiement">8. Payment</a>
+    <a href="#9-obligations-du-partenaire">9. Partner obligations</a>
+    <a href="#10-propriete-intellectuelle">10. Intellectual property</a>
+    <a href="#11-responsabilite">11. Liability</a>
+    <a href="#12-confidentialite">12. Confidentiality</a>
+    <a href="#13-duree-et-resiliation">13. Term and termination</a>
+    <a href="#14-droit-applicable">14. Governing law</a>
+    <a href="#15-contact">15. Contact</a>
+  </nav>
+  <article class="l-doc">
+
+      <h2 id="1-presentation">1. Overview</h2>
       <p>Zyllio is a no-code SaaS platform for designing, deploying and managing web and mobile applications without technical development.</p>
-      <p>The Zyllio Affiliate Program enables freelancers, agencies and partners to recommend Zyllio and earn a commission on generated subscriptions.</p>
-      <h2 id="definitions">2. Definitions</h2>
-      <p><strong>“Lead”</strong> means any person or company referred to Zyllio by the Partner.</p>
-      <p><strong>“Qualified Customer”</strong> means a Lead who has subscribed to a paid Zyllio offer through the Partner.</p>
-      <p><strong>“Eligible Revenue”</strong> means the net-of-tax amounts actually paid by customers to Zyllio for subscriptions, excluding refunds, discounts and third-party services.</p>
-      <p><strong>“Commission”</strong> means the percentage applied to Eligible Revenue generated by Qualified Customers.</p>
-      <p><strong>“Affiliate Code”</strong> means the unique identifier assigned to the Partner and used by Leads when registering to track conversions.</p>
-      <h2 id="purpose">3. Purpose</h2><p>These terms set out the conditions under which the Partner may promote Zyllio and receive a commission on sales generated through its activities.</p>
-      <h2 id="status">4. Status of the parties</h2><p>The Partner acts as an independent contractor. No employment, commercial agency or joint venture relationship is created between Zyllio and the Partner. The Partner may not bind Zyllio contractually.</p>
-      <h2 id="joining">5. Joining the program</h2><p>The Partner may promote Zyllio to its customers or audience, share its Affiliate Code and recommend Zyllio as part of its services or advisory work.</p><p>The Affiliate Code must be entered by the customer when registering or communicated to Zyllio when the introduction is made. Zyllio may accept or refuse any application to join the program.</p>
-      <h2 id="commissions">6. Commissions</h2><ul><li>The Partner receives a 20% commission on Eligible Revenue, being net-of-tax amounts actually paid by customers.</li><li>The commission continues without time limit while the customer remains active and generates revenue.</li></ul><p>Commissions are calculated only on net-of-tax amounts collected by Zyllio. No commission is due in the event of a customer refund, fraud or customer cancellation.</p><p><strong>Example:</strong> if a customer subscribes for €120 including VAT, comprising €100 excluding VAT and €20 VAT, the commission is calculated on €100. The Partner therefore receives €20, or 20% of that amount, while the subscription remains active.</p>
-      <h2 id="lead-validation">7. Lead validation</h2><p>A Lead is valid if it is not already a Zyllio customer, is not already in commercial discussions with Zyllio, and uses the Partner's Affiliate Code during registration or is otherwise identified by Zyllio as referred by that Partner.</p><p>Zyllio may accept or reject a Lead. If several partners claim the same customer, Zyllio awards the commission to the partner that introduced the Lead first, based on available information such as the code used, contact date and commercial communications.</p>
-      <h2 id="payment">8. Payment</h2><p>Commissions are paid monthly, within 30 days after the end of each month.</p><h3>Payment requirements</h3><p>To receive commissions, the Partner must be able to issue an invoice compliant with applicable law. The Partner is solely responsible for its administrative, tax and social-security status and must have a status enabling it to invoice its services.</p><p>No commission may be paid without a valid invoice. Zyllio may suspend or refuse payment if the documents supplied are non-compliant.</p>
-      <h2 id="obligations">9. Partner obligations</h2><p>The Partner undertakes to promote Zyllio honestly and transparently, respect Zyllio's brand and reputation, and refrain from abusive practices such as spam or deception.</p><p>The Partner must not use the Zyllio brand in advertising campaigns without authorisation, create misleading content, or manipulate affiliate tracking through fraud or abusive redirects.</p>
-      <h2 id="ip">10. Intellectual property</h2><p>Zyllio remains the sole owner of its brand, product and marketing materials.</p>
-      <h2 id="liability">11. Liability</h2><p>Zyllio shall not be liable for indirect losses or damage connected with the Partner's activities.</p>
-      <h2 id="confidentiality">12. Confidentiality</h2><p>The Partner must keep confidential all non-public information relating to Zyllio, including information about its customers, strategy, product and pricing.</p>
-      <h2 id="term">13. Term and termination</h2><p>The program is entered into for an indefinite term. Either party may end it at any time with 30 days' notice.</p><p>Zyllio may immediately suspend or terminate the Partner's account if these terms are breached.</p>
-      <h2 id="law">14. Governing law</h2><p>These terms are governed by French law.</p>
-      <h2 id="contact">15. Contact</h2><p>For questions about the program, contact <a href="mailto:contact@zyllio.com">contact@zyllio.com</a>.</p>
-    </article>
-  </main>
+      <p>The Zyllio affiliate program allows freelancers, agencies and partners to recommend the Zyllio solution and earn a commission on the subscriptions generated.</p>
+
+      <h2 id="2-definitions">2. Definitions</h2>
+      <p><strong>“Lead”</strong>: any person or company recommended to Zyllio by the Partner.</p>
+      <p><strong>“Qualified Customer”</strong>: any Lead who has subscribed to a paid Zyllio plan through the Partner.</p>
+      <p><strong>“Eligible Revenue”</strong>: amounts excluding taxes actually paid by customers to Zyllio for subscriptions, excluding refunds, discounts and third-party services.</p>
+      <p><strong>“Commission”</strong>: the percentage applied to the Eligible Revenue generated by Qualified Customers.</p>
+      <p><strong>“Affiliate Code”</strong>: the unique identifier assigned to the Partner, used by Leads when signing up so that conversions can be tracked.</p>
+
+      <h2 id="3-objet">3. Purpose</h2>
+      <p>This document sets out the conditions under which the Partner may promote Zyllio and earn a commission on sales generated through its activity.</p>
+
+      <h2 id="4-statut-des-parties">4. Status of the parties</h2>
+      <p>The Partner acts as an independent contractor.</p>
+      <p>No employment, commercial agency or joint-venture relationship is created between Zyllio and the Partner. The Partner may under no circumstances enter into contracts on behalf of Zyllio.</p>
+
+      <h2 id="5-modalites-d-affiliation">5. Affiliation terms</h2>
+      <p>The Partner may:</p>
+      <ul>
+        <li>promote Zyllio to its clients or audience;</li>
+        <li>share the unique Affiliate Code provided by Zyllio;</li>
+        <li>recommend Zyllio as part of its services or support.</li>
+      </ul>
+      <p>The Affiliate Code must be entered by the customer when signing up, or communicated to Zyllio at the time of the introduction. Zyllio reserves the right to accept or refuse any application to join the program.</p>
+
+      <h2 id="6-commissions">6. Commissions</h2>
+      <p>The Partner receives:</p>
+      <ul>
+        <li>a 20% commission on Eligible Revenue, i.e. the amounts excluding taxes actually paid by customers;</li>
+        <li>a commission with no time limit, for as long as the customer remains active and generates revenue.</li>
+      </ul>
+      <p>Commissions are calculated solely on the amounts excluding taxes collected by Zyllio. No commission is due in the event of a customer refund, fraud or customer cancellation.</p>
+      <p><strong>Calculation example:</strong> if a customer subscribes to a plan costing €120 including VAT, i.e. €100 excluding VAT and €20 of VAT, the commission is calculated on €100 excluding VAT. The Partner therefore receives €20, i.e. 20% of that amount, for as long as the subscription is active.</p>
+
+      <h2 id="7-conditions-de-validation-des-leads">7. Lead validation conditions</h2>
+      <p>A Lead is considered valid if:</p>
+      <ul>
+        <li>it is not already a Zyllio customer;</li>
+        <li>it is not already in commercial discussions with Zyllio;</li>
+        <li>it uses the Partner’s Affiliate Code when signing up, or is identified as such by Zyllio.</li>
+      </ul>
+      <p>Zyllio reserves the right to validate or reject a Lead.</p>
+      <p><strong>Commission attribution:</strong> in the event of a conflict between several partners over the same customer, Zyllio attributes the commission to the partner who brought in the Lead first, based on the information available, in particular the code used, the date of contact and commercial exchanges.</p>
+
+      <h2 id="8-paiement">8. Payment</h2>
+      <p>Commissions are paid monthly, within 30 days after the end of each month.</p>
+      <h3>Payment conditions</h3>
+      <p>To receive commissions, the Partner must be able to issue an invoice that complies with applicable regulations. The Partner is solely responsible for its administrative, tax and social security situation and must have a legal status allowing it to invoice its services.</p>
+      <p>No commission can be paid without a valid invoice. Zyllio reserves the right to suspend or refuse any payment if the documents provided are not compliant.</p>
+
+      <h2 id="9-obligations-du-partenaire">9. Partner obligations</h2>
+      <p>The Partner undertakes to:</p>
+      <ul>
+        <li>promote Zyllio honestly and transparently;</li>
+        <li>respect the Zyllio image and brand;</li>
+        <li>not use abusive practices, such as spam or deception.</li>
+      </ul>
+      <p>The Partner is prohibited from:</p>
+      <ul>
+        <li>using the Zyllio brand in advertising campaigns without authorization;</li>
+        <li>creating misleading or false content;</li>
+        <li>manipulating affiliate tracking, in particular through fraud or abusive redirects.</li>
+      </ul>
+
+      <h2 id="10-propriete-intellectuelle">10. Intellectual property</h2>
+      <p>Zyllio remains the sole owner of its brand, its product and its marketing materials.</p>
+
+      <h2 id="11-responsabilite">11. Liability</h2>
+      <p>Zyllio cannot be held liable for indirect losses or damages related to the Partner’s activity.</p>
+
+      <h2 id="12-confidentialite">12. Confidentiality</h2>
+      <p>The Partner undertakes to keep confidential all non-public information relating to Zyllio, in particular regarding its customers, strategy, product and prices.</p>
+
+      <h2 id="13-duree-et-resiliation">13. Term and termination</h2>
+      <p>The program is entered into for an indefinite period. Either party may terminate it at any time with 30 days’ notice.</p>
+      <p>In the event of a breach of these terms, Zyllio may immediately suspend or terminate the Partner’s account.</p>
+
+      <h2 id="14-droit-applicable">14. Governing law</h2>
+      <p>This document is governed by French law.</p>
+
+      <h2 id="15-contact">15. Contact</h2>
+      <p>For any question about the affiliate program: <a href="mailto:contact@zyllio.com">contact@zyllio.com</a></p>
+  </article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>The French AI + NoCode platform for building your business applications.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio on LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Zyllio community on Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support.html" class="js-contact" aria-label="Contact us"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="index.html#comment">How it works</a></li><li><a href="index.html#agent">Zyllio agent</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li><li><a href="partner.html">Partner agencies</a></li><li><a href="affiliate.html">Affiliates</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="terms-of-use.html">Terms of use</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="legal.html">Legal notice</a></li><li><a href="affiliate-program.html">Affiliate program</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. All rights reserved.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Designed and hosted in France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Close"
+  placeholder-last-name="Your last name"
+  placeholder-first-name="Your first name"
+  placeholder-email="you@company.com"
+  placeholder-message="Hello, I have a question"
+>
+  <h2 slot="title">Contact us</h2>
+  <p slot="intro">Send us a message and we’ll reply within 24 business hours.</p>
+  <span slot="label-last-name">Last name</span>
+  <span slot="label-first-name">First name</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Send</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Sommaire : section en cours */
+  var tocLinks = $$('.l-toc a')
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        tocLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) })
+      })
+    }, { rootMargin: '-90px 0px -70% 0px' })
+    heads.forEach(function (h) { tio.observe(h) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
 </html>

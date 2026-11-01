@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Accord de traitement des données de Zyllio Studio.">
-  <title>Accord de traitement des données — Zyllio</title>
-  <link rel="icon" type="image/png" href="./image/icon.png">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="legal-document.css">
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Accord de traitement des données | Zyllio</title>
+<meta name="description" content="Accord de traitement des données de Zyllio Studio."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/gdpr-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/gdpr.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/gdpr-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/gdpr.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./legal-page.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
 </head>
 <body>
-  <header class="legal-header">
-    <a class="legal-brand" href="index-fr.html" aria-label="Accueil Zyllio"><img src="./image/logo-light.png" alt="Zyllio"></a>
-    <nav aria-label="Documents légaux">
-      <a href="terms-of-use-fr.html">Conditions</a>
-      <a href="privacy-fr.html">Confidentialité</a>
-      <a href="gdpr-fr.html" aria-current="page">RGPD</a>
-      <a href="affiliate-program-fr.html">Affiliation</a>
-      <a href="legal-fr.html">Mentions légales</a>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="features-fr.html">Produit</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="partner-fr.html">Agences</a>
+      <a href="blog-fr.html">Blog</a>
+      <a href="support-fr.html">Support</a>
+      <a href="affiliate-fr.html">Affiliation</a>
+      <a class="m-only" href="gdpr.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
     </nav>
-  </header>
-  <main class="legal-shell">
-    <nav class="legal-toc" aria-label="Sommaire"><strong>Sommaire</strong><a href="#1-objet-et-champ-d-application">1. Objet et champ d'application</a><a href="#2-instructions-objet-et-duree-du-traitement">2. Instructions, objet et durée du traitement</a><a href="#3-description-du-traitement">3. Description du traitement</a><a href="#4-obligations-du-client">4. Obligations du Client</a><a href="#5-confidentialite-et-securite">5. Confidentialité et sécurité</a><a href="#6-sous-traitants-ulterieurs">6. Sous-traitants ultérieurs</a><a href="#7-transferts-hors-de-l-espace-economique-europeen">7. Transferts hors de l'Espace économique européen</a><a href="#8-assistance-droits-des-personnes-et-violations-de-donnees">8. Assistance, droits des personnes et violations de données</a><a href="#9-sort-des-donnees-a-la-fin-du-service">9. Sort des données à la fin du service</a><a href="#10-information-audits-et-conformite">10. Information, audits et conformité</a><a href="#11-hierarchie-et-contact">11. Hiérarchie et contact</a></nav>
-    <article class="legal-document"><h1>Accord de traitement des données (DPA)</h1>
-<p class="legal-meta"><strong>Dernière mise à jour :</strong> 22 septembre 2026  <br><strong>Entrée en vigueur :</strong> 22 septembre 2026</p>
+    <div class="side">
+      <a class="lang" href="gdpr.html" hreflang="en" lang="en" aria-label="English version"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="l-head" aria-labelledby="page-t">
+  <div class="wrap">
+    <nav class="l-docs" aria-label="Documents légaux"><a href="terms-of-use-fr.html">Conditions d’utilisation</a><a href="privacy-fr.html">Confidentialité</a><a href="gdpr-fr.html" aria-current="page">Traitement des données (DPA)</a><a href="affiliate-program-fr.html">Programme d’affiliation</a><a href="legal-fr.html">Mentions légales</a></nav>
+    <h1 id="page-t">Accord de traitement des données (DPA)</h1>
+    <p class="l-meta"><strong>Dernière mise à jour :</strong> 22 septembre 2026  <br><strong>Entrée en vigueur :</strong> 22 septembre 2026</p>
+  </div>
+</section>
+
+<div class="wrap l-shell">
+  <nav class="l-toc" aria-label="Sommaire">
+    <strong>Sommaire</strong><a href="#1-objet-et-champ-d-application">1. Objet et champ d'application</a><a href="#2-instructions-objet-et-duree-du-traitement">2. Instructions, objet et durée du traitement</a><a href="#3-description-du-traitement">3. Description du traitement</a><a href="#4-obligations-du-client">4. Obligations du Client</a><a href="#5-confidentialite-et-securite">5. Confidentialité et sécurité</a><a href="#6-sous-traitants-ulterieurs">6. Sous-traitants ultérieurs</a><a href="#7-transferts-hors-de-l-espace-economique-europeen">7. Transferts hors de l'Espace économique européen</a><a href="#8-assistance-droits-des-personnes-et-violations-de-donnees">8. Assistance, droits des personnes et violations de données</a><a href="#9-sort-des-donnees-a-la-fin-du-service">9. Sort des données à la fin du service</a><a href="#10-information-audits-et-conformite">10. Information, audits et conformité</a><a href="#11-hierarchie-et-contact">11. Hiérarchie et contact</a>
+  </nav>
+  <article class="l-doc">
 <h2 id="1-objet-et-champ-d-application">1. Objet et champ d&#39;application</h2>
 <p>Le présent accord de traitement des données (l&#39;« Accord ») complète les conditions applicables à Zyllio Studio (les « Conditions »). Il s&#39;applique lorsque Zyllio traite des données personnelles pour le compte du Client dans le cadre de la fourniture de la Plateforme.</p>
 <p>Dans ce cadre, le Client agit en qualité de responsable du traitement et Zyllio en qualité de sous-traitant, au sens du Règlement (UE) 2016/679 (« RGPD »). Le présent Accord ne s&#39;applique pas aux traitements pour lesquels Zyllio agit en son propre nom, notamment la gestion des comptes, de la facturation, de la relation commerciale et du support, décrits dans la politique de confidentialité de Zyllio.</p>
@@ -58,7 +94,94 @@
 <h2 id="11-hierarchie-et-contact">11. Hiérarchie et contact</h2>
 <p>En cas de contradiction entre le présent Accord et les Conditions, le présent Accord prévaut pour les questions relatives au traitement de données personnelles pour le compte du Client.</p>
 <p>Pour toute question relative au présent Accord ou pour transmettre une instruction documentée, le Client peut contacter Zyllio à <strong>contact@zyllio.com</strong>.</p>
-<p><strong>Zyllio</strong>  <br>SASU — SIREN 994 131 274<br>24 rue des Fleurs<br>91470 Limours, France</p></article>
-  </main>
+<p><strong>Zyllio</strong>  <br>SASU — SIREN 994 131 274<br>24 rue des Fleurs<br>91470 Limours, France</p>
+  </article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support-fr.html" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="index-fr.html#comment">Comment ça marche</a></li><li><a href="index-fr.html#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Sommaire : section en cours */
+  var tocLinks = $$('.l-toc a')
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        tocLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) })
+      })
+    }, { rootMargin: '-90px 0px -70% 0px' })
+    heads.forEach(function (h) { tio.observe(h) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
 </html>

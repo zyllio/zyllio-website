@@ -1,237 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Use Zyllio to create mobile apps in minutes">
+<meta charset="utf-8"/>
+<script>
+/* Langue : un navigateur en français bascule sur la version française, sauf si le visiteur a choisi l'anglais */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}});var c=null;try{c=localStorage.getItem(k)}catch(x){}var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(c!=='en'&&!/[?&]lang=en(&|$)/.test(location.search)&&(c==='fr'||/^fr\b/i.test(l)))location.replace('support-fr.html'+location.hash)})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Support | Zyllio</title>
+<meta name="description" content="Zyllio support: documentation, a support team based in France, a community and video tutorials to build your company’s applications."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/support.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/support.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/support-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/support.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zyllio"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:title" content="Support | Zyllio"/>
+<meta property="og:description" content="Documentation, a support team based in France, a community and video tutorials."/>
+<meta property="og:url" content="https://zyllio.com/support.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Support | Zyllio"/>
+<meta name="twitter:description" content="Documentation, a support team based in France, a community and video tutorials."/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+<style>
+/* ---------- Page Support ---------- */
+.links a.on{color:var(--blue);background:var(--sky-t)}
 
-  <title>Zyllio - Support</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+/* En-tête de page */
+.p-hero{position:relative;overflow:hidden;text-align:center;margin-top:-76px;padding:150px 0 96px;background:radial-gradient(70% 60% at 50% -5%,#dce8fb 0%,#eef4fd 38%,transparent 72%),#fff}
+.p-hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#16478510 1px,transparent 1px),linear-gradient(90deg,#16478510 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%)}
+.p-hero .wrap{position:relative;z-index:1}
+.p-hero .eyebrow{justify-content:center}
+.p-hero h1{font-size:clamp(36px,4.6vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.045em;max-width:900px;margin:0 auto 22px}
+.p-hero h1 .s{display:block;padding-bottom:.06em}
+.p-hero .lead{max-width:660px;margin:0 auto;font-size:19px}
+.p-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
+
+
+/* En-tête Support */
+.s-hero{text-align:left}
+.s-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:72px;align-items:center}
+.s-hero .eyebrow{justify-content:flex-start}
+.s-hero h1{margin-left:0;font-size:clamp(36px,4.4vw,58px)}
+.s-hero .lead{margin:0;max-width:520px}
+.s-hero .p-cta{justify-content:flex-start}
+.s-facts{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 24px;font-size:14px;font-weight:600;color:var(--ink2)}
+.s-facts li{display:flex;align-items:center;gap:9px}
+.s-facts img{border-radius:3px;box-shadow:0 0 0 1px #0000001a}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px var(--ok-t)}
+.sc{position:relative;border-radius:22px;background:#fff;border:1px solid var(--line);box-shadow:0 40px 90px #16478524,0 2px 6px #16478510}
+.sc-top{display:flex;align-items:center;gap:12px;padding:16px 20px;border-bottom:1px solid var(--line)}
+.sc-top img{border-radius:9px}
+.sc-top b{display:block;font-size:15px;line-height:1.2}
+.sc-top small{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--soft)}
+.sc-top .dot{width:6px;height:6px;box-shadow:0 0 0 3px var(--ok-t)}
+.sc-body{display:grid;gap:14px;padding:22px 20px 26px;background:#fbfcfe;border-radius:0 0 22px 22px}
+.msg{max-width:84%;justify-self:start}
+.msg p{margin:0;padding:12px 15px;border-radius:16px 16px 16px 4px;background:#fff;border:1px solid var(--line);font-size:14px;line-height:1.5;color:var(--ink2)}
+.msg small{display:block;margin:5px 4px 0;font-size:11.5px;color:var(--soft)}
+.msg.me{justify-self:end;text-align:right}
+.msg.me p{border-radius:16px 16px 4px 16px;background:var(--sky-t);border-color:#d3e1f7;color:var(--ink);text-align:left}
+.msg.doc{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:14px;background:#fff;border:1px solid var(--line)}
+.msg.doc i{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:var(--sky-t);color:var(--blue)}
+.msg.doc i svg{width:18px;height:18px}
+.msg.doc b{display:block;font-size:13.5px}
+.msg.doc small{margin:0}
+
+/* Obtenir de l'aide */
+.help-sec{padding:0 0 112px}
+.ways{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.way{display:flex;flex-direction:column;padding:30px;border-radius:22px;border:1px solid var(--line);background:#fff}
+.way.main{border-color:var(--navy);box-shadow:0 0 0 1px var(--navy),0 30px 60px #16478521}
+.way i{display:grid;place-items:center;width:46px;height:46px;border-radius:13px;background:var(--sky-t);color:var(--blue);margin-bottom:22px}
+.way i svg{width:22px;height:22px}
+.way h2{font-size:22px;letter-spacing:-.03em}
+.way p{margin:10px 0 24px;font-size:15px;line-height:1.6;color:var(--muted)}
+.way .btn{margin-top:auto;align-self:flex-start}
+.levels{display:flex;align-items:center;flex-wrap:wrap;gap:12px 28px;margin-top:20px;padding:18px 24px;border-radius:18px;background:var(--paper);border:1px solid var(--line);font-size:14px;color:var(--muted)}
+.levels>b{color:var(--ink);font-weight:650}
+.levels ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 24px}
+.levels li span{color:var(--ink2);font-weight:600}
+.levels a{margin-left:auto}
+
+/* Vidéos */
+.videos{background:var(--paper)}
+.vgroup+.vgroup{margin-top:56px}
+.vgroup-h{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;margin-bottom:20px}
+.vgroup-h h3{font-size:21px}
+.vgroup-h p{margin:0;font-size:15px;color:var(--muted)}
+.vids{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.vid{display:flex;flex-direction:column;gap:4px;color:var(--ink)}
+.vid-img{position:relative;display:block;aspect-ratio:16/9;margin-bottom:12px;border-radius:14px;overflow:hidden;background:#0b1b33;border:1px solid var(--line)}
+.vid-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s var(--ease)}
+.vid-img i{position:absolute;left:12px;bottom:12px;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#ffffffeb;color:var(--blue);box-shadow:0 10px 30px #0b1b3340;transition:transform .25s var(--ease)}
+.vid-img i svg{width:18px;height:18px;margin-left:2px}
+.vid:hover .vid-img img{transform:scale(1.03)}
+.vid:hover .vid-img i{transform:scale(1.08)}
+.vid-img iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vid-k{font-size:12px;font-weight:650;letter-spacing:.06em;text-transform:uppercase;color:var(--soft)}
+.vid b{font-size:16px;line-height:1.4;font-weight:650;letter-spacing:-.01em}
+.vid:hover b{color:var(--navy)}
+.vnote{margin:48px 0 0;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;font-size:14px;color:var(--soft)}
+
+/* Services */
+.serv{padding:112px 0}
+.serv-card{display:flex;align-items:center;justify-content:space-between;gap:32px;padding:40px 44px;border-radius:24px;background:var(--navy);color:#fff}
+.serv-card h2{color:#fff;font-size:clamp(24px,2.6vw,32px)}
+.serv-card p{margin:10px 0 0;max-width:620px;color:#c9d6ea;font-size:16px;line-height:1.6}
+.serv-card .btn{flex:none;background:#fff;color:var(--navy)}
+.serv-card .btn:hover{background:#eef3fa}
+
+@media (max-width:1080px){
+  .vids{grid-template-columns:1fr 1fr}
+  .levels a{margin-left:0}
+}
+@media (max-width:1080px){
+  .s-grid{grid-template-columns:1fr;gap:56px}
+  .sc{max-width:560px}
+}
+@media (max-width:900px){
+  .ways{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .p-hero{margin-top:-68px;padding:110px 0 64px}
+  .s-hero{padding-bottom:80px}
+  .msg{max-width:92%}
+  .p-hero h1{font-size:clamp(32px,8.6vw,44px)}
+  .p-hero .lead{font-size:17px}
+  .p-cta .btn{width:100%}
+  .help-sec{padding-bottom:80px}
+  .way{padding:26px 22px}
+  .levels{padding:18px}
+  .vids{grid-template-columns:1fr;gap:28px}
+  .serv{padding:80px 0}
+  .serv-card{flex-direction:column;align-items:flex-start;padding:30px 24px}
+  .serv-card .btn{width:100%}
+}
+</style>
 </head>
-
 <body>
+<a class="skip" href="#contenu">Skip to content</a>
 
-  <zyllio-nav always-overlaid>
-    <a href="index.html" slot="link">Home</a>
-    <a href="features.html" slot="link">Features</a>
-    <a href="pricing.html" slot="link">Pricing</a>
-    <a href="partner.html" slot="link">Agency</a>
-    <a href="support.html" slot="link">Support</a>
-    <a href="blog.html" slot="link">Blog</a>
-    <a href="affiliate.html" slot="link">Affiliate</a>
-    <a href="https://zyllio.fr" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
-  </zyllio-nav>
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Main navigation">
+      <a href="features.html">Product</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="partner.html">Agencies</a>
+      <a href="blog.html">Blog</a>
+      <a class="on" href="support.html" aria-current="page">Support</a>
+      <a href="affiliate.html">Affiliates</a>
+      <a class="m-only" href="support-fr.html" hreflang="fr" lang="fr">Version française</a>
+      <a class="m-only" href="https://www.zyllio.one">Log in</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="support-fr.html" hreflang="fr" lang="fr" aria-label="Version française"><img src="./flags/fr.png" alt="" width="18" height="12"/>FR</a>
+      <a class="login" href="https://www.zyllio.one">Log in</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Start for free</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Open menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
 
-  <br>
-  <br>
+<main id="contenu">
 
-  <zyllio-section id="support" layout="column">
+<!-- En-tête -->
+<section class="p-hero s-hero" aria-labelledby="page-t">
+  <div class="wrap s-grid">
+    <div class="s-txt">
+    <p class="eyebrow">Support</p>
+    <h1 id="page-t">A team in France, <span class="s">by your side.</span></h1>
+    <p class="lead">Documentation, support team and community: find the right answer at the right time.</p>
+    <div class="p-cta">
+      <button class="btn btn-navy js-contact" type="button">Contact us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a class="btn btn-line" href="https://docs.zyllio.com" target="_blank" rel="noopener">Documentation</a>
+    </div>
+    <ul class="s-facts">
+      <li><img src="./flags/fr.png" alt="" width="20" height="14"/>Team based in France</li>
+      <li><span class="dot"></span>Reply within 24 business hours</li>
+    </ul>
+    </div>
+    <div class="sc" role="img" aria-label="Example conversation with the Zyllio support team">
+      <div class="sc-top"><img src="./image/icon.png" alt="" width="32" height="32"/><div><b>Zyllio Support</b><small><span class="dot"></span>Online</small></div></div>
+      <div class="sc-body" aria-hidden="true">
+        <div class="msg me"><p>Hello, how can I automatically email the customer when a job is approved?</p><small>Claire · 9:12</small></div>
+        <div class="msg"><p>Hi Claire! Create an automation triggered on approval, then add the “Send an email” action. I’m sending you the step-by-step guide.</p><small>Zyllio Support · 9:26</small></div>
+        <div class="msg doc"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 00-2 2v14a2 2 0 002 2h10a2 2 0 002-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></i><span><b>Guide · Automations</b><small>docs.zyllio.com</small></span></div>
+        <div class="msg me"><p>Perfect, it works. Thanks!</p><small>Claire · 9:41</small></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <h1 slot="title">Support</h1>
+<!-- Obtenir de l'aide -->
+<section class="help-sec" id="aide" aria-label="Get help">
+  <div class="wrap">
+    <div class="ways">
+      <article class="way rv">
+        <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 016.5 17H20V3H6.5A2.5 2.5 0 004 5.5z"/><path d="M4 19.5A2.5 2.5 0 006.5 22H20v-5"/></svg></i>
+        <h2>Documentation</h2>
+        <p>Illustrated guides and tutorials with sample data: Stripe, Airtable, Gmail, REST API, custom domain…</p>
+        <a class="btn btn-line" href="https://docs.zyllio.com" target="_blank" rel="noopener">Browse the documentation</a>
+      </article>
+      <article class="way rv" style="--d:.06s">
+        <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg></i>
+        <h2>Support team</h2>
+        <p>Send us your question in writing: our team, based in France, replies within 24 business hours.</p>
+        <button class="btn btn-line js-contact" type="button">Send a message</button>
+      </article>
+      <article class="way main rv" style="--d:.12s">
+        <i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 01-9 8.4 8.6 8.6 0 01-3.9-.9L3 20l1.1-4.1A8.4 8.4 0 0112 3a8.4 8.4 0 019 8.5z"/></svg></i>
+        <h2>Community</h2>
+        <p>Chat with our team and experienced users in our Slack workspace.</p>
+        <a class="btn btn-navy" href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener">Join the community <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </article>
+    </div>
+    <div class="levels rv">
+      <b>Support by plan</b>
+      <ul><li>Discovery: <span>Community</span></li><li>Professional: <span>Business hours</span></li><li>Enterprise: <span>24/7</span></li><li>Enterprise Plus: <span>24/7 and SLA</span></li></ul>
+      <a class="arrow-link" href="pricing.html">See plans <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    </div>
+  </div>
+</section>
 
-    <zyllio-card slot="content">
+<!-- Vidéos -->
+<section class="sec videos" id="videos" aria-labelledby="vid-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Video tutorials</p><h2 id="vid-t">Learn <span class="s">by video.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Our live sessions and tutorials to get started with Zyllio. Videos are in French.</p>
+    </div>
+    <div class="vgroup">
+      <div class="vgroup-h rv"><h3>Vibe no-coding</h3><p>Build an application by chatting with AI.</p></div>
+      <div class="vids">
+          <a class="vid rv" href="https://www.youtube.com/watch?v=42pZ7xANJ_I" data-yt="42pZ7xANJ_I" target="_blank" rel="noopener">
+            <span class="vid-img"><img src="./image/videos/42pZ7xANJ_I.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #39</span><b>Vibe no-coding: blown away by the possibilities</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=-HsJnnb84P8" data-yt="-HsJnnb84P8" target="_blank" rel="noopener" style="--d:0.05s">
+            <span class="vid-img"><img src="./image/videos/-HsJnnb84P8.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #38</span><b>Vibe no-coding: Mistral or ChatGPT?</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=lbOzOVY-FBs" data-yt="lbOzOVY-FBs" target="_blank" rel="noopener" style="--d:0.1s">
+            <span class="vid-img"><img src="./image/videos/lbOzOVY-FBs.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #37</span><b>Vibe no-coding: building an application</b>
+          </a>
+      </div>
+    </div>
+    <div class="vgroup">
+      <div class="vgroup-h rv"><h3>Features</h3><p>New features explained in detail.</p></div>
+      <div class="vids">
+          <a class="vid rv" href="https://www.youtube.com/watch?v=egZJpZcnVDU" data-yt="egZJpZcnVDU" target="_blank" rel="noopener">
+            <span class="vid-img"><img src="./image/videos/egZJpZcnVDU.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #30</span><b>Automations and PDF reading</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=IKqrvuNZZCo" data-yt="IKqrvuNZZCo" target="_blank" rel="noopener" style="--d:0.05s">
+            <span class="vid-img"><img src="./image/videos/IKqrvuNZZCo.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #31</span><b>Generating PDF documents with Mistral</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=SUs6E7aBs3Y" data-yt="SUs6E7aBs3Y" target="_blank" rel="noopener" style="--d:0.1s">
+            <span class="vid-img"><img src="./image/videos/SUs6E7aBs3Y.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream #35</span><b>Publishing on the App Store and Google Play</b>
+          </a>
+      </div>
+    </div>
+    <div class="vgroup">
+      <div class="vgroup-h rv"><h3>Getting started</h3><p>Studio basics, step by step.</p></div>
+      <div class="vids">
+          <a class="vid rv" href="https://www.youtube.com/watch?v=Zh_nG4bKs44" data-yt="Zh_nG4bKs44" target="_blank" rel="noopener">
+            <span class="vid-img"><img src="./image/videos/Zh_nG4bKs44.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Getting started</span><b>Welcome to Zyllio</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=4xrP_0R0tlA" data-yt="4xrP_0R0tlA" target="_blank" rel="noopener" style="--d:0.05s">
+            <span class="vid-img"><img src="./image/videos/4xrP_0R0tlA.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Getting started</span><b>The dashboard</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=tPPR-tXv7YY" data-yt="tPPR-tXv7YY" target="_blank" rel="noopener" style="--d:0.1s">
+            <span class="vid-img"><img src="./image/videos/tPPR-tXv7YY.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Getting started</span><b>The Studio</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=K4ypc9iRD4c" data-yt="K4ypc9iRD4c" target="_blank" rel="noopener" style="--d:0s">
+            <span class="vid-img"><img src="./image/videos/K4ypc9iRD4c.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Getting started</span><b>Your first screen</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=JmaI4fhn1s4" data-yt="JmaI4fhn1s4" target="_blank" rel="noopener" style="--d:0.05s">
+            <span class="vid-img"><img src="./image/videos/JmaI4fhn1s4.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Getting started</span><b>Data tables</b>
+          </a>
+          <a class="vid rv" href="https://www.youtube.com/watch?v=05l86vgs72I" data-yt="05l86vgs72I" target="_blank" rel="noopener" style="--d:0.1s">
+            <span class="vid-img"><img src="./image/videos/05l86vgs72I.jpg" alt="" width="480" height="360" loading="lazy"/><i aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg></i></span>
+            <span class="vid-k">Zy’Stream</span><b>Building an application from A to Z</b>
+          </a>
+      </div>
+    </div>
+    <p class="vnote rv"><span>Videos load from YouTube only when you play them.</span><a class="arrow-link" href="https://www.youtube.com/@zyllio" target="_blank" rel="noopener">All our videos on YouTube <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
 
-      <zyllio-card-text>
-        <h1>Forum</h1>
+<!-- Services -->
+<section class="serv" aria-labelledby="serv-t">
+  <div class="wrap">
+    <div class="serv-card rv">
+      <div><h2 id="serv-t">Need to move faster?</h2><p>With Zyllio Services, our experts scope, design and deliver your turnkey application.</p></div>
+      <button class="btn js-contact" type="button">Talk to our team</button>
+    </div>
+  </div>
+</section>
 
-        <ul>
-          <li>Join our <a
-              href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw"
-              target="_blank"><u>support and community forum here</u></a></li>
-          <li>Our support team is actively monitoring the forum and providing timely responses to users' questions and
-            issues.
-            In addition to our team, there are also many experienced users who are happy to share their knowledge and
-            help others
-          </li>
-          <li>Explore our <a
-            href="https://docs-en.zyllio.com" target="_blank"><u>multilingual documentation</u></a> and illustrated tutorials to 
-            guide you step-by-step
-          </li>
-        </ul>
-      </zyllio-card-text>
+</main>
 
-      <zyllio-card-image src="./image/support/support-slack.jpg"></zyllio-card-image>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>The French AI + NoCode platform for building your business applications.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio on LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Zyllio community on Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support.html" class="js-contact" aria-label="Contact us"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="index.html#comment">How it works</a></li><li><a href="index.html#agent">Zyllio agent</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li><li><a href="partner.html">Partner agencies</a></li><li><a href="affiliate.html">Affiliates</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="terms-of-use.html">Terms of use</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="legal.html">Legal notice</a></li><li><a href="affiliate-program.html">Affiliate program</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. All rights reserved.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Designed and hosted in France</span></div>
+  </div>
+</footer>
 
-    </zyllio-card>
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Close"
+  placeholder-last-name="Your last name"
+  placeholder-first-name="Your first name"
+  placeholder-email="you@company.com"
+  placeholder-message="How can we help you?"
+>
+  <h2 slot="title">Contact us</h2>
+  <p slot="intro">Send us a message and we’ll reply within 24 business hours.</p>
+  <span slot="label-last-name">Last name</span>
+  <span slot="label-first-name">First name</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Send</span>
+</zyllio-contact-modal>
 
-  </zyllio-section>
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-  <zyllio-section id="documentation" layout="column">
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
 
-    <h1 slot="title">Documentation</h1>
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
 
-    <zyllio-card slot="content">
+  /* Vidéos : lecteur YouTube sans cookie, chargé au clic */
+  $$('[data-yt]').forEach(function (a) {
+    a.addEventListener('click', function (e) {
+      if (e.ctrlKey || e.metaKey || e.shiftKey) return
+      e.preventDefault()
+      var f = document.createElement('iframe')
+      f.src = 'https://www.youtube-nocookie.com/embed/' + a.getAttribute('data-yt') + '?autoplay=1&rel=0'
+      f.title = a.querySelector('b').textContent
+      f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen'
+      f.allowFullscreen = true
+      // un lecteur ne peut pas rester dans un lien : on remplace la vignette par un bloc simple
+      var d = document.createElement('div')
+      d.className = 'vid on'
+      d.innerHTML = a.innerHTML
+      var box = d.querySelector('.vid-img')
+      box.innerHTML = ''; box.appendChild(f)
+      a.parentNode.replaceChild(d, a)
+    })
+  })
 
-      <zyllio-card-text>
-        <ul>
-          <li><a href="https://docs-en.zyllio.com" target="_blank"><u>Multilingual documentation</u></a> - Access detailed guides in English and French for seamless learning</li>
-          <li>Step-by-step illustrated tutorials to help you integrate essential tools: Stripe, Google Fonts, Airtable, 
-            Custom domain, GMail, REST API Integration</li>
-          <li>Follow real-world examples with pre-provided test data, making it easier to reproduce and implement tutorials</li>
-        </ul>
-      </zyllio-card-text>
-
-      <zyllio-card-image src="./image/support/support-documentation.jpg"></zyllio-card-image>
-
-    </zyllio-card>
-
-  </zyllio-section>
-
-  <zyllio-section id="tutorials" layout="row wrap">
-
-    <h1 slot="title">Tutorials</h1>
-    
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/tspKFoyw_Bk?si=F7XOZVoEyMrqiaXk" allowfullscreen></iframe>
-      <h1 class="fr">Build in public - Gest. inventaire</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/IkBYRGgiz1Y?si=OWHLCpEdPxkoUdwH" allowfullscreen></iframe>
-      <h1 class="fr">Build in public - Agence Immo.</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/Zh_nG4bKs44?si=OJ-ihX5EIuVGo_jp" allowfullscreen></iframe>
-      <h1 class="fr">Bien débuter - Bienvenue</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/4xrP_0R0tlA?si=e19vIcdLuA2SJQxe" allowfullscreen></iframe>
-      <h1 class="fr">Bien débuter - Le Dashboard</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/tPPR-tXv7YY?si=Ku7aTj9gA1W1FKC5" allowfullscreen></iframe>
-      <h1 class="fr">Bien débuter - Le Studio</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/K4ypc9iRD4c?si=Xtx9iOR-CVI-ohZu" allowfullscreen></iframe>
-      <h1 class="fr">Bien débuter - Premier écran</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/JmaI4fhn1s4?si=9z9WP06-fUL6SAxB" allowfullscreen></iframe>
-      <h1 class="fr">Bien débuter - Les tables</h1>
-    </zyllio-tutorial>
-
-    <zyllio-tutorial slot="content">
-      <iframe src="https://www.youtube.com/embed/jS_f_d9upVY?si=9-KsqbwgV1W5hX1d" allowfullscreen></iframe>
-      <h1 class="ar">شرح منصة زيليو(zyllio)</h1>
-    </zyllio-tutorial>    
-    
-  </zyllio-section>
-
-  <zyllio-section id="vision" layout="column">
-
-    <h1 slot="title">Our vision</h1>
-
-    <zyllio-card class="style1" slot="content">
-      <zyllio-card-text>
-        <h1>Our mission</h1>
-
-        <br>
-
-        Our mission is to provide a product that is intuitive, easy to use, and helps our users achieve their goals.
-
-        We are constantly working to improve our product and add new features that are useful and relevant to our users.
-
-        <br><br>
-
-        We believe that every individual, entrepreneur, and business should have access to the tools they need to be
-        successful.
-
-        That's why we strive to provide a product that is affordable and accessible to users of all budgets and
-        backgrounds.
-
-        <br><br>
-        Offering free features, alongside our paid plans, allows us to provide our users with more value
-        and flexibility.
-        We want our users to be able to use our product to its full potential, regardless of their financial situation.
-
-      </zyllio-card-text>
-
-      <zyllio-card-image src="./image/support/support-vision.jpg"></zyllio-card-image>
-    </zyllio-card>
-
-    <zyllio-card class="style2" slot="content">
-      <zyllio-card-text>
-        <h1>2026 Roadmap</h1>
-
-        <br>
-        Our goal is to provide our users with a clear view of the product's future direction and to solicit feedback and
-        input from our user community
-        <br><br>
-
-        The following are some of the key features and enhancements that are planned for 2026:
-        <br>
-        <ul>
-          <li>Finalizing educational contents, tutorials and onboarding process</li>
-          <li>Millions of data rows</li>
-          <li>Automations</li>
-        </ul>
-      </zyllio-card-text>
-
-      <zyllio-card-image src="./image/support/support-roadmap.jpg"></zyllio-card-image>
-    </zyllio-card>
-
-  </zyllio-section>
-
-
-  <zyllio-section id="contact" layout="row space-around wrap">
-
-    <h1 slot="title">Reach us</h1>
-
-    <zyllio-contact slot="content" style="--icon-bg: #EEF2FF; --link-color: #4F6AD4">
-      <img slot="icon" alt="email" src="./image/icons/email.png">
-      <h1 slot="title">Email</h1>
-      <h2 slot="message">Feel free to ask any questions. Our team replies within 24 business hours.</h2>
-      <a slot="badge" id="contact-trigger-support" href="#">SEND A MESSAGE &rarr;</a>
-    </zyllio-contact>
-
-    <zyllio-contact slot="content" style="--icon-bg: #E6F7F5; --link-color: #0D7B74">
-      <img slot="icon" alt="linkedin" src="./image/icons/linkedin.png">
-      <h1 slot="title">LinkedIn</h1>
-      <h2 slot="message">Follow our live demonstrations and stay up to date with the latest news every day.</h2>
-      <a slot="badge" href="https://www.linkedin.com/company/zyllio/" target="_blank">VIEW OUR PROFILE &rarr;</a>
-    </zyllio-contact>
-
-    <zyllio-contact slot="content" style="--icon-bg: #F0EAFF; --link-color: #7C3AED">
-      <img slot="icon" alt="slack" src="./image/icons/slack.png">
-      <h1 slot="title">Slack</h1>
-      <h2 slot="message">Join our community forum to chat in real time with our experts.</h2>
-      <a slot="badge" href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw"
-        target="_blank">JOIN THE CHANNEL &rarr;</a>
-    </zyllio-contact>
-
-  </zyllio-section>
-
-  <zyllio-footer>
-    <a href="terms-of-use.html" target="_blank">Terms of use</a> - <a href="privacy.html" target="_blank">Privacy policy</a> - <a href="gdpr.html" target="_blank">GDPR</a> - <a href="legal.html" target="_blank">Legal notice</a> - <a href="affiliate-program.html" target="_blank">Affiliate Program</a>
-  </zyllio-footer>
-
-  <zyllio-contact-modal
-    open-trigger="#contact-trigger-support"
-    close-label="Close"
-    placeholder-last-name="Your last name"
-    placeholder-first-name="Your first name"
-    placeholder-email="you@company.com"
-    placeholder-message="How can we help you?"
-  >
-    <h2 slot="title">Contact us</h2>
-    <p slot="intro">Send us a message and we'll reply quickly.</p>
-    <span slot="label-last-name">Last name</span>
-    <span slot="label-first-name">First name</span>
-    <span slot="label-email">Email</span>
-    <span slot="label-message">Message</span>
-    <span slot="submit-label">Send</span>
-  </zyllio-contact-modal>
-
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
-
 </html>

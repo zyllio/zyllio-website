@@ -1,598 +1,667 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Créez des applications web et mobiles sur mesure sans code avec Zyllio. Concevez, connectez vos données, automatisez et publiez rapidement.">
-  <link rel="canonical" href="https://zyllio.com/index-fr.html">
-  <link rel="alternate" hreflang="en" href="https://zyllio.com/">
-  <link rel="alternate" hreflang="fr" href="https://zyllio.com/index-fr.html">
-  <link rel="alternate" hreflang="x-default" href="https://zyllio.com/">
-
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Zyllio">
-  <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Créateur d’applications sans code | Zyllio">
-  <meta property="og:description" content="Créez des applications sur mesure, connectez vos données, automatisez et publiez rapidement avec Zyllio.">
-  <meta property="og:url" content="https://zyllio.com/index-fr.html">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Créateur d’applications sans code | Zyllio">
-  <meta name="twitter:description" content="Créez des applications sur mesure, connectez vos données, automatisez et publiez rapidement avec Zyllio.">
-
-  <title>Créateur d’applications sans code | Zyllio</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Créez vos applications métier avec l’IA | Zyllio</title>
+<meta name="description" content="Décrivez votre application, Zyllio la construit avec vous : l’IA génère écrans, données et automatisations, vous gardez la main dans le Studio NoCode. Plateforme française, hébergement en France."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/index-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/index-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zyllio"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:title" content="Créez vos applications métier avec l’IA | Zyllio"/>
+<meta property="og:description" content="Décrivez votre application, Zyllio la construit avec vous. IA + Studio NoCode, hébergement en France."/>
+<meta property="og:url" content="https://zyllio.com/index-fr.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Créez vos applications métier avec l’IA | Zyllio"/>
+<meta name="twitter:description" content="Décrivez votre application, Zyllio la construit avec vous. IA + Studio NoCode, hébergement en France."/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+<link rel="stylesheet" href="./site.css"/>
 </head>
-
 <body>
-  <zyllio-nav>
-    <a href="index-fr.html" slot="link">Accueil</a>
-    <a href="features-fr.html" slot="link">Produit</a>
-    <a href="pricing-fr.html" slot="link">Tarifs</a>
-    <a href="partner-fr.html" slot="link">Agence</a>
-    <a href="support-fr.html" slot="link">Support</a>
-    <a href="blog-fr.html" slot="link">Blog</a>
-    <a href="affiliate-fr.html" slot="link">Affiliation</a>
-    <a href="index.html" slot="link"><zyllio-language-selector language="en"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Se connecter</zyllio-sign-in>
-  </zyllio-nav>
-
-  <zyllio-header id="home">
-    <h1 slot="title">Créez vos apps</h1>
-    <h2 slot="sub-title">sans coder grâce à l'IA</h2>
-    <h3 slot="message">Votre idée devient une app métier sur mesure</h3>
-    <zyllio-ai-prompt
-      slot="ai-prompt"
-      label="Décrivez l’application que vous voulez créer"
-      placeholder="Ex : Je veux une app pour gérer les réservations, les paiements et les rappels clients."
-      button-label="Tester mon idée"></zyllio-ai-prompt>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Commencez gratuitement</zyllio-sign-in>
-    <zyllio-hosting-badge slot="hosting" label="Made in France"></zyllio-hosting-badge>
-  </zyllio-header>
-
-  <zyllio-section>
-    <h1 slot="title">Créez visuellement facilement</h1>
-    <zyllio-demo slot="content" ></zyllio-demo>
-  </zyllio-section>
-
-  <zyllio-section id="they-trust-us" layout="row wrap" >
-    <h1 slot="title">Ils nous font confiance</h1>
-
-    <zyllio-marquee slot="content">
-
-    <zyllio-customer slot="content">
-      <img alt="dl" src="./image/customers/customer-dl.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="db-industrie" src="./image/customers/customer-db-industrie.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="leroy" src="./image/customers/customer-leroy.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="ubs" src="./image/customers/customer-ubs.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="c-possible" src="./image/customers/customer-c-possible.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="dl" src="./image/customers/customer-armee-du-salut.png">
-    </zyllio-customer>
-    
-    <zyllio-customer slot="content">
-      <img alt="demenagement" src="./image/customers/customer-demenagement.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="design-data" src="./image/customers/customer-design-data.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="ccjm" src="./image/customers/customer-ccjm.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="resolocal" src="./image/customers/customer-resolocal.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="01mag" src="./image/customers/customer-marketorders.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="01mag" src="./image/customers/customer-01mag.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="radio ctn" src="./image/customers/customer-ctn.png">
-    </zyllio-customer>
-
-    <zyllio-customer slot="content">
-      <img alt="rehber" src="./image/customers/customer-rehber.png">
-    </zyllio-customer>
-
-    </zyllio-marquee>
-
-  </zyllio-section>
-
-  <zyllio-section id="business" layout="column">
-
-    <h1 slot="title">Qui a besoin de Zyllio ?</h1>
-
-    <zyllio-card class="style2" slot="content">
-      <div>
-        <zyllio-card-text>
-          <h1>Entreprises</h1>
-          <span>Offrez plus de services à vos clients et vos employés, digitalisez vos processus internes et libérez-vous des contraintes du développement logiciel complexe</span>
-        </zyllio-card-text>
-
-        <zyllio-card-text>
-          <h1>Startups</h1>
-          <span>Transformez votre idée en application, créez une première version prête à être utilisée, 
-            testez-la sur le marché sans épuiser votre budget ni votre énergie.</span>
-        </zyllio-card-text>        
-
-        <zyllio-card-text>
-          <h1>Associations</h1>
-          <span>Fédérez, informez et mobilisez votre communauté. Organisez vos événements, vendez vos produits, collectez des dons 
-            et partagez vos actualités sur une seule et même plateforme</span>
-        </zyllio-card-text>
-      </div>
-
-      <zyllio-card-image src="./image/business-owner.jpg"></zyllio-card-image>
-
-    </zyllio-card>
-
-    <zyllio-card class="style1" slot="content">
-
-      <zyllio-card-image src="./image/freelancer.jpg"></zyllio-card-image>
-
-      <zyllio-card-text>
-        <h1>Freelances No-Code</h1>
-        <ul> 
-          <li>Créez des applications puissantes pour vos clients sans écrire une seule ligne de code — maîtrisez Zyllio en seulement quelques semaines</li> 
-          <li>Concevez, gérez, publiez et partagez des applications entièrement personnalisées, parfaitement adaptées aux besoins de vos clients</li>
-          <li>Augmentez vos revenus et maximisez vos marges en proposant des services compétitifs rendus possibles grâce aux tarifs abordables de Zyllio</li> 
-        </ul>
-      </zyllio-card-text>
-
-    </zyllio-card>
-
-  </zyllio-section>
-
-
-
-  <zyllio-section id="features" layout="column">
-
-    <h1 slot="title">Fonctionnalités</h1>
-
-    <zyllio-masonry slot="content">
-
-      <zyllio-masonry-card  class="style1">
-        <h3 slot="title">Créez des apps rapidement</h3>
-        <div slot="subtitle">Vous n'avez pas besoin d'écrire de code, vous pouvez vous concentrer sur la conception et la personnalisation de votre projet</div>
-        <img slot="image" src="./image/home/home-feature-1.png">
-      </zyllio-masonry-card>
-
-      <zyllio-masonry-card class="style3">
-        <h3 slot="title">Connectez-vous à vos données</h3>
-        <div slot="subtitle">Connectez vos données en utilisant des connecteurs natifs: Google Spreadsheet, Airtable et TimeTonic
-          <br>Automatisez vos flux de travail en utilisant Make et Zapier</div>
-        <img slot="image" src="./image/home/home-feature-3.png">
-      </zyllio-masonry-card>
-      
-      <zyllio-masonry-card class="style6">
-        <h3 slot="title">Connectez-vous avec vos utilisateurs</h3>
-        <div slot="subtitle">Permettez aux utilisateurs publics et privés d'accéder à leurs données
-          <br>Notifiez vos utilisateurs instantanément par <b>SMS</b>, <b>Email</b> et <b>Notifications</b></div>
-        <img slot="image" src="./image/home/home-feature-6.png">
-      </zyllio-masonry-card>
-
-      <zyllio-masonry-card class="style2">
-        <h3 slot="title">Une expérience fluide sur tous les écrans</h3>
-        <div slot="subtitle">Compatible mobile, tablette et ordinateur avec affichage optimisé pour chaque support. 
-          <br>Utilisez les <b>Containers</b> et les <b>Popup</b> adaptatives pour organiser facilement vos contenus</div>
-        <img slot="image" src="./image/home/home-feature-2.png">
-      </zyllio-masonry-card>
-
-      <zyllio-masonry-card class="style4">
-        <h3 slot="title">Exploiter la puissance de l'IA</h3>
-        <div slot="subtitle">Créez des applications plus intelligentes et plus efficaces en générant du texte (ChatGPT) et des images (DALL·E)</div>
-        <img slot="image" src="./image/home/home-feature-5.png">
-      </zyllio-masonry-card>
-
-      <zyllio-masonry-card class="style5">
-        <h3 slot="title">Publiez et surveillez votre application</h3>
-        <div slot="subtitle">Publiez votre application instantanément et partagez votre application avec vos utilisateurs en utilisant le <b>QR code </b>généré</div>
-        <img slot="image" src="./image/home/home-feature-4.png">
-      </zyllio-masonry-card>
-
-    </zyllio-masonry>
-
-  </zyllio-section>
-
-  <zyllio-section id="feature-cards" layout="row wrap" >
-
-    <h1 slot="title">Toutes les fonctionnalités essentielles</h1>
-
-      <zyllio-card-icon slot="content" class="signature">
-        <h1>Signature</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="picture">
-        <h1>Prise de photos</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="geolocation">
-        <h1>Géolocalisation</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="scan">
-        <h1>Scan code barre </h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="micro">
-        <h1>Microphone</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="notification">
-        <div class="play-store"></div>
-        <h1>Notification push</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="offline">
-        <h1>Mode déconnecté</h1>
-      </zyllio-card-icon>
-
-      <zyllio-card-icon slot="content" class="payment">
-        <h1>Paiement</h1>
-      </zyllio-card-icon>
-
-  </zyllio-section>
-
-  <zyllio-section id="testimonials" >
-
-    <h1 slot="title">Ce que disent nos clients</h1>
-
-    <zyllio-carousel slot="content" >
-
-      <zyllio-testimonial id="t8">
-
-        <h1>Drive Lady</h1>
-        <img slot="profile" src="./image/testimonials/testimonial8.png">
-        <h3 slot="name" >Margaux & Camille</h3>
-        <h4 slot="position" >Fondatrices</h4>
-        <h2 slot="message">
-    
-          Nous souhaitions développer une application de covoiturage entre femmes, mais nous n’avions aucune connaissance en programmation.
-          <br><br>
-          Zyllio a été le parfait outil : nous avons pu créer notre application, grâce à la plateforme intuitive ainsi que
-          l'accompagnement plus que sur mesure par l'expert Zyllio, qui a cru en notre projet, et qui nous a accompagné dans son développement. 
-          
-          <br><br>
-          Il a su répondre à nos attentes tout en adaptant aux capacités de Zyllio 👌
-
-          <br><br>
-          Nous recommandons vivement Zyllio, pour sa praticité, son expérience client, et son développement rapide ! 🚀  
-        </h2>
-    
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t7">
-
-        <h1>Secret de peau</h1>
-        <img slot="profile" src="./image/testimonials/testimonial7.png">
-        <h3 slot="name" >Laurent Pan</h3>
-        <h4 slot="position" >Instagram, 673K abonnés</h4>
-        <h2 slot="message">
-    
-          J'ai créé une application qui permet de diagnostiquer les bénéfices et les problèmes de produits de soins. 
-          
-          Et tout cela s'appuie sur une base de centaines de milliers de produits et surtout sur mon algorithme secret 😉
-    
-          <br><br>
-          Très content d'avoir pu découvrir Zyllio. C'est un bon outil pour lancer son application sans trop d'investissement.
-    
-          Mention spéciale au support, ultra réactif, qui a même ajouté de nouvelles fonctionnalités en cours de développement !
-    
-          <br><br>
-          Je recommande chaudement !    
-        </h2>
-    
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t6">
-
-        <h1>Université de Bretagne Sud</h1>
-        <img slot="profile" src="./image/testimonials/testimonial6.png">
-        <h3 slot="name" >Pascal Baudont</h3>
-        <h4 slot="position" >Enseignant à l'Université de Bretagne Sud</h4>
-        <h2 slot="message">
-
-          J'ai la chance d'enseigner à l'Université de Bretagne Sud qui a accepté ma proposition d'enseigner le No code aux étudiants 
-          de Licence (étudiants en gestion, SVT, math, stat…). J'ai pu tester différents outils dans mes enseignements 
-          (souvent venant des Etats unis). 
-          <br><br>
-          Pour aborder la création d'applications, l'ergonomie de Zyllio est bluffante. Les étudiants.tes ont pris en main le logiciel très rapidement et de manière efficace en créant en quelques heures leur première application. Effet waouh garanti !
-          
-          <br><br>Gestion des données, des composants et des liens entre les écrans, degré de personnalisation important, publication instantanée de l'application : Zyllio permet de réaliser ses idées sans code.
-          Et de manière spontanée, certains m'ont partagé des idées de projets personnels qu'ils pourraient mettre en oeuvre 
-          rapidement avec Zyllio.
-        </h2>
-
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t5">
-
-        <h1>Leroi & Associés</h1>
-        <img slot="profile" src="./image/testimonials/testimonial5.png">
-        <h3 slot="name" >Fabrice Reynaud</h3>
-        <h4 slot="position" >Associé Leroi & Associés</h4>
-        <h2 slot="message">
-
-          Mon étude de commissaire de justice souhaitait offrir à ses clients une application facilitant la réalisation et le suivi des 
-          constats qu'ils nous chargent d'établir
-          <br><br>
-          La très grande polyvalence de Zyllio, les possibilités offertes (notamment le recueil de signature, la prise de photographies etc...) m'ont poussé 
-          à choisir naturellement Zyllio pour la réalisation de l'application, et ce sans connaissances en programmation informatique.
-          <br><br>
-
-          Le support est ultra réactif et les possibilités vont au delà de ce que j'imaginais au départ !
-        </h2>
-
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t4">
-
-        <h1>C’Possible</h1>
-        <img slot="profile" src="./image/testimonials/testimonial4.png">
-        <h3 slot="name" >Jacques Pradel</h3>
-        <h4 slot="position" >Responsable informatique</h4>
-        <h2 slot="message">
-
-          Mon association souhaitait mettre à disposition de ses bénévoles une application sur smartphone, un défi pour moi.
-
-          <br><br>
-          Sans connaissance en développement informatique et à un cout très abordable par rapport aux autres offres du marché, 
-          j’ai pu en quelques semaines réaliser une application correspondant à nos besoins qui permettra à nos 300 bénévoles de renseigner 
-          directement des données sur leur smartphone, et de disposer des ressources dont ils ont besoins (documents, vidéo, news ..)
-
-          <br><br>
-          Zyllio, c’est, la simplicité d’utilisation, des composants variés, un support au topissime !!
-        </h2>
-
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t3">
-
-        <h1>Santé bien être dist.</h1>
-        <img slot="profile" src="./image/testimonials/testimonial3.png">
-        <h3 slot="name" >Christophe Kupriez</h3>
-        <h4 slot="position" >SAS Santé bien être distributions</h4>
-        <h2 slot="message">
-
-          Zyllio est une plateforme extraordinaire pour ceux qui veulent avoir une application pour leurs activités. 
-          
-          <br><br>
-          Au-delà d’un excellent rapport qualité prix,
-          C’est l’écoute et la disponibilité de l’équipe. Ainsi que l’adaptabilité. 
-          <br><br>
-          A titre personnel ils ont développé pour moi des fonctions qui était nécessaires pour que mon projet puisse se développer dans les meilleures conditions. 
-          <br><br>
-          Je recommande à 1000 % !
-        </h2>
-
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t0">
-
-        <h1>Resolocal</h1>
-        <img slot="profile" src="./image/testimonials/testimonial0.png">
-        <h3 slot="name" >Yves Vaillant</h3>
-        <h4 slot="position" >Création print et digitale</h4>
-        <h2 slot="message">
-
-          Après avoir testé une bonne partie des app builders du marché, j'ai finalement choisi Zyllio pour mes 2 applis.
-          
-          <br><br>
-          Le meilleur rapport qualité prix du marché !
-
-          <br><br>
-          Ce que je n'ai trouvé nulle part ailleurs c'est la disponibilité et la bienveillante compétence du concepteur. 
-          
-          <br><br>
-          Et pas besoin de google translate pour se faire comprendre...
-
-          <br><br>
-          No code but not alone !
-        </h2>
-
-      </zyllio-testimonial>
-      
-      <zyllio-testimonial id="t1">
-
-        <h1>MarketOrders</h1>
-        <img slot="profile" src="./image/testimonials/testimonial1.png">
-        <h3 slot="name" >Ram</h3>
-        <h4 slot="position" >CEO</h4>
-        <h2 slot="message">
-
-          Zyllio a dépassé nos attentes en matière de prestation de service !
-          <br><br>
-          Nous avions besoin d'une application pour notre lancement de produit et Zyllio nous a été recommandé
-          <br><br>
-          Zyllio a dépassé nos attentes en matière de prestation de service ! Un excellent service personnalisé et une livraison dans les délais impartis.
-        </h2>
-
-      </zyllio-testimonial>
-
-      <zyllio-testimonial id="t2">
-
-        <h1>CCJM Consulting</h1>
-        <img slot="profile" src="./image/testimonials/testimonial2.png">
-        <h3 slot="name" >Ariane Eva Morin</h3>
-        <h4 slot="position" >CEO</h4>
-        <h2 slot="message">
-
-          Superbe application et support fantastique !
-          <br><br>
-          J'ai signé avec Zyllio pour créer mon application mobile et en quelques semaines, mon application était entièrement fonctionnelle, prête à être testée et lancée quelques semaines plus tard !
-          <br><br>
-          Un excellent support de l'équipe de Zyllio à chaque étape du processus.
-        </h2>
-
-      </zyllio-testimonial>
-    </zyllio-carousel>
-  </zyllio-section>
-
-  <zyllio-section id="community" layout="row space-between">
-
-    <h1 slot="title">Notre communauté</h1>
-
-    <zyllio-stat slot="content">
-      <h1>5841</h1>
-      <h2>apps crées</h2>
-    </zyllio-stat>
-
-    <zyllio-stat slot="content">
-      <h1>3852</h1>
-      <h2>utilisateurs</h2>
-    </zyllio-stat>
-
-    <zyllio-stat slot="content">
-      <h1>4203</h1>
-      <h2>membres de <br>la communauté</h2>
-    </zyllio-stat>
-
-  </zyllio-section>
-
-  <zyllio-section id="integrations" layout="row space-around wrap">
-
-    <h1 slot="title">Services intégrés</h1>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/twilio.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/youtube.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/facebook.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/google-sheets.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/airtable.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/zapier.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img alt="gmail" src="./image/services/gmail.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/integromat.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/vimeo.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/timetonic.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img alt="xano" src="./image/services/xano.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img alt="openai" src="./image/services/openai.png">
-    </zyllio-integration>
-
-    <zyllio-integration slot="content">
-      <img src="./image/services/osm.png">
-    </zyllio-integration>
-
-  </zyllio-section>
-
-  <zyllio-section id="get-started" layout="row">
-
-    <h1 slot="title">Essayer gratuitement !</h1>
-
-    <div slot="content">
-
-      Connectez-vous pour créer votre app personnalisée, aucune carte de crédit requise.
-
-      <br><br>
-      <zyllio-sign-in href="https://www.zyllio.one">S'inscrire</zyllio-sign-in>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="features-fr.html">Produit</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="partner-fr.html">Agences</a>
+      <a href="blog-fr.html">Blog</a>
+      <a href="support-fr.html">Support</a>
+      <a href="affiliate-fr.html">Affiliation</a>
+      <a class="m-only" href="index.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="index.html" hreflang="en" lang="en" aria-label="English version"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
+  </div>
+</header>
 
-  </zyllio-section>
+<main id="contenu">
 
-  <zyllio-section id="contact" layout="row space-around wrap">
+<!-- Hero -->
+<section class="hero" aria-labelledby="hero-t">
+  <div class="wrap hero-in">
+    <a class="announce" href="#agent"><b>Nouveau</b><span class="a-long">L’agent Zyllio dans ChatGPT, Mistral et Claude</span><span class="a-short">L’agent Zyllio dans votre IA</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <h1 id="hero-t">Décrivez votre application. <span class="s">Zyllio la construit avec vous.</span></h1>
+    <p class="lead">L’IA génère les applications métier de votre entreprise&nbsp;: écrans, données et automatisations. Vous gardez la main dans le Studio NoCode.</p>
+    <form class="composer" id="composer" autocomplete="off" novalidate>
+        <label class="sr" for="prompt">Décrivez l’application que vous voulez créer</label>
+        <textarea id="prompt" name="prompt" rows="2" maxlength="600" placeholder="Ex. : une application pour suivre les interventions de mon équipe, avec planning et comptes rendus…"></textarea>
+        <div class="c-bar">
+          <button class="btn btn-navy" type="submit">Créer mon application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </form>
+    <div class="ideas" role="group" aria-label="Exemples de demandes">
+        <span>Idées :</span>
+        <button type="button" data-i="0" aria-pressed="false">Interventions terrain</button>
+        <button type="button" data-i="1" aria-pressed="false">Suivi clients</button>
+        <button type="button" data-i="2" aria-pressed="false">Inventaire</button>
+        <button type="button" data-i="3" aria-pressed="false">Demandes internes</button>
+      </div>
+    <ul class="reassure">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Gratuit pour démarrer</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sans carte bancaire</li>
+        <li><img src="./flags/fr.png" alt="" width="18" height="12"/>Hébergé en France</li>
+      </ul>
+    <div class="player" id="player">
+      <div class="player-bar" aria-hidden="true"><span class="dots"><i></i><i></i><i></i></span><span>Studio Zyllio · démonstration</span></div>
+      <picture>
+        <source media="(max-width: 700px)" srcset="./image/studio-demo-mobile.webp" width="1640" height="1788"/>
+        <img src="./image/studio-demo-1304.webp" srcset="./image/studio-demo-1304.webp 1304w, ./image/studio-demo-2608.webp 2608w" sizes="min(1200px, calc(100vw - 64px))" width="2608" height="1788" decoding="async" alt="Studio Zyllio : l’IA a créé l’application DépanPro à partir d’une demande en langage naturel, avec les écrans Accueil, Interventions et Détail d’intervention"/>
+      </picture>
+    </div>
+  </div>
+  <div class="clients" aria-label="Ils nous font confiance">
+    <p>Ils ont créé leurs applications avec Zyllio</p>
+    <div class="marquee" id="marquee">
+    <ul class="track">
+      <li class="full"><img src="./image/customers/customer-dl.png" alt="Drive Lady" width="200" height="200"/></li>
+      <li><img src="./image/customers/customer-leroy.png" alt="Leroi &amp; Associés" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-ubs.png" alt="Université de Bretagne Sud" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-c-possible.png" alt="C’Possible" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-armee-du-salut.png" alt="Armée du Salut" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-db-industrie.png" alt="DB Industrie" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-resolocal.png" alt="Resolocal" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-marketorders.png" alt="MarketOrders" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-ccjm.png" alt="CCJM Consulting" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-sas.png" alt="Santé bien être distributions" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-secretdepeau.png" alt="Secret de peau" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-design-data.png" alt="Design Data" loading="lazy"/></li>
+      <li><img src="./image/customers/customer-01mag.png" alt="01mag" loading="lazy"/></li>
+    </ul>
+  </div>
+  </div>
+</section>
 
-    <h1 slot="title">Contactez nous</h1>
+<!-- Comment ça marche -->
+<section class="sec how" id="comment" aria-labelledby="how-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Comment ça marche</p><h2 id="how-t">De l’idée à l’application, <span class="s">en quatre temps.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Votre besoin en quelques phrases suffit pour démarrer. L’IA construit une première version, et vous reprenez la main quand vous le souhaitez.</p>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="num">1</span><h3>Vous décrivez</h3><p>Expliquez votre besoin avec vos mots, comme à un collègue.</p><span class="tag">En une phrase</span></li>
+      <li class="rv" style="--d:.08s"><span class="num">2</span><h3>L’IA structure</h3><p>Écrans, tables, parcours, automatisations et authentification si nécessaire.</p><span class="tag">En quelques secondes</span></li>
+      <li class="rv" style="--d:.16s"><span class="num">3</span><h3>Vous ajustez</h3><p>Chaque détail est visible dans le Studio. Corrigez à la main ou demandez à l’IA.</p><span class="tag">Sans boîte noire</span></li>
+      <li class="rv" style="--d:.24s"><span class="num">4</span><h3>Vous publiez</h3><p>Sur le web et le mobile, par lien ou QR code, et en option sur les stores.</p><span class="tag">Mises à jour immédiates</span></li>
+    </ol>
+  </div>
+</section>
 
-    <zyllio-contact slot="content" style="--icon-bg: #EEF2FF; --link-color: #4F6AD4">
-      <img slot="icon" src="./image/icons/email.png">
-      <h1 slot="title">Email</h1>
-      <h2 slot="message">Posez-nous toutes vos questions par écrit. Notre équipe vous répondra sous 24h ouvrées.</h2>
-      <a slot="badge" id="contact-trigger-index-fr" href="#">ENVOYER UN MESSAGE &rarr;</a>
-    </zyllio-contact>
+<!-- Agent Zyllio -->
+<section class="sec agent" id="agent" aria-labelledby="agent-t">
+  <div class="wrap agent-grid">
+    <div>
+      <div class="rv"><p class="eyebrow">Agent Zyllio</p><h2 id="agent-t">Créez votre application <span class="s">depuis votre assistant IA.</span></h2></div>
+      <p class="lead rv" style="--d:.08s">L’agent Zyllio se connecte à ChatGPT, Mistral et Claude grâce au protocole MCP. Décrivez, ajustez et publiez votre application sans quitter la conversation.</p>
+      <ul class="caps rv" style="--d:.14s">
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg></i><b>Écrans et composants</b><span>Créés et modifiés à la demande, en langage naturel.</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></i><b>Données</b><span>Vos tables et vos enregistrements, gérés depuis la conversation.</span></li>
+        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 8l5-5 5 5M4 17v3h16v-3"/></svg></i><b>Publication</b><span>Votre application web (PWA) mise en ligne en un message.</span></li>
+      </ul>
+      <div class="works rv" style="--d:.2s">
+        <p>Fonctionne avec</p>
+        <ul><li>ChatGPT <small>Validé par OpenAI</small></li><li>Mistral</li><li>Claude</li></ul>
+      </div>
+      <div class="agent-cta rv" style="--d:.24s"><a class="btn btn-navy" href="https://www.zyllio.one">Commencer gratuitement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="arrow-link" href="blog-fr.html#D010">Lire l’annonce <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="chat rv" style="--d:.1s">
+      <div class="chat-top">
+        <div class="ag-tabs" role="group" aria-label="Choisir un assistant">
+          <button type="button" aria-pressed="true">ChatGPT</button><button type="button" aria-pressed="false">Mistral</button><button type="button" aria-pressed="false">Claude</button>
+        </div>
+        <span class="linked">Zyllio connecté</span>
+      </div>
+      <div class="chat-body">
+        <div class="msg-u">Crée une application de suivi d’interventions pour mon équipe, avec un planning et des comptes rendus.</div>
+        <div class="msg-a">
+          <span class="av"><img src="./image/icon.png" alt="" width="30" height="30" loading="lazy"/></span>
+          <div>
+            <div class="who-a"><span id="ag-name">ChatGPT</span> · avec Zyllio</div>
+            <div class="tool"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span><b>Écrans créés</b> · Planning, Interventions, Compte rendu</span></div>
+            <div class="tool"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span><b>Données configurées</b> · Interventions, Clients, Techniciens</span></div>
+            <div class="tool"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i><span><b>Application publiée</b> · lien et QR code prêts</span></div>
+            <p>Votre application est en ligne. Dites-moi ce que vous souhaitez ajuster, ou ouvrez-la dans le Studio Zyllio.</p>
+          </div>
+        </div>
+      </div>
+      <div class="chat-in" aria-hidden="true"><span>Ajoute une signature client au compte rendu…</span><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></div>
+    </div>
+  </div>
+</section>
 
-    <zyllio-contact slot="content" style="--icon-bg: #E6F7F5; --link-color: #0D7B74">
-      <img slot="icon" src="./image/icons/linkedin.png">
-      <h1 slot="title">LinkedIn</h1>
-      <h2 slot="message">Suivez nos démonstrations en direct et restez informés des dernières actualités tous les jours.</h2>
-      <a slot="badge" href="https://www.linkedin.com/company/zyllio/" target="_blank">VOIR NOTRE PROFIL &rarr;</a>
-    </zyllio-contact>
+<!-- Studio -->
+<section class="sec studio" id="studio" aria-labelledby="studio-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Le Studio NoCode</p><h2 id="studio-t">La puissance de l’IA. <span class="s">La liberté du NoCode.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Ce que l’IA crée, vous le voyez, vous le comprenez et vous le modifiez. Votre application évolue avec vous, sans repartir de zéro.</p>
+    </div>
+    <div class="bento">
+      <article class="tile t-ai rv">
+        <div class="txt">
+          <p class="k">Assistant IA</p>
+          <h3>Demandez, l’IA crée écrans, tables et composants.</h3>
+          <ul>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Partez d’une simple phrase</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Affinez par la conversation</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Reprenez la main à tout moment</li>
+          </ul>
+        </div>
+        <div class="shot"><img src="./image/features/tile-ai-studio-700.webp" srcset="./image/features/tile-ai-studio-700.webp 700w, ./image/features/tile-ai-studio-1400.webp 1400w" sizes="(max-width: 720px) calc(100vw - 70px), 460px" alt="Assistant IA du Studio Zyllio : une demande en langage naturel, sa réponse et l’écran d’accueil généré" width="1400" height="933" loading="lazy"/></div>
+      </article>
+      <article class="tile rv" style="--d:.06s">
+        <div class="txt"><p class="k">Écrans</p><h3>Un éditeur visuel</h3><p>Glissez, déposez, reliez vos écrans. Ce que vous voyez est ce que vos utilisateurs verront.</p></div>
+        <div class="shot"><img src="./image/features/tile-screens-studio-700.webp" srcset="./image/features/tile-screens-studio-700.webp 700w, ./image/features/tile-screens-studio-1400.webp 1400w" sizes="(max-width: 720px) calc(100vw - 90px), (max-width: 1100px) 45vw, 340px" alt="Éditeur d’écrans du Studio Zyllio : palette de composants et écran d’accueil en cours de conception" width="1400" height="933" loading="lazy"/></div>
+      </article>
+      <article class="tile rv">
+        <div class="txt"><p class="k">Données</p><h3>Vos tables, vos règles</h3><p>Structurez vos données et leurs relations, ou connectez vos sources existantes.</p></div>
+        <div class="shot"><img src="./image/features/feature-data-studio-855.webp" srcset="./image/features/feature-data-studio-855.webp 855w, ./image/features/feature-data-studio-1710.webp 1710w" sizes="(max-width: 720px) calc(100vw - 90px), (max-width: 1100px) 45vw, 340px" alt="Éditeur de données du Studio Zyllio : tables Interventions, Clients et Utilisateurs reliées entre elles" width="1710" height="1140" loading="lazy"/></div>
+      </article>
+      <article class="tile rv" style="--d:.06s">
+        <div class="txt"><p class="k">Automatisations</p><h3>Des actions sans code</h3><p>Enchaînez mises à jour, emails et notifications en quelques clics.</p></div>
+        <div class="shot"><img src="./image/features/feature-action-editor.jpg" alt="Éditeur d’actions enchaînées jusqu’à l’envoi d’un message WhatsApp" width="600" height="400" loading="lazy"/></div>
+      </article>
+      <article class="tile rv" style="--d:.12s">
+        <div class="txt"><p class="k">Publication</p><h3>En ligne en un clic</h3><p>Partagez par lien ou QR code. Vos mises à jour sont immédiates.</p></div>
+        <div class="shot"><img src="./image/features/feature-publication.jpg" alt="Fenêtre de publication avec QR code d’installation" width="600" height="400" loading="lazy"/></div>
+      </article>
+      <article class="tile t-mini rv">
+        <p class="k">Vos utilisateurs</p>
+        <h3>Restez en contact</h3>
+        <p>Donnez accès à vos applications en public ou en privé, et prévenez vos utilisateurs instantanément.</p>
+        <ul class="minis">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>SMS</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>Email</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0112 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 003.4 0"/></svg>Notifications push</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 018 0v4"/></svg>Accès privé</li>
+        </ul>
+      </article>
+      <article class="tile t-mini rv" style="--d:.06s">
+        <p class="k">IA intégrée</p>
+        <h3>De l’IA dans vos applications</h3>
+        <p>Un chatbot IA pour répondre à vos utilisateurs, des comptes rendus rédigés, des demandes résumées&nbsp;: l’IA travaille directement dans vos applications.</p>
+        <ul class="minis">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 01-11.6 7.1L4 20l.9-5.4A8 8 0 1121 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg>Chatbot <small>IA</small></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h16v3M9 20h6M12 4v16"/></svg>Texte <small>ChatGPT</small></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.1-3.1a2 2 0 00-2.8 0L6 21"/></svg>Images <small>DALL·E</small></li>
+        </ul>
+      </article>
+      <article class="tile t-mini rv" style="--d:.12s">
+        <p class="k">Tous les écrans</p>
+        <h3>Une seule application, partout</h3>
+        <p>Affichage optimisé sur chaque support, avec des containers et des popups adaptatifs pour organiser vos contenus.</p>
+        <ul class="minis">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>Mobile</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2.5"/><path d="M11 18h2"/></svg>Tablette</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Ordinateur</li>
+        </ul>
+      </article>
+      <article class="tile t-native rv">
+        <p class="k">Fonctions natives</p>
+        <h3>Les fonctions du terrain, prêtes à l’emploi</h3>
+        <p class="note">Certaines fonctions dépendent de l’offre choisie.</p>
+        <ul class="natives">
+          <li><img src="./image/icons2/signature.png" alt="" loading="lazy"/>Signature</li>
+          <li><img src="./image/icons2/picture.png" alt="" loading="lazy"/>Prise de photos</li>
+          <li><img src="./image/icons2/geolocation.png" alt="" loading="lazy"/>Géolocalisation</li>
+          <li><img src="./image/icons2/scan.png" alt="" loading="lazy"/>Scan code-barre</li>
+          <li><img src="./image/icons2/micro.png" alt="" loading="lazy"/>Microphone</li>
+          <li><img src="./image/icons2/notification.png" alt="" loading="lazy"/>Notifications push</li>
+          <li><img src="./image/icons2/payment.png" alt="" loading="lazy"/>Paiement</li>
+        </ul>
+      </article>
+      <article class="tile t-integ rv" style="--d:.06s">
+        <p class="k">Connecteurs</p>
+        <h3>Branché sur vos outils</h3>
+        <ul class="integ">
+          <li><img src="./image/services/mistral.png" alt="Mistral AI" loading="lazy"/></li>
+          <li><img src="./image/services/airtable.png" alt="Airtable" loading="lazy"/></li>
+          <li><img src="./image/services/timetonic.png" alt="TimeTonic" loading="lazy"/></li>
+          <li><img src="./image/services/zapier.png" alt="Zapier" loading="lazy"/></li>
+          <li><img src="./image/services/integromat.png" alt="Make" loading="lazy"/></li>
+          <li><img src="./image/services/openai.png" alt="OpenAI" loading="lazy"/></li>
+          <li><img src="./image/services/xano.png" alt="Xano" loading="lazy"/></li>
+          <li><img src="./image/services/stripe.png" alt="Stripe" loading="lazy"/></li>
+          <li><img src="./image/services/gmail.png" alt="Gmail" loading="lazy"/></li>
+        </ul>
+      </article>
+    </div>
+    <p class="more rv"><a class="btn btn-line" href="features-fr.html">Voir toutes les fonctionnalités <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
 
-    <zyllio-contact slot="content" style="--icon-bg: #F0EAFF; --link-color: #7C3AED">
-      <img slot="icon" alt="slack" src="./image/icons/slack.png">
-      <h1 slot="title">Slack</h1>
-      <h2 slot="message">Rejoignez notre forum communautaire pour échanger en temps réel avec nos experts.</h2>
-      <a slot="badge" href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank">REJOINDRE LE CANAL &rarr;</a>
-    </zyllio-contact>
+<!-- Pour qui -->
+<section class="sec who-sec" id="pour-qui" aria-labelledby="who-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Pour les entreprises</p><h2 id="who-t">Pensé pour les équipes <span class="s">qui font tourner l’entreprise.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Du dirigeant de PME à la DSI, chacun trouve dans Zyllio un moyen rapide et maîtrisé de créer les applications dont l’activité a besoin.</p>
+    </div>
+    <div class="aud">
+      <article class="rv"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01"/></svg></i><h3>Dirigeants de PME</h3><p>Digitalisez vos processus sans recruter d’équipe de développement. Une application sur mesure, au prix d’un abonnement.</p></article>
+      <article class="rv" style="--d:.06s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></svg></i><h3>Directions métier</h3><p>Opérations, commerce, qualité, RH&nbsp;: créez les outils de vos équipes sans attendre un projet informatique de plusieurs mois.</p></article>
+      <article class="rv" style="--d:.12s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><h3>DSI</h3><p>Encadrez le NoCode&nbsp;: hébergement en France, RGPD, API REST et authentification unique SSO selon l’offre.</p></article>
+      <article class="pro rv" style="--d:.18s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg></i><h3>Agences et intégrateurs</h3><p>Livrez plus vite les applications de vos clients avec le NoCode et l’IA, et générez des revenus récurrents.</p><a href="partner-fr.html">Offre partenaire <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></article>
+    </div>
+  </div>
+</section>
 
-  </zyllio-section>
+<!-- Cas d'usage -->
+<section class="sec uses" id="usages" aria-labelledby="uses-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Des usages concrets</p><h2 id="uses-t">Chaque entreprise est unique. <span class="s">Ses applications aussi.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Votre application suit vos processus, pas l’inverse.</p>
+    </div>
+    <div class="uses-grid">
+      <div class="rv">
+        <div class="utabs" role="tablist" aria-label="Exemples d’applications">
+          <button class="utab" role="tab" id="ut-0" aria-controls="up-0" aria-selected="true" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2M9 13l2 2 4-4"/></svg></span><strong>Comptes rendus terrain</strong><small>Photos, check-list et signature du client, saisis directement sur le terrain.</small></button>
+          <button class="utab" role="tab" id="ut-1" aria-controls="up-1" aria-selected="false" tabindex="-1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></svg></span><strong>Planning et réservations</strong><small>Salles, véhicules ou rendez-vous : un planning partagé par toute l’équipe.</small></button>
+          <button class="utab" role="tab" id="ut-2" aria-controls="up-2" aria-selected="false" tabindex="-1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4zM3 6h18M16 10a4 4 0 01-8 0"/></svg></span><strong>Portail de commandes</strong><small>Vos clients professionnels consultent le catalogue et commandent en ligne.</small></button>
+          <button class="utab" role="tab" id="ut-3" aria-controls="up-3" aria-selected="false" tabindex="-1"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18M7 16v-5M12 16V8M17 16v-8"/></svg></span><strong>Tableaux de bord</strong><small>Suivez vos indicateurs clés et repérez ce qui demande votre attention.</small></button>
+        </div>
+        <div class="also"><span>Gestion de clients</span><span>Inventaires</span><span>Portails clients</span><span>Demandes internes</span><span>Événements</span><span>Suivi de dossiers</span></div>
+      </div>
+      <div class="stage rv" style="--d:.1s">
+        <div class="app on" role="tabpanel" id="up-0" aria-labelledby="ut-0">
+          <div class="app-h"><b>Intervention n°&nbsp;482</b><span class="pill p-info">En cours</span></div>
+          <div class="cr">
+            <div class="cr-l">
+              <div class="fld"><small>Client</small><b>Hôtel Bellevue</b></div>
+              <div class="fld"><small>Technicien</small><b>Karim B.</b></div>
+              <span class="ck-t">Check-list</span>
+              <div class="ck on">Coupure électrique</div>
+              <div class="ck on">Remplacement du filtre</div>
+              <div class="ck">Test de fonctionnement</div>
+            </div>
+            <div class="cr-r">
+              <small>Photos</small>
+              <div class="ph"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.1-3.1a2 2 0 00-2.8 0L6 21"/></svg></i><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-3.1-3.1a2 2 0 00-2.8 0L6 21"/></svg></i><i class="add">+</i></div>
+              <small>Signature du client</small>
+              <div class="sig"><svg viewBox="0 0 200 50" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34c10-22 18-26 20-14s-6 20 2 14 12-26 20-18-4 22 6 16 14-18 22-14 0 16 10 12 16-20 26-16 4 12 14 10 20-8 34-12 20-2 30-4"/></svg></div>
+            </div>
+          </div>
+          <div class="app-cta">Valider et envoyer au client</div>
+        </div>
+        <div class="app" role="tabpanel" id="up-1" aria-labelledby="ut-1" aria-hidden="true">
+          <div class="app-h"><b>Réservations · semaine 44</b><span>+ Réserver</span></div>
+          <div class="cal">
+            <span></span><span class="dh">Lun <small>27</small></span><span class="dh">Mar <small>28</small></span><span class="dh">Mer <small>29</small></span><span class="dh d4">Jeu <small>30</small></span><span class="dh d5">Ven <small>31</small></span>
+            <span class="hr" style="grid-row:2">9h</span><span class="hr" style="grid-row:3">10h</span><span class="hr" style="grid-row:4">11h</span><span class="hr" style="grid-row:5">12h</span><span class="hr" style="grid-row:6">13h</span><span class="hr" style="grid-row:7">14h</span><span class="hr" style="grid-row:8">15h</span><span class="hr" style="grid-row:9">16h</span>
+            <div class="ev c1" style="grid-column:2;grid-row:2/4"><b>Salle Atlas</b><small>Réunion d’équipe</small></div>
+            <div class="ev c3" style="grid-column:2;grid-row:7/9"><b>Véhicule 2</b><small>Livraison</small></div>
+            <div class="ev c2" style="grid-column:3;grid-row:3/5"><b>RDV client</b><small>M. Lambert</small></div>
+            <div class="ev c1" style="grid-column:4;grid-row:2/3"><b>Salle Atlas</b></div>
+            <div class="ev c4" style="grid-column:4;grid-row:6/9"><b>Formation</b><small>Nouveaux arrivants</small></div>
+            <div class="ev c3 d4" style="grid-column:5;grid-row:4/6"><b>Véhicule 1</b><small>Chantier Nord</small></div>
+            <div class="ev c2 d5" style="grid-column:6;grid-row:2/5"><b>Salle Horizon</b><small>Atelier client</small></div>
+            <div class="ev c1 d5" style="grid-column:6;grid-row:8/9"><b>Point hebdo</b></div>
+          </div>
+        </div>
+        <div class="app" role="tabpanel" id="up-2" aria-labelledby="ut-2" aria-hidden="true">
+          <div class="app-h"><b>Portail distributeurs · pièces</b><span>Panier · 2</span></div>
+          <div class="cats"><span class="on">Tout</span><span>Moteur</span><span>Freinage</span><span>Électricité</span></div>
+          <div class="prods">
+            <div class="prod"><span class="im">⚙️</span><div><span><b>Filtre à air AF123B</b><small>25,00&nbsp;€ HT</small></span><em>+</em></div></div>
+            <div class="prod"><span class="im">🛞</span><div><span><b>Plaquettes de frein</b><small>38,50&nbsp;€ HT</small></span><em>+</em></div></div>
+            <div class="prod"><span class="im">🔋</span><div><span><b>Batterie 12V 70Ah</b><small>89,00&nbsp;€ HT</small></span><em>+</em></div></div>
+            <div class="prod"><span class="im">🔩</span><div><span><b>Bougies d’allumage ×4</b><small>22,40&nbsp;€ HT</small></span><em>+</em></div></div>
+            <div class="prod"><span class="im">🛢️</span><div><span><b>Huile moteur 5W30</b><small>41,90&nbsp;€ HT</small></span><em>+</em></div></div>
+            <div class="prod"><span class="im">💡</span><div><span><b>Ampoule H7 ×2</b><small>12,60&nbsp;€ HT</small></span><em>+</em></div></div>
+          </div>
+          <div class="cart">2 articles · 63,50&nbsp;€ HT <span>Commander</span></div>
+        </div>
+        <div class="app" role="tabpanel" id="up-3" aria-labelledby="ut-3" aria-hidden="true">
+          <div class="app-h"><b>Tableau de bord · octobre</b><span>Exporter</span></div>
+          <div class="kpis"><div><b>1&nbsp;248</b>demandes traitées</div><div><b>94&nbsp;%</b>clients satisfaits</div><div><b>3,2&nbsp;j</b>délai moyen</div></div>
+          <div class="chart-wrap"><div class="chart" aria-hidden="true"><i data-m="J" style="height:38%"></i><i data-m="F" style="height:45%"></i><i data-m="M" style="height:52%"></i><i data-m="A" style="height:48%"></i><i data-m="M" style="height:60%"></i><i data-m="J" style="height:66%"></i><i data-m="J" style="height:58%"></i><i data-m="A" style="height:42%"></i><i data-m="S" style="height:74%"></i><i class="now" data-m="O" style="height:88%"></i></div></div>
+          <div class="ranks">
+            <div>Maintenance<em><i style="width:42%"></i></em><b>42&nbsp;%</b></div>
+            <div>Installation<em><i style="width:31%"></i></em><b>31&nbsp;%</b></div>
+            <div>Dépannage<em><i style="width:27%"></i></em><b>27&nbsp;%</b></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <zyllio-footer>
-      <a href="terms-of-use-fr.html" target="_blank">Conditions d'utilisation</a> - <a href="privacy-fr.html" target="_blank">Politique de confidentialité</a> - <a href="gdpr-fr.html" target="_blank">RGPD</a> - <a href="legal-fr.html" target="_blank">Mentions légales</a> - <a href="affiliate-program-fr.html" target="_blank">Programme d'affiliation</a>
-  </zyllio-footer>
+<!-- Chiffres -->
+<section class="figures" aria-label="Zyllio en chiffres">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stats-head">
+        <div class="rv"><p class="eyebrow">Zyllio en chiffres</p><h2>Une plateforme <span class="s">déjà en production.</span></h2></div>
+        <p class="lead rv" style="--d:.08s">Entreprises, organisations publiques, associations et agences créent leurs applications avec Zyllio.</p>
+      </div>
+      <div class="stat-grid">
+        <article class="stat rv"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V5a2 2 0 012-2h6a2 2 0 012 2v16M15 9h2a2 2 0 012 2v10M9 7h2M9 11h2M9 15h2"/></svg></i><b data-count="63">63</b><strong>organisations clientes</strong><span>Entreprises, collectivités, associations et agences.</span></article>
+        <article class="stat rv" style="--d:.06s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0113 0M16 4.5a3.5 3.5 0 010 7M21.5 20a6.5 6.5 0 00-4-6"/></svg></i><b data-count="7842">7 842</b><strong>utilisateurs au quotidien</strong><span>Techniciens, salariés et clients qui utilisent les applications.</span></article>
+        <article class="stat rv" style="--d:.12s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><path d="M9 6h6M11 18h2"/></svg></i><b data-count="318">318</b><strong>applications en production</strong><span>Outils internes, portails clients, applications terrain…</span></article>
+        <article class="stat hl rv" style="--d:.18s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></i><b>2021</b><strong>année de lancement</strong><span>Des années d’évolutions continues, hébergées en France.</span></article>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <zyllio-contact-modal
-    open-trigger="#contact-trigger-index-fr"
-    close-label="Fermer"
-    placeholder-last-name="Votre nom"
-    placeholder-first-name="Votre prénom"
-    placeholder-email="vous@entreprise.com"
-    placeholder-message="Bonjour — j'ai une question"
-  >
-    <h2 slot="title">Contactez-nous</h2>
-    <p slot="intro">Envoyez un message et nous vous répondrons rapidement.</p>
-    <span slot="label-last-name">Nom</span>
-    <span slot="label-first-name">Prénom</span>
-    <span slot="label-email">Email</span>
-    <span slot="label-message">Message</span>
-    <span slot="submit-label">Envoyer</span>
-  </zyllio-contact-modal>
+<!-- Témoignages -->
+<section class="sec voices" id="temoignages" aria-labelledby="voices-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Ils en parlent</p><h2 id="voices-t">Des applications utilisées <span class="s">au quotidien.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Étude de commissaires de justice, industriel, cabinet de conseil, association, start-up : des organisations très différentes font tourner leurs applications sur Zyllio.</p>
+    </div>
+    <div class="voices-grid">
+      <figure class="feature-q rv" style="margin:0">
+        <span class="q-brand"><img src="./image/customers/customer-leroy.png" alt="Leroi &amp; Associés" loading="lazy"/></span>
+        <blockquote>«&nbsp;Le support est ultra réactif et <em>les possibilités vont au‑delà de ce que j’imaginais au départ&nbsp;!</em>&nbsp;»</blockquote>
+        <p>Pour son étude de commissaires de justice, Fabrice Reynaud a créé, sans connaissances en programmation, une application qui facilite la réalisation et le suivi des constats de ses clients.</p>
+        <ul class="q-tags"><li>Recueil de signature</li><li>Prise de photos</li><li>Suivi des constats</li></ul>
+        <figcaption class="who"><img src="./image/testimonials/testimonial5.png" alt="" width="46" height="46" loading="lazy"/><div><b>Fabrice Reynaud</b><span>Associé · Leroi &amp; Associés, commissaires de justice</span></div></figcaption>
+      </figure>
+      <div class="qcards">
+        <figure class="qcard rv"><span class="org">CCJM Consulting</span><blockquote>«&nbsp;[…] En quelques semaines, mon application était entièrement fonctionnelle. […] Un excellent support de l’équipe de Zyllio à chaque étape du processus.&nbsp;»</blockquote><ul class="q-tags"><li>Évaluation de profils</li><li>Accompagnement professionnel</li></ul><figcaption class="who"><img src="./image/testimonials/testimonial2.png" alt="" width="46" height="46" loading="lazy"/><div><b>Ariane Eva Morin</b><span>CEO</span></div></figcaption></figure>
+        <figure class="qcard rv" style="--d:.06s"><span class="org">Santé bien être distributions</span><blockquote>«&nbsp;Au-delà d’un excellent rapport qualité-prix, c’est l’écoute et la disponibilité de l’équipe, ainsi que l’adaptabilité. […] Ils ont développé pour moi des fonctions qui étaient nécessaires pour que mon projet puisse se développer dans les meilleures conditions.&nbsp;»</blockquote><ul class="q-tags"><li>Application compagnon</li><li>Robot cuiseur Thermochef</li></ul><figcaption class="who"><img src="./image/testimonials/testimonial3.png" alt="" width="46" height="46" loading="lazy"/><div><b>Christophe Kupriez</b><span>Industrie · Thermochef</span></div></figcaption></figure>
+        <figure class="qcard rv"><span class="org">C’Possible</span><blockquote>«&nbsp;J’ai pu en quelques semaines réaliser une application correspondant à nos besoins […]. Zyllio, c’est la simplicité d’utilisation, des composants variés […].&nbsp;»</blockquote><ul class="q-tags"><li>Agenda des sessions</li><li>Notifications push</li></ul><figcaption class="who"><img src="./image/testimonials/testimonial4.png" alt="" width="46" height="46" loading="lazy"/><div><b>Jacques Pradel</b><span>Responsable informatique</span></div></figcaption></figure>
+        <figure class="qcard rv" style="--d:.06s"><span class="org">Drive Lady</span><blockquote>«&nbsp;Zyllio a été le parfait outil : nous avons pu créer notre application, grâce à la plateforme intuitive ainsi que l’accompagnement plus que sur mesure par l’expert Zyllio.&nbsp;»</blockquote><ul class="q-tags"><li>Réservation de covoiturage</li><li>Paiement Stripe</li><li>Vérification d’identité (KYC)</li></ul><figcaption class="who"><img src="./image/testimonials/testimonial8.png" alt="" width="46" height="46" loading="lazy"/><div><b>Margaux &amp; Camille</b><span>Fondatrices</span></div></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- Confiance -->
+<section class="sec trust" id="confiance" aria-labelledby="trust-t">
+  <div class="wrap trust-grid">
+    <div>
+      <div class="rv"><p class="eyebrow">Confiance &amp; proximité</p><h2 id="trust-t">Conçue en France. <span class="s">Hébergée en France.</span></h2></div>
+      <p class="lead rv" style="--d:.08s">Vos applications métier reposent sur une plateforme française qui prend en charge toute l’infrastructure technique. Vous vous concentrez sur votre activité.</p>
+      <div class="fr-card rv" style="--d:.14s"><img src="./flags/fr.png" alt="" width="44" height="30"/><div><b>Hébergement RGPD en France</b><span>Vos données restent en France. <a href="./gdpr-fr.html">Accord de sous-traitance RGPD</a></span></div></div>
+    </div>
+    <div class="pillars">
+      <article class="pillar rv"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></i><h3>Hébergement</h3><p>Une infrastructure localisée en France pour toutes vos applications.</p></article>
+      <article class="pillar rv" style="--d:.06s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></i><h3>Sécurité</h3><p>Données chiffrées, rôles et droits d’accès par utilisateur, authentification unique (SSO) selon l’offre.</p></article>
+      <article class="pillar rv" style="--d:.12s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></i><h3>Sauvegardes et maintenance</h3><p>Sauvegardes automatiques et mises à jour de la plateforme, sans action de votre part.</p></article>
+      <article class="pillar rv" style="--d:.18s"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 104 16.1L2 22z"/></svg></i><h3>Support en français</h3><p>Une équipe accessible qui répond sous 24 heures ouvrées, et 24h/24 avec l’offre Entreprise.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- Offres -->
+<section class="sec offers" id="offres" aria-labelledby="offers-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Tarifs &amp; accompagnement</p><h2 id="offers-t">Démarrez gratuitement. <span class="s">Évoluez à votre rythme.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Une offre gratuite sans limite de durée, des offres payantes sans engagement, et un accompagnement si vous le souhaitez.</p>
+    </div>
+    <div class="paths">
+      <article class="path main rv">
+        <span class="flag">Pour commencer</span>
+        <span class="k">Offre Découverte</span>
+        <div class="price"><b>0&nbsp;€</b><span>sans limite de durée</span></div>
+        <p>Créez et testez votre application gratuitement, puis passez à une offre payante quand vous en avez besoin.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Applications et utilisateurs illimités</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Google Sheets, Airtable, TimeTonic</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Sans carte bancaire</li>
+        </ul>
+        <a class="btn btn-navy" href="https://www.zyllio.one">Commencer gratuitement <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="next">Offres payantes dès 32,50&nbsp;€&nbsp;HT/mois, sans engagement.</p>
+      </article>
+      <article class="path rv" style="--d:.06s">
+        <span class="k">Zyllio Services</span>
+        <h3>Clé en main</h3>
+        <p>Nos experts cadrent, conçoivent et livrent votre application, clé en main.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Cadrage de votre besoin</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Conception et mise en ligne</li>
+        </ul>
+        <button class="btn btn-line js-contact" type="button">Parler à l’équipe</button>
+      </article>
+      <article class="path rv" style="--d:.12s">
+        <span class="k">Agences &amp; freelances</span>
+        <h3>Offre partenaire</h3>
+        <p>Vous créez des applications pour vos clients&nbsp;? Livrez plus vite avec le NoCode et l’IA.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Jusqu’à 5 accès agence inclus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fonctionnalités Entreprise Plus</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Support prioritaire</li>
+        </ul>
+        <a class="btn btn-line" href="partner-fr.html">Découvrir l’offre</a>
+      </article>
+    </div>
+    <p class="rv" style="text-align:center;margin:36px 0 0"><a class="arrow-link" href="pricing-fr.html">Comparer toutes les offres <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq-sec" id="faq" aria-labelledby="faq-t">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2 id="faq-t">Vous vous <span class="s">demandez…</span></h2>
+      <p class="lead">Une autre question&nbsp;? Notre équipe répond sous 24 heures ouvrées.</p>
+      <div class="help"><button class="btn btn-navy btn-sm js-contact" type="button">Nous écrire</button><a class="btn btn-line btn-sm" href="support-fr.html">Centre d’aide</a></div>
+    </div>
+    <div class="faq rv" style="--d:.08s">
+      <details name="faq" open><summary>Puis-je modifier ce que l’IA a créé&nbsp;?</summary><p>Oui. Le Studio NoCode vous montre chaque écran, chaque table et chaque automatisation. Vous les modifiez à la main ou en le demandant à l’IA, sans reconstruire votre application.</p></details>
+      <details name="faq"><summary>Puis-je utiliser Zyllio depuis ChatGPT, Mistral ou Claude&nbsp;?</summary><p>Oui. L’agent Zyllio se connecte à votre assistant IA grâce au protocole MCP : vous créez vos écrans et vos composants, gérez vos données et publiez votre application directement depuis la conversation. Le plugin pour ChatGPT est public et validé par OpenAI.</p></details>
+      <details name="faq"><summary>Faut-il savoir programmer&nbsp;?</summary><p>Non. Zyllio est conçu pour vos équipes métier, sans compétence technique. Si vous souhaitez aller plus vite, nos experts peuvent aussi réaliser votre application.</p></details>
+      <details name="faq"><summary>Quels types d’applications puis-je créer&nbsp;?</summary><p>Zyllio est généraliste : suivi d’interventions, gestion de clients, inventaires, formulaires terrain, portails, suivi de dossiers, processus internes… Vous partez de votre besoin métier.</p></details>
+      <details name="faq"><summary>Où sont hébergées mes applications&nbsp;?</summary><p>En France, chez l’hébergeur français OVHcloud. Zyllio prend en charge l’hébergement, la sécurité et la maintenance technique de la plateforme.</p></details>
+      <details name="faq"><summary>Mes applications fonctionnent-elles sur mobile&nbsp;?</summary><p>Oui. Une seule application s’adapte à l’ordinateur, à la tablette et au smartphone, pour votre équipe comme pour vos clients.</p></details>
+      <details name="faq"><summary>Puis-je publier sur l’App Store et Google Play&nbsp;?</summary><p>Oui, en option sur les offres compatibles. Par défaut, vos applications sont accessibles instantanément par lien ou QR code, avec des mises à jour immédiates et sans commission des stores.</p></details>
+      <details name="faq"><summary>Y a-t-il un engagement&nbsp;?</summary><p>Non. L’offre Découverte est gratuite sans limite de durée et sans carte bancaire. Les offres payantes sont sans engagement de durée.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="final" id="contact" aria-labelledby="final-t">
+  <div class="wrap">
+    <div class="final-card rv">
+      <p class="eyebrow">À vous de jouer</p>
+      <h2 id="final-t">Votre prochaine application commence <span class="s">par une phrase.</span></h2>
+      <p>Décrivez votre projet à l’IA, ajustez-le dans le Studio et publiez. Gratuitement, sans carte bancaire.</p>
+      <form class="mini" id="mini" autocomplete="off" novalidate>
+        <label class="sr" for="mini-in">Décrivez l’application que vous voulez créer</label>
+        <input id="mini-in" type="text" maxlength="600" placeholder="Je veux une application pour…"/>
+        <button class="btn btn-orange" type="submit">Créer mon application <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </form>
+      <div class="final-alt">
+        <span>Envie de voir Zyllio en action&nbsp;? <button class="js-contact" type="button">Demandez une démo</button></span>
+        <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener"><img src="./image/icons/linkedin.png" alt="" width="16" height="16"/>LinkedIn</a>
+        <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener"><img src="./image/icons/slack.png" alt="" width="16" height="16"/>Communauté Slack</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="#contact" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="#comment">Comment ça marche</a></li><li><a href="#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  var doc = document.documentElement
+  doc.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  var STUDIO = 'https://www.zyllio.one'
+  var studioUrl = function (p) { return p ? STUDIO + '/?' + new URLSearchParams({ prompt: p }).toString() : STUDIO }
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Champ de demande */
+  var PR = [
+    'Une application de suivi d’interventions pour mon équipe terrain, avec planning, comptes rendus et notifications clients.',
+    'Une application de gestion de clients avec dossiers, suivi des demandes et rappels de relance.',
+    'Une application d’inventaire pour suivre mes équipements, les entrées et sorties, avec alerte de stock bas.',
+    'Une application de demandes internes avec formulaire, circuit de validation et notifications.'
+  ]
+  var ta = $('#prompt'), ideas = $$('.ideas button'), form = $('#composer')
+  var press = function (b) { ideas.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)) }) }
+  var grow = function () { ta.style.height = 'auto'; ta.style.height = Math.min(ta.scrollHeight, 200) + 'px' }
+  ideas.forEach(function (b) {
+    b.addEventListener('click', function () { ta.value = PR[+b.dataset.i]; grow(); press(b); ta.focus() })
+  })
+  ta.addEventListener('input', function () { grow(); press(null) })
+  var go = function (v, el) {
+    if (!v) { el.classList.remove('shake'); void el.offsetWidth; el.classList.add('shake'); return false }
+    window.location.href = studioUrl(v); return true
+  }
+  form.addEventListener('submit', function (e) { e.preventDefault(); if (!go(ta.value.trim(), form)) ta.focus() })
+  ta.addEventListener('keydown', function (e) { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit')) } })
+  var mini = $('#mini'), miniIn = $('#mini-in')
+  mini.addEventListener('submit', function (e) { e.preventDefault(); if (!go(miniIn.value.trim(), mini)) miniIn.focus() })
+
+  /* Sélecteur d'assistant */
+  var agTabs = $$('.ag-tabs button'), agName = $('#ag-name')
+  agTabs.forEach(function (b) {
+    b.addEventListener('click', function () {
+      agTabs.forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)) })
+      agName.textContent = b.textContent
+    })
+  })
+
+  /* Défilement des logos */
+  var mq = $('#marquee'), track = $('.track', mq)
+  if (!reduce) {
+    $$('li', track).forEach(function (li) { var c = li.cloneNode(true); c.setAttribute('aria-hidden', 'true'); $$('img', c).forEach(function (i) { i.alt = '' }); track.appendChild(c) })
+    mq.classList.add('run')
+  }
+
+  /* Cas d'usage */
+  var tabs = $$('.utab'), panes = $$('.app')
+  var select = function (i, focus) {
+    tabs.forEach(function (t, j) { var on = i === j; t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1 })
+    panes.forEach(function (p, j) { var on = i === j; p.classList.toggle('on', on); if (on) p.removeAttribute('aria-hidden'); else p.setAttribute('aria-hidden', 'true') })
+    if (focus) tabs[i].focus()
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { select(i) })
+    t.addEventListener('keydown', function (e) {
+      var k = e.key, n = tabs.length
+      if (k === 'ArrowDown' || k === 'ArrowRight') { e.preventDefault(); select((i + 1) % n, true) }
+      if (k === 'ArrowUp' || k === 'ArrowLeft') { e.preventDefault(); select((i - 1 + n) % n, true) }
+    })
+  })
+
+  /* Compteurs */
+  var fmt = function (n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ' ') }
+  var counters = $$('[data-count]')
+  counters.forEach(function (el) { el.textContent = fmt(+el.dataset.count) })
+  if ('IntersectionObserver' in window && !reduce) {
+    var co = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        co.unobserve(e.target)
+        var el = e.target, to = +el.dataset.count, t0 = performance.now(), D = 1400
+        var step = function (t) { var p = Math.min((t - t0) / D, 1), q = 1 - Math.pow(1 - p, 3); el.textContent = fmt(Math.round(to * q)); if (p < 1) requestAnimationFrame(step) }
+        requestAnimationFrame(step)
+      })
+    }, { threshold: 0.6 })
+    counters.forEach(function (el) { co.observe(el) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
-
 </html>

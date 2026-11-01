@@ -1,991 +1,655 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Use Zyllio to create mobile apps in minutes">
-
-  <title>Zyllio - Blog</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Zyllio - Blog</title>
+<meta name="description" content="Les nouveautés de Zyllio : nouvelles fonctionnalités, tutoriels et vidéos pour créer les applications de votre entreprise."/>
+<link rel="canonical" href="https://zyllio.com/blog-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/blog.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/blog-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/blog.html"/>
+<meta property="og:title" content="Blog | Zyllio"/>
+<meta property="og:url" content="https://zyllio.com/blog-fr.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./blog.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
 </head>
-
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-  <zyllio-nav always-overlaid>
-    <a href="index-fr.html" slot="link">Accueil</a>
-    <a href="features-fr.html" slot="link">Produit</a>
-    <a href="pricing-fr.html" slot="link">Tarifs</a>
-    <a href="partner-fr.html" slot="link">Agence</a>
-    <a href="support-fr.html" slot="link">Support</a>
-    <a href="blog-fr.html" slot="link">Blog</a>
-    <a href="affiliate-fr.html" slot="link">Affiliation</a>
-    <a href="index.html" slot="link"><zyllio-language-selector language="en"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one" >Se connecter</zyllio-sign-in>
-  </zyllio-nav>
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="features-fr.html">Produit</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="partner-fr.html">Agences</a>
+      <a class="on" href="blog-fr.html" aria-current="page">Blog</a>
+      <a href="support-fr.html">Support</a>
+      <a href="affiliate-fr.html">Affiliation</a>
+      <a class="m-only" href="blog.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="blog.html" hreflang="en" lang="en" aria-label="English version"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
 
-  <br>
-  <br>
+<!-- Conteneurs zy-* : retirés par le sanitizer Angular, les articles restent à plat dans le panneau du studio -->
+<zy-main id="contenu" role="main">
 
-  <zyllio-section id="D010" layout="column" small-title>
+<!-- hidden : masque cet en-tête dans le panneau Nouveautés du studio ; blog.css le réaffiche sur le site -->
+<section class="p-hero" aria-labelledby="page-t" hidden>
+  <div class="wrap">
+    <h1 id="page-t">Les nouveautés <span class="s">de Zyllio.</span></h1>
+    <p class="lead">Nouvelles fonctionnalités, tutoriels et vidéos.</p>
+  </div>
+</section>
 
-    <h1 slot="title">Le plugin Zyllio MCP est disponible !</h1>
+<zy-posts class="wrap posts">
 
-    <zyllio-blog slot="content">
-      <h1>Octobre 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="D010" role="article">
+    <h1 class="post-t">Le plugin Zyllio MCP est disponible !</h1>
+    <h1 class="post-d"><time datetime="2026-10">Octobre 2026</time></h1>
+    <h2 class="post-x">
         Le plugin Zyllio MCP, public et validé par OpenAI, permet de créer et gérer votre application Zyllio directement depuis ChatGPT 🚀
         <br><br>
-
         Créez des écrans et des composants, gérez vos données, puis publiez votre application PWA sans quitter la conversation.
+    </h2>
+    <img src="https://zyllio.com/blog-image/D010.png" alt="Plugin Zyllio publié"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/D010.png" alt="Plugin Zyllio publié">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="G004" layout="column" small-title>
-
-    <h1 slot="title">Publions une app Zyllio sur les stores</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Septembre 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="G004" role="article">
+    <h1 class="post-t">Publions une app Zyllio sur les stores</h1>
+    <h1 class="post-d"><time datetime="2026-09">Septembre 2026</time></h1>
+    <h2 class="post-x">
         Dans ce nouvel épisode de Zy'Stream, découvrez comment publier une application No-Code sur le Google Play Store et l'Apple App Store 🚀
         <br><br>
-
         Regardez la vidéo <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/SUs6E7aBs3Y"><u>sur YouTube</u></a> 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/G004.png" alt="Zy'Stream #35 - Publions une app No-Code sur les stores"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/G004.png" alt="Zy'Stream #35 - Publions une app No-Code sur les stores">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C010" layout="column" small-title>
-
-    <h1 slot="title">Publication sur les stores !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Août 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="C010" role="article">
+    <h1 class="post-t">Publication sur les stores !</h1>
+    <h1 class="post-d"><time datetime="2026-08">Août 2026</time></h1>
+    <h2 class="post-x">
         Nous avons finalisé l'intégration des plateformes Google Play Store (Android) et Apple App Store (iOS) &#128640;
         <br><br>
-
         Une fois configuré, 1 minute suffit pour publier votre application sur les stores &#10024;
         <br><br>
-
         Nous recherchons toujours un <strong>3<sup>e</sup> client</strong> pour lancer un pilote, avec une offre préférentielle à <strong>-50 %</strong> &#128588;
+    </h2>
+    <img src="https://zyllio.com/blog-image/C010.png" alt="Publication sur les stores !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C010.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="B010" layout="column" small-title>
-
-    <h1 slot="title">Automatisations natives !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juillet 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="B010" role="article">
+    <h1 class="post-t">Automatisations natives !</h1>
+    <h1 class="post-d"><time datetime="2026-07">Juillet 2026</time></h1>
+    <h2 class="post-x">
         Les automatisations natives sont desormais disponibles dans Zyllio &#127881;
         <br><br>
-
         Declenchez vos scenarios sur mise a jour d'une table, via webhook ou de maniere planifiee, avec conditions, boucles, variables, emails, appels API et generation de texte &#10024;
         <br><br>
-
         Avec l'editeur d'ecrans, la couche donnees et maintenant le moteur d'automatisation, Zyllio reunit les trois briques d'un vrai outil no-code sur une seule plateforme &#128640;
+    </h2>
+    <img src="https://zyllio.com/blog-image/B010.png" alt="Automatisations natives !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/B010.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="F008" layout="column" small-title>
-
-    <h1 slot="title">Nouveauté IA !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Avril 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="F008" role="article">
+    <h1 class="post-t">Nouveauté IA !</h1>
+    <h1 class="post-d"><time datetime="2026-04">Avril 2026</time></h1>
+    <h2 class="post-x">
         Nous faisons évoluer notre plateforme Zyllio pour faire de l’assistant IA un véritable levier de productivité 👏 
         <br><br> 
-
         Après l’assistant de création de composants, puis celui des écrans, IA s’étend désormais à la gestion des données 👌 
         <br><br> 
-
         Grâce au no-code, chaque élément reste personnalisable, ajustable, maîtrisé. Le meilleur des deux mondes : la vitesse de l’IA + le contrôle du no-code 👌
-        <br><br> 
-  
-      </h2>
+        <br><br>
+    </h2>
+    <img src="https://zyllio.com/blog-image/F008.png" alt="Nouveauté IA !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/F008.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="F007" layout="column" small-title>
-
-    <h1 slot="title">Nouveauté Outlook !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mars 2026</h1>
-
-      <h2>
-
+  <zy-post class="post" id="F007" role="article">
+    <h1 class="post-t">Nouveauté Outlook !</h1>
+    <h1 class="post-d"><time datetime="2026-03">Mars 2026</time></h1>
+    <h2 class="post-x">
         Aujourd'hui on annonce l'intégration Outlook pour envoi de email 🚀 
-        
         <br><br> 
+        Et aussi le support des fichiers attachés sur Outlook et Gmail 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/F007.png" alt="Nouveauté Outlook !" loading="lazy"/>
+  </zy-post>
 
-        Et aussi le support des fichiers attachés sur Outlook et Gmail 👌 
-  
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/F007.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D008" layout="column" small-title>
-
-    <h1 slot="title">1700 nouvelles icônes !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Fév. 2026</h1>
-
-      <h2>
+  <zy-post class="post" id="D008" role="article">
+    <h1 class="post-t">1700 nouvelles icônes !</h1>
+    <h1 class="post-d">Fév. 2026</h1>
+    <h2 class="post-x">
         Nous venons d’enrichir notre bibliothèque avec 1 700 icônes modernes, qui viennent s’ajouter aux 700 déjà disponibles 👌
- 
         <br><br> 
-        
         Au total, 2 400 icônes pour encore plus de possibilités créatives ✨
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/D008.png" alt="1700 nouvelles icônes !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/D008.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D006" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant: Tableau éditable !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Jan. 2026</h1>
-
-      <h2>
+  <zy-post class="post" id="D006" role="article">
+    <h1 class="post-t">Nouveau composant: Tableau éditable !</h1>
+    <h1 class="post-d">Jan. 2026</h1>
+    <h2 class="post-x">
         Vous pouvez désormais éditer directement n’importe quelle ligne de vos tables sans aller retours 👌
         <br><br>       
         Il supporte les champs : texte, texte multiligne, options & options colorées, cases à cocher et ceci avec Tri et Pagination 👍
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/D006.png" alt="Nouveau composant: Tableau éditable !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/D006.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D007" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant: Avis !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Déc. 2025</h1>
-
-      <h2>
+  <zy-post class="post" id="D007" role="article">
+    <h1 class="post-t">Nouveau composant: Avis !</h1>
+    <h1 class="post-d">Déc. 2025</h1>
+    <h2 class="post-x">
         Ce composant sert à collecter les avis sur un item : service, produit, article, post, annonce ...👌
-
         <br><br> 
         Simple à intégrer et entièrement personnalisable, il booste l'engagement et la confiance sur votre app ! 👏 🚀
+    </h2>
+    <img src="https://zyllio.com/blog-image/D007.png" alt="Nouveau composant: Avis !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/D007.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="J003" layout="column" small-title>
-
-    <h1 slot="title">Badges de notification !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Nov. 2025</h1>
-
-      <h2>
-
+  <zy-post class="post" id="J003" role="article">
+    <h1 class="post-t">Badges de notification !</h1>
+    <h1 class="post-d">Nov. 2025</h1>
+    <h2 class="post-x">
         Vous pouvez désormais afficher un badge de notification dont la valeur provient directement d’une donnée ou d’une formule 👌
         <br><br>
         Il est également possible d’afficher ou masquer un écran en fonction d’une condition ou du type de terminal 👍
+    </h2>
+    <img src="https://zyllio.com/blog-image/J003.png" alt="Badges de notification !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/J003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C009" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle interface utilisateur !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Oct. 2025</h1>
-
-      <h2>
-
+  <zy-post class="post" id="C009" role="article">
+    <h1 class="post-t">Nouvelle interface utilisateur !</h1>
+    <h1 class="post-d">Oct. 2025</h1>
+    <h2 class="post-x">
         Après 4 semaines de prototypages avec notre infographiste, nous sortons une refonte de l'interface aujourd'hui 👏 🚀 
-        
         <br><br>
-        
-        Plus simple - Plus claire - Plus accessible - Plus moderne 👌 
+        Plus simple - Plus claire - Plus accessible - Plus moderne 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/C009.png" alt="Nouvelle interface utilisateur !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C009.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C008" layout="column" small-title>
-
-    <h1 slot="title">Nouveau site Internet !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Août 2025</h1>
-
-      <h2>
-
+  <zy-post class="post" id="C008" role="article">
+    <h1 class="post-t">Nouveau site Internet !</h1>
+    <h1 class="post-d"><time datetime="2025-08">Août 2025</time></h1>
+    <h2 class="post-x">
         Le site <a target="_blank" href="https://zyllio.fr">zyllio.fr</a> a été modernisé et entièrement mis à jour ! 🚀 
-
         <br><br>
         L'accent est mis sur le support du mobile, tablette et ordinateur grâce aux nouvelles fonctionnalités responsives, containers et popups 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/C008.png" alt="Nouveau site Internet !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C008.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="E009" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle fonctionnalité : Popups !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juillet 2025</h1>
-
-      <h2>
-
+  <zy-post class="post" id="E009" role="article">
+    <h1 class="post-t">Nouvelle fonctionnalité : Popups !</h1>
+    <h1 class="post-d"><time datetime="2025-07">Juillet 2025</time></h1>
+    <h2 class="post-x">
         Aujourd’hui, nous dévoilons une fonctionnalité : les popups personnalisables 🚀 
-
         <br><br>
         Grâce à elles, vous pouvez désormais afficher ce que vous voulez, quand vous voulez, où vous voulez : 
         une fiche produit détaillée, 
         un login fluide, 
         un formulaire de contact, 
         ou tout autre contenu 100% sur-mesure… 👌
-
         <br><br>
         Et pour découvrir tout leur potentiel, regardez ce nouvel épisode de <a target="_blank" href='https://www.youtube.com/watch?v=7yaWVyyPIPs'><u>Zy'News</u></a>, avec une démo visuelle et des cas d’usage concrets 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/E009.png" alt="Nouvelle fonctionnalité : Popups !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/E009.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-
-  <zyllio-section id="E008" layout="column" small-title>
-
-    <h1 slot="title">Créez votre SAAS !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juillet 2025</h1>
- 
-      <h2>
+  <zy-post class="post" id="E008" role="article">
+    <h1 class="post-t">Créez votre SAAS !</h1>
+    <h1 class="post-d"><time datetime="2025-07">Juillet 2025</time></h1>
+    <h2 class="post-x">
         Grande annonce aujourd'hui avec l'introduction de fonctionnalités SAAS 🚀 
         <br><br>
         De nouvelles API ont été mises à disposition pour que vous puissiez créer votre SAAS 👌 
         <ul>
-          <li>Créez une application modèle</li>
-          <li>Répliquez la automatiquement depuis Zyllio ou Make / Zapier pour vos clients</li>
-          <li>Publiez cette application</li>
+        <li>Créez une application modèle</li>
+        <li>Répliquez la automatiquement depuis Zyllio ou Make / Zapier pour vos clients</li>
+        <li>Publiez cette application</li>
         </ul>
-
         <br>
+        Et c'est disponible maintenant 🚀
+    </h2>
+    <img src="https://zyllio.com/blog-image/E008.png" alt="Créez votre SAAS !" loading="lazy"/>
+  </zy-post>
 
-        Et c'est disponible maintenant 🚀 
-
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/E008.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="J002" layout="column" small-title>
-
-    <h1 slot="title">Les containers Desktop !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juin 2025</h1>
- 
-      <h2>
-        
+  <zy-post class="post" id="J002" role="article">
+    <h1 class="post-t">Les containers Desktop !</h1>
+    <h1 class="post-d"><time datetime="2025-06">Juin 2025</time></h1>
+    <h2 class="post-x">
         Une avancée majeure pour la conception d'apps desktop 👌🚀
-
         <br><br>
-
         Les <strong>containers</strong> permettent désormais de structurer facilement vos écrans sur desktop et de 
         créer des interfaces complexes, lisibles et interactives 👍 
-
         <ul>
-          <li>Des dashboards riches en statistiques</li>
-          <li>Des formulaires multi-colonnes clairs et fonctionnels</li>
-          <li>Des catalogues de produits interactifs sur un seul écran</li>
+        <li>Des dashboards riches en statistiques</li>
+        <li>Des formulaires multi-colonnes clairs et fonctionnels</li>
+        <li>Des catalogues de produits interactifs sur un seul écran</li>
         </ul>
         <br>
         <strong>Fonctionnalités clés</strong>
         <ul>
-          <li>8 types de containers disponibles</li>
-          <li>Imbrication illimitée des containers (containers dans containers)</li>
-          <li>Personnalisation des couleurs de fond</li>
-          <li>Contrôle précis des marges internes et externes</li>
-          <li>Alignements horizontaux et verticaux configurables</li>
-          <li>Fonction copier/coller de contenu entre containers</li>
+        <li>8 types de containers disponibles</li>
+        <li>Imbrication illimitée des containers (containers dans containers)</li>
+        <li>Personnalisation des couleurs de fond</li>
+        <li>Contrôle précis des marges internes et externes</li>
+        <li>Alignements horizontaux et verticaux configurables</li>
+        <li>Fonction copier/coller de contenu entre containers</li>
         </ul>
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/J002.png" alt="Les containers Desktop !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/J002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="G003" layout="column" small-title>
-
-    <h1 slot="title">Push notifications overview !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mai. 2025</h1>
- 
-      <h2>
-        
+  <zy-post class="post" id="G003" role="article">
+    <h1 class="post-t">Push notifications overview !</h1>
+    <h1 class="post-d">Mai. 2025</h1>
+    <h2 class="post-x">
         Vous utilisez les Push Notifications ? Vous avez maintenant une visibilité sur les terminaux enregistrés, les canaux et les utilisateurs👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/G003.png" alt="Push notifications overview !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/G003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="F006" layout="column" small-title>
-
-    <h1 slot="title">Tables colorées !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Avr. 2025</h1>
- 
-      <h2>
-        
+  <zy-post class="post" id="F006" role="article">
+    <h1 class="post-t">Tables colorées !</h1>
+    <h1 class="post-d">Avr. 2025</h1>
+    <h2 class="post-x">
         Cette fonctionnalité permet d'organiser les tables par couleur afin de distinguer visuellement les domaines 
         fonctionnels et faciliter la lecture du schéma de base de données👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/F006.png" alt="Tables colorées !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/F006.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="G002" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant: Table !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mar. 2025</h1>
- 
-      <h2>
-        
+  <zy-post class="post" id="G002" role="article">
+    <h1 class="post-t">Nouveau composant: Table !</h1>
+    <h1 class="post-d">Mar. 2025</h1>
+    <h2 class="post-x">
         Un nouveau composant Table est disponible — l'un des plus ambitieux — qui améliore l'experience utilisateur sur tablette et ordinateur 🚀
-
         <br><br>
         Et il arrive avec son <a target="_blank" href='https://www.youtube.com/watch?v=0hcxcBDrhXM'><u>tutoriel</u></a> 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/G002.png" alt="Nouveau composant: Table !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/G002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="E007" layout="column" small-title>
-
-    <h1 slot="title">La simulation supporte le mode Desktop !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mar. 2025</h1>
- 
-      <h2>
+  <zy-post class="post" id="E007" role="article">
+    <h1 class="post-t">La simulation supporte le mode Desktop !</h1>
+    <h1 class="post-d">Mar. 2025</h1>
+    <h2 class="post-x">
         Le mode Desktop a bien progressé ces derniers jours avec un changement radical dans l'onglet simulation qui permet de tester les 3 modes 🚀
+    </h2>
+    <img src="https://zyllio.com/blog-image/E007.png" alt="La simulation supporte le mode Desktop !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
+  <zy-post class="post" id="E006" role="article">
+    <h1 class="post-t">Infrastructure: Augmentation à 50 000 lignes !</h1>
+    <h1 class="post-d">Fév. 2025</h1>
+    <h2 class="post-x">
+        Suite à l'augmentation des capacités serveur, le Plan Enterprise passe de 20 000 lignes à <b>50 000 lignes</b> 🚀
+    </h2>
+    <img src="https://zyllio.com/blog-image/E006.png" alt="Infrastructure: Augmentation à 50 000 lignes !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/E007.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="E006" layout="column" small-title>
-
-    <h1 slot="title">Infrastructure: Augmentation à 50 000 lignes !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Fév. 2025</h1>
- 
-      <h2>
-        Suite à l'augmentation des capacités serveur, le Plan Enterprise passe de 20 000 lignes à <b>50 000 lignes</b> 🚀         
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/E006.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-  
-  <zyllio-section id="E005" layout="column" small-title>
-
-    <h1 slot="title">Infrastructure : Capacité des serveurs doublée !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Fév. 2025</h1>
- 
-      <h2>
+  <zy-post class="post" id="E005" role="article">
+    <h1 class="post-t">Infrastructure : Capacité des serveurs doublée !</h1>
+    <h1 class="post-d">Fév. 2025</h1>
+    <h2 class="post-x">
         Aujourd'hui, nous annonçons que nous avons doublé notre capacité de serveurs ! 🚀
-
         <br><br>
         Avec une infrastructure améliorée, vous pouvez désormais bénéficier d'une performance accrue et 
-        d'une plus grande fiabilité sur tous les services 👌        
-        
-      </h2>
+        d'une plus grande fiabilité sur tous les services 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/E005.png" alt="Infrastructure : Capacité des serveurs doublée !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/E005.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-
-  <zyllio-section id="B009" layout="column" small-title>
-
-    <h1 slot="title">Amélioration: Traductions !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Fév. 2025</h1>
- 
-      <h2>        
-
+  <zy-post class="post" id="B009" role="article">
+    <h1 class="post-t">Amélioration: Traductions !</h1>
+    <h1 class="post-d">Fév. 2025</h1>
+    <h2 class="post-x">
         Aujourd'hui, nous introduisons une nouvelle <b>formule de traduction</b> pour ceux dont les ambitions dépassent les frontières ! 🚀
-
         <br><br>
         Il suffit d'utiliser la table prédefinie <b>Translations</b>, d'ajouter vos traductions dans autant de langues que nécessaire, 
-        et d'utiliser la formule <b>Translate</b> 👌      
-        
-      </h2>
+        et d'utiliser la formule <b>Translate</b> 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/B009.png" alt="Amélioration: Traductions !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/B009.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-
-  <zyllio-section id="E004" layout="column" small-title>
-
-    <h1 slot="title">Amélioration: navigation sur Desktop  !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Fév. 2025</h1>
- 
-      <h2>
+  <zy-post class="post" id="E004" role="article">
+    <h1 class="post-t">Amélioration: navigation sur Desktop  !</h1>
+    <h1 class="post-d">Fév. 2025</h1>
+    <h2 class="post-x">
         La navigation Desktop est maintenant disponible pour tout le monde ! 🚀
-
         <br><br>
         Le composant Footer a été renommé en Navigation
-
         <ul> 
-          <li>En mode mobile, il apparaît toujours en bas (aucun changement)</li>
-          <li>En mode desktop, il disparaît du bas pour apparaître en haut dans un format horizontal</li>
+        <li>En mode mobile, il apparaît toujours en bas (aucun changement)</li>
+        <li>En mode desktop, il disparaît du bas pour apparaître en haut dans un format horizontal</li>
         </ul>
-
         Aucun impact sur vos applications, le composant s'adapte automatiquement 👍 Il vous suffit de republier 👌
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/E004.png" alt="Amélioration: navigation sur Desktop  !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/E004.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D005" layout="column" small-title>
-
-    <h1 slot="title">Amélioration: applications responsives !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Jan. 2025</h1>
- 
-      <h2>
+  <zy-post class="post" id="D005" role="article">
+    <h1 class="post-t">Amélioration: applications responsives !</h1>
+    <h1 class="post-d">Jan. 2025</h1>
+    <h2 class="post-x">
         Vos applications fonctionnent désormais parfaitement sur les tablettes et les ordinateurs, aussi bien en orientation horizontale que verticale 👌
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/D005.png" alt="Amélioration: applications responsives !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/D005.png">
+  <zy-post class="post" id="C007" role="article">
+    <h1 class="post-t">Nouveau composant: Profile !</h1>
+    <h1 class="post-d">Jan. 2025</h1>
+    <h2 class="post-x">
+        Ce composant permet d'afficher un contact dans un format minimaliste 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/C007.png" alt="Nouveau composant: Profile !" loading="lazy"/>
+  </zy-post>
 
-    </zyllio-blog>
-  </zyllio-section>
+  <zy-post class="post" id="C006" role="article">
+    <h1 class="post-t">Amélioration: composant Choose !</h1>
+    <h1 class="post-d">Déc. 2024</h1>
+    <h2 class="post-x">
+        Le composant Choose permet de trier et aussi de rechercher 👏
+    </h2>
+    <img src="https://zyllio.com/blog-image/C006.png" alt="Amélioration: composant Choose !" loading="lazy"/>
+  </zy-post>
 
-  <zyllio-section id="C007" layout="column" small-title>
+  <zy-post class="post" id="S002" role="article">
+    <h1 class="post-t">Nouvelle integration: Baserow !</h1>
+    <h1 class="post-d">Déc. 2024</h1>
+    <h2 class="post-x">
+        Une nouvelle integration est disponible pour connecter vos tables Baserow incluant lectures, mises à jour et suppressions de lignes 👏
+    </h2>
+    <img src="https://zyllio.com/blog-image/S002.png" alt="Nouvelle integration: Baserow !" loading="lazy"/>
+  </zy-post>
 
-    <h1 slot="title">Nouveau composant: Profile !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Jan. 2025</h1>
- 
-      <h2>
-        Ce composant permet d'afficher un contact dans un format minimaliste 👌       
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C007.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C006" layout="column" small-title>
-
-    <h1 slot="title">Amélioration: composant Choose !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Déc. 2024</h1>
- 
-      <h2>
-        Le composant Choose permet de trier et aussi de rechercher 👏        
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C006.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="S002" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle integration: Baserow !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Déc. 2024</h1>
- 
-      <h2>
-        Une nouvelle integration est disponible pour connecter vos tables Baserow incluant lectures, mises à jour et suppressions de lignes 👏        
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/S002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="B008" layout="column" small-title>
-
-    <h1 slot="title">Nouveau serveur Français !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Déc. 2024</h1>
- 
-      <h2>
+  <zy-post class="post" id="B008" role="article">
+    <h1 class="post-t">Nouveau serveur Français !</h1>
+    <h1 class="post-d">Déc. 2024</h1>
+    <h2 class="post-x">
         Un nouveau serveur hébergé en France chez OVH Gravelines vous est mis à disposition: plus puissant et 
         plus réactif 👏
+    </h2>
+    <img src="https://zyllio.com/blog-image/B008.png" alt="Nouveau serveur Français !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/B008.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C005" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle action: Confirmation !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Nov. 2024</h1>
- 
-      <h2>
+  <zy-post class="post" id="C005" role="article">
+    <h1 class="post-t">Nouvelle action: Confirmation !</h1>
+    <h1 class="post-d">Nov. 2024</h1>
+    <h2 class="post-x">
         Une nouvelle action permet de demander une confirmation à l'utilisateur et offre la possibilité de connecter votre flow d'actions à Oui ou Non 👌
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/C005.png" alt="Nouvelle action: Confirmation !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/C005.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="F003" layout="column" small-title>
-
-    <h1 slot="title">La documentation est en ligne !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Oct. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="F003" role="article">
+    <h1 class="post-t">La documentation est en ligne !</h1>
+    <h1 class="post-d">Oct. 2024</h1>
+    <h2 class="post-x">
         La documentation est finalisée en français et en anglais. La documentation appropriée s'affichera en fonction des paramètres de langue de votre navigateur 👌
-
         <br><br>
         <a target="_blank" href='https://docs-en.zyllio.com/'><u>Découvrez-la ici</u></a> 👌
+    </h2>
+    <img src="https://zyllio.com/blog-image/F003.png" alt="La documentation est en ligne !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/F003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="F002" layout="column" small-title>
-
-    <h1 slot="title">Zyllio à l'université !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Oct. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="F002" role="article">
+    <h1 class="post-t">Zyllio à l'université !</h1>
+    <h1 class="post-d">Oct. 2024</h1>
+    <h2 class="post-x">
         Zyllio est utilisé regulièrement par des enseignants pour initier ses élèves au No-Code 👏
-        
         <br><br>
-       
         Consultez ce témoignage pour en savoir plus : <a target="_blank" href="https://www.linkedin.com/feed/update/urn:li:activity:7252688815234994176/"><u>Consultez ici</u></a> 👌
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/F002.png" alt="Zyllio à l'université !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/F002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="E003" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant Suggestion !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Sept. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="E003" role="article">
+    <h1 class="post-t">Nouveau composant Suggestion !</h1>
+    <h1 class="post-d">Sept. 2024</h1>
+    <h2 class="post-x">
         Le composant Suggestion présente un texte avec une icône pour mettre en avant les messages importants,
-
         <br><br>avec une icône et des couleurs personnalisables pour un rendu personnalisé.
-         
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/E003.png" alt="Nouveau composant Suggestion !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/E003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="T004" layout="column" small-title>
-
-    <h1 slot="title">Comparaison Zyllio / Glide !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Sept. 2024</h1>
- 
-      <h2>
-
-        Pourquoi choisir Zyllio plutôt que Glide ? 👌
-
-        <ul>
-          <li>Utilisateurs et apps illimités dès le plan gratuit 👏</li>
-          <li>Tarifs plus abordables (29€ vs 60$) 👍</li>
-          <li>Hébergement RGPD en France</li>
-          <li>Support en français</li>
-          <li>Accès gratuit à Google Sheets, Airtable, Timetonic</li>
-        </ul>
-
-        <a href="https://zyllio.com/docs/Comparatif%20Zyllio_Glide.pdf"><u>Consultez le comparatif complet ici</u></a>
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/T004.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="B007" layout="column" small-title>
-
-    <h1 slot="title">Nouvel éditeur d'action !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Sept. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="B007" role="article">
+    <h1 class="post-t">Nouvel éditeur d'action !</h1>
+    <h1 class="post-d">Sept. 2024</h1>
+    <h2 class="post-x">
         L'espace de travail a maintenant un fond clair pour améliorer le contraste et éviter le sombre-sur-sombre 👏
         <br><br>
-
         Un nouveau sous-titre fournit plus de contexte sur chaque action 👍 
-
         <br><br>
         Plus de bouton de suppression, utilisez simplement la touche Suppr. de votre clavier 👌
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/B007.png" alt="Nouvel éditeur d'action !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/B007.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D004" layout="column" small-title>
-
-    <h1 slot="title">8 nouvelles actions Zapier !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Sept. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="D004" role="article">
+    <h1 class="post-t">8 nouvelles actions Zapier !</h1>
+    <h1 class="post-d">Sept. 2024</h1>
+    <h2 class="post-x">
         Nous sommes ravis d'annoncer la deuxième version de l'intégration Zapier avec pas moins de 8 actions ! 🚀
-
         <ul> 
-          <li>Get Rows : lit tout le contenu d'une table</li>
-          <li>Get Row : lit une seule ligne d'une table</li> 
-          <li>Update Row : met à jour une ligne</li> 
-          <li>Delete Row : supprime une ligne</li> 
-          <li>Create Row : crée une ligne</li> 
-          <li>Et aussi 3 actions pour envoyer des Push Notifications depuis Zapier !</li>
+        <li>Get Rows : lit tout le contenu d'une table</li>
+        <li>Get Row : lit une seule ligne d'une table</li> 
+        <li>Update Row : met à jour une ligne</li> 
+        <li>Delete Row : supprime une ligne</li> 
+        <li>Create Row : crée une ligne</li> 
+        <li>Et aussi 3 actions pour envoyer des Push Notifications depuis Zapier !</li>
         </ul> 
-        
         <br>
         Et aussi les Webhooks déjà annoncés 👍
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/D004.png" alt="8 nouvelles actions Zapier !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/D004.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D003" layout="column" small-title>
-
-    <h1 slot="title">8 nouvelles actions Make !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Sept. 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="D003" role="article">
+    <h1 class="post-t">8 nouvelles actions Make !</h1>
+    <h1 class="post-d">Sept. 2024</h1>
+    <h2 class="post-x">
         Nous sommes ravis d'annoncer la deuxième version de l'intégration Make avec pas moins de 8 actions ! 🚀
-
         <ul> 
-          <li>Get Rows : lit tout le contenu d'une table</li>
-          <li>Get Row : lit une seule ligne d'une table</li> 
-          <li>Update Row : met à jour une ligne</li> 
-          <li>Delete Row : supprime une ligne</li> 
-          <li>Create Row : crée une ligne</li> 
-          <li>Et aussi 3 actions pour envoyer des Push Notifications depuis Make !</li>
+        <li>Get Rows : lit tout le contenu d'une table</li>
+        <li>Get Row : lit une seule ligne d'une table</li> 
+        <li>Update Row : met à jour une ligne</li> 
+        <li>Delete Row : supprime une ligne</li> 
+        <li>Create Row : crée une ligne</li> 
+        <li>Et aussi 3 actions pour envoyer des Push Notifications depuis Make !</li>
         </ul> 
-        
         <br>
         Et aussi les Webhooks déjà annoncés 👍
-        
-      </h2>
+    </h2>
+    <img src="https://zyllio.com/blog-image/D003.png" alt="8 nouvelles actions Make !" loading="lazy"/>
+  </zy-post>
 
-      <img src="https://zyllio.com/blog-image/D003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="D002" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle fonctionnalité: Webhooks !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Août 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="D002" role="article">
+    <h1 class="post-t">Nouvelle fonctionnalité: Webhooks !</h1>
+    <h1 class="post-d"><time datetime="2024-08">Août 2024</time></h1>
+    <h2 class="post-x">
         Grande annonce dans le domaine de l'intégration: le support des Webhook Make et Zapier ! 👏
-
         <br><br>
         Cela permet à tout moment dans votre application de faire appel à un scénario Make et un Zap Zapier, 
         les possibilités sont infinies 🚀
-
         <br><br>
         Et tout cela est documenté en Français étape par étape 👍
-
         <br><br>
         Notez que les Webhook Make supportent la possibilité de retourner des données, 
         et donc votre application Zyllio peut récupérer ces données 👍
+    </h2>
+    <img src="https://zyllio.com/blog-image/D002.png" alt="Nouvelle fonctionnalité: Webhooks !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/D002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-
-  <zyllio-section id="C004" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle fonctionnalité: Typographie !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>July 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="C004" role="article">
+    <h1 class="post-t">Nouvelle fonctionnalité: Typographie !</h1>
+    <h1 class="post-d">July 2024</h1>
+    <h2 class="post-x">
         Changez la police par défaut (Roboto) pour une police disponible sur Google Fonts (plus de 1000 options) 🚀
-
         <br><br>
         Cela inclut des polices très populaires telles que Poppins, Lato, Montserrat, Raleway, Ubuntu, Fira, et bien d'autres 👏
-
         <br><br>
-        Cela vous permet de personnaliser votre application avec un style plus sérieux, raffiné, audacieux, ou même plus amusant 👍       
+        Cela vous permet de personnaliser votre application avec un style plus sérieux, raffiné, audacieux, ou même plus amusant 👍
+    </h2>
+    <img src="https://zyllio.com/blog-image/C004.png" alt="Nouvelle fonctionnalité: Typographie !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C004.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C003" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant: Chat !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juin 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="C003" role="article">
+    <h1 class="post-t">Nouveau composant: Chat !</h1>
+    <h1 class="post-d"><time datetime="2024-06">Juin 2024</time></h1>
+    <h2 class="post-x">
         Le nouveau composant Chat permet l'échange de messages entre 2 utilisateurs, ces utilisateurs doivent être authentifiés 🚀 
-
         <br><br> 
-
         Zyllio vous simplifie la vie en fournissant une table prête à l'emploi. Et surtout nous avons rédigé un tutoriel complet 
         <a href="https://docs.zyllio.com/chat-67" target="_blank"><u>Tutoriel Chat</u></a> 👍
+    </h2>
+    <img src="https://zyllio.com/blog-image/C003.png" alt="Nouveau composant: Chat !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="C002" layout="column" small-title>
-
-    <h1 slot="title">Nouveau composant: Markdown !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Juin 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="C002" role="article">
+    <h1 class="post-t">Nouveau composant: Markdown !</h1>
+    <h1 class="post-d"><time datetime="2024-06">Juin 2024</time></h1>
+    <h2 class="post-x">
         Le composant Markdown permet d'afficher du contenu produit par ChatGPT ou tout autre texte hiérarchique avec une mise en forme 
         claire et structurée 🚀 
-
         <br><br> 
         Il est idéal pour intégrer facilement des textes formatés, des listes, des liens et autres éléments 
         typographiques dans vos applications 👍
+    </h2>
+    <img src="https://zyllio.com/blog-image/C002.png" alt="Nouveau composant: Markdown !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/C002.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="Y004" layout="column" small-title>
-
-    <h1 slot="title">2 nouveaux composants !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mai 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="Y004" role="article">
+    <h1 class="post-t">2 nouveaux composants !</h1>
+    <h1 class="post-d"><time datetime="2024-05">Mai 2024</time></h1>
+    <h2 class="post-x">
         Le composant Icon affiche une icône (parmi 700 proposées) et un texte optionnel 🚀
         <br><br> 
         Le composant Link Button affiche un lien, utilisé souvent pour des actions secondaires 🚀
+    </h2>
+    <img src="https://zyllio.com/blog-image/Y004.png" alt="2 nouveaux composants !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/Y004.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="Y003" layout="column" small-title>
-
-    <h1 slot="title">Nouveaux modèles d'écrans !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Mai 2024</h1>
- 
-      <h2>
-
+  <zy-post class="post" id="Y003" role="article">
+    <h1 class="post-t">Nouveaux modèles d'écrans !</h1>
+    <h1 class="post-d"><time datetime="2024-05">Mai 2024</time></h1>
+    <h2 class="post-x">
         Tous les modèles d'écran ont été revus en profondeur: beaucoup plus moderne et professionnels🚀
         <br><br> 
         Nouveaux modèles d'écran: Update Account, Change Password et le combo Login/Sign up 👍
         <br><br> 
-        Tous ces modèles sont compatibles avec les Thèmes       
+        Tous ces modèles sont compatibles avec les Thèmes
+    </h2>
+    <img src="https://zyllio.com/blog-image/Y003.png" alt="Nouveaux modèles d'écrans !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
-
-      <img src="https://zyllio.com/blog-image/Y003.png">
-
-    </zyllio-blog>
-  </zyllio-section>
-
-  <zyllio-section id="X004" layout="column" small-title>
-
-    <h1 slot="title">Nouvelle fonctionnalité: Analytics !</h1>
-
-    <zyllio-blog slot="content">
-      <h1>Avril 2024</h1>
- 
-      <h2>
-        
+  <zy-post class="post" id="X004" role="article">
+    <h1 class="post-t">Nouvelle fonctionnalité: Analytics !</h1>
+    <h1 class="post-d"><time datetime="2024-04">Avril 2024</time></h1>
+    <h2 class="post-x">
         Suivez la performance globale de votre application avec les compteurs de visites et les visites par type d'appareil 
         pour améliorer vos stratégies de marketing et l'expérience utilisateur 👍
         <br>
         <br> 
         La collecte de statistiques est réalisée dans le respect des règles de protection des données RGPD.
+    </h2>
+    <img src="https://zyllio.com/blog-image/X004.png" alt="Nouvelle fonctionnalité: Analytics !" loading="lazy"/>
+  </zy-post>
 
-      </h2>
+</zy-posts>
 
-      <img src="https://zyllio.com/blog-image/X004.png">
+</zy-main>
 
-    </zyllio-blog>
-  </zyllio-section>
-  
-  <zyllio-footer>
-      <a href="terms-of-use-fr.html" target="_blank">Conditions d'utilisation</a> - <a href="privacy-fr.html" target="_blank">Politique de confidentialité</a> - <a href="gdpr-fr.html" target="_blank">RGPD</a> - <a href="legal-fr.html" target="_blank">Mentions légales</a> - <a href="affiliate-program-fr.html" target="_blank">Programme d'affiliation</a>
-  </zyllio-footer>
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support-fr.html" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="index-fr.html#comment">Comment ça marche</a></li><li><a href="index-fr.html#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
 
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
-
 </html>

@@ -1,516 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Compare Zyllio's no-code app builder plans. Start free, publish custom business apps, and scale with automation, integrations, and support.">
-  <link rel="canonical" href="https://zyllio.com/pricing.html">
-  <link rel="alternate" hreflang="en" href="https://zyllio.com/pricing.html">
-  <link rel="alternate" hreflang="fr" href="https://zyllio.com/pricing-fr.html">
-  <link rel="alternate" hreflang="x-default" href="https://zyllio.com/pricing.html">
+<meta charset="utf-8"/>
+<script>
+/* Langue : un navigateur en français bascule sur la version française, sauf si le visiteur a choisi l'anglais */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}});var c=null;try{c=localStorage.getItem(k)}catch(x){}var l=(navigator.languages&&navigator.languages[0])||navigator.language||'';if(c!=='en'&&!/[?&]lang=en(&|$)/.test(location.search)&&(c==='fr'||/^fr\b/i.test(l)))location.replace('pricing-fr.html'+location.hash)})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Pricing | Zyllio</title>
+<meta name="description" content="Zyllio pricing for building your company’s business applications: a free plan with no time limit and paid plans with no commitment."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/pricing.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/pricing.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/pricing-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/pricing.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zyllio"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:title" content="Pricing | Zyllio"/>
+<meta property="og:description" content="A free plan with no time limit and paid plans with no commitment to build your company’s applications."/>
+<meta property="og:url" content="https://zyllio.com/pricing.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Pricing | Zyllio"/>
+<meta name="twitter:description" content="A free plan with no time limit and paid plans with no commitment to build your company’s applications."/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+<style>
+/* ---------- Page Tarifs ---------- */
+.links a.on{color:var(--blue);background:var(--sky-t)}
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Zyllio">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:title" content="Zyllio Pricing | Build Custom No-Code Apps">
-  <meta property="og:description" content="Compare Zyllio's no-code app builder plans. Start free and scale custom business apps with automation and integrations.">
-  <meta property="og:url" content="https://zyllio.com/pricing.html">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Zyllio Pricing | Build Custom No-Code Apps">
-  <meta name="twitter:description" content="Compare Zyllio's no-code app builder plans. Start free and scale custom business apps with automation and integrations.">
+/* En-tête de page */
+.p-hero{position:relative;overflow:hidden;text-align:center;margin-top:-76px;padding:150px 0 72px;background:radial-gradient(70% 60% at 50% -5%,#dce8fb 0%,#eef4fd 38%,transparent 72%),#fff}
+.p-hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#16478510 1px,transparent 1px),linear-gradient(90deg,#16478510 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%)}
+.p-hero .wrap{position:relative;z-index:1}
+.p-hero .eyebrow{justify-content:center}
+.p-hero h1{font-size:clamp(36px,4.6vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.045em;max-width:900px;margin:0 auto 22px}
+.p-hero h1 .s{display:block;padding-bottom:.06em}
+.p-hero .lead{max-width:660px;margin:0 auto;font-size:19px}
 
-  <title>Zyllio Pricing | Build Custom No-Code Apps</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+
+/* Offres */
+.plans-sec{padding:0 0 96px}
+.plans{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;padding:28px 24px;border-radius:22px;border:1px solid var(--line);background:#fff}
+.plan.main{border-color:var(--navy);box-shadow:0 0 0 1px var(--navy),0 30px 60px #16478521}
+.plan .flag{position:absolute;top:-12px;left:24px;font-size:12px;font-weight:700;background:var(--sky);color:#fff;border-radius:99px;padding:4px 12px}
+.plan h3{font-size:21px}
+.plan .for{margin:6px 0 0;min-height:3.1em;font-size:14.5px;line-height:1.55;color:var(--muted)}
+.amount{margin:18px 0 22px}
+.amount b{white-space:nowrap;font-size:44px;line-height:1;letter-spacing:-.05em;font-weight:700}
+.amount sup{position:relative;top:.2em;vertical-align:top;margin-left:2px;font-size:20px;line-height:1;letter-spacing:-.02em;font-weight:650}
+.amount span{display:inline-block;margin-left:6px;font-size:13.5px;color:var(--muted)}
+.amount.ttc,.vat-ttc .amount.ht{display:none}
+.vat-ttc .amount.ttc{display:block}
+
+/* Bascule HT / TTC */
+.vat{margin:18px 0 0;text-align:center;font-size:13.5px;color:var(--soft)}
+.vat button{padding:0;border:0;background:none;font-size:inherit;font-weight:600;color:var(--blue);text-decoration:underline;text-underline-offset:3px;text-decoration-color:#16478555}
+.vat button:hover{text-decoration-color:currentColor}
+.vat .t,.vat-ttc .vat .h{display:none}
+.vat-ttc .vat .t{display:inline}
+html:not(.js) .vat{display:none}
+.plan .btn{width:100%}
+.base{margin:24px 0 12px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;font-weight:650;color:var(--ink)}
+.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14px;line-height:1.45;color:var(--ink2)}
+.plan li{display:grid;grid-template-columns:16px 1fr;gap:10px}
+.plan li svg{width:16px;height:16px;margin-top:1px;color:var(--ok)}
+.plan li b{color:var(--ink);font-weight:650}
+
+/* Option stores */
+.addon{display:flex;align-items:center;gap:20px;margin-top:20px;padding:20px 24px;border-radius:18px;background:var(--paper);border:1px solid var(--line)}
+.addon i{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--sky-t);color:var(--blue)}
+.addon i svg{width:22px;height:22px}
+.addon p{margin:0;font-size:15px;line-height:1.55;color:var(--muted)}
+.addon b{color:var(--ink);font-weight:650}
+
+/* Accompagnement */
+.help-sec{padding:96px 0;background:var(--paper)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.duo article{display:flex;flex-direction:column;padding:32px;border-radius:22px;background:#fff;border:1px solid var(--line)}
+.duo .k{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.duo h3{font-size:24px;margin:10px 0 8px}
+.duo p{margin:0 0 24px;font-size:15.5px;line-height:1.6;color:var(--muted)}
+.duo .btn{margin-top:auto;align-self:flex-start}
+
+/* Comparatif */
+.cmp-sec{padding:96px 0}
+.cmp{border:1px solid var(--line);border-radius:22px;background:#fff;overflow:hidden}
+.tbl{overflow-x:auto}
+.tbl table{width:100%;min-width:760px;border-collapse:collapse;font-size:14.5px}
+.tbl th,.tbl td{padding:13px 16px;border-bottom:1px solid var(--line);text-align:center;vertical-align:middle}
+.tbl thead th{position:sticky;top:0;background:#fff;font-size:14px;font-weight:700;color:var(--ink)}
+.tbl thead th.hl,.tbl td.hl{background:#f3f7fd}
+.tbl tbody th[scope=row]{text-align:left;font-weight:500;color:var(--ink2);width:34%}
+.tbl td{color:var(--ink2)}
+.tbl tr.grp th{text-align:left;padding:22px 16px 10px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--soft);background:#fff}
+.tbl tr:last-child>*{border-bottom:0}
+.yes{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--ok-t);color:var(--ok)}
+.yes svg{width:13px;height:13px}
+.no{color:#b3bdcc}
+
+/* FAQ */
+.faq-sec{padding:112px 0}
+
+@media (max-width:1080px){
+  .plans{grid-template-columns:1fr 1fr;row-gap:28px}
+  .plan .for{min-height:0}
+}
+@media (max-width:720px){
+  .p-hero{margin-top:-68px;padding:110px 0 56px}
+  .p-hero h1{font-size:clamp(32px,8.6vw,44px)}
+  .p-hero .lead{font-size:17px}
+  .plans{grid-template-columns:1fr}
+  .plans-sec{padding-bottom:72px}
+  .addon{align-items:flex-start;gap:14px;padding:18px}
+  .addon i{width:36px;height:36px;border-radius:10px}
+  .help-sec,.cmp-sec{padding:72px 0}
+  .duo{grid-template-columns:1fr}
+  .duo article{padding:26px 22px}
+  .tbl table{font-size:13.5px}
+  .tbl th,.tbl td{padding:11px 10px}
+  .tbl tbody th[scope=row]{position:sticky;left:0;z-index:1;background:#fff;min-width:150px}
+  .faq-sec{padding:80px 0}
+}
+</style>
 </head>
-
 <body>
-
-  <zyllio-nav always-overlaid>
-    <a href="features.html" slot="link">Features</a>
-    <a href="pricing.html" slot="link">Pricing</a>
-    <a href="partner.html" slot="link">Agency</a>
-    <a href="support.html" slot="link">Support</a>
-    <a href="blog.html" slot="link">Blog</a>
-    <a href="affiliate.html" slot="link">Affiliate</a>
-    <a href="https://zyllio.fr" slot="link"><zyllio-language-selector language="fr"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Sign in</zyllio-sign-in>
-  </zyllio-nav>
-
-  <br>
-  <br>
-
-  <zyllio-section id="pricing" layout="row space-between wrap">
-
-    <h1 slot="title">Pricing</h1>
-
-    <zyllio-price-plan index="0" slot="content">
-      <h1>Starter</h1>
-      <h2><span class="price">$0</span></h2>
-
-      <zyllio-price-plan-content>
-
-        <h1>Experiment your idea</h1>
-        <ul>
-          <li class="checked"><b>Unlimited apps</b></li>
-          <li class="checked"><b>100 data entries</b></li>
-          <li class="checked"><b>Unlimited end users</b></li>
-          <li class="checked">OpenAI</li>
-          <li class="checked">Google Sheets data source</li>
-          <li class="checked">Airtable datasource</li>
-          <li class="checked">Timetonic datasource</li>
-          <li class="checked">Plugins</li>
-          <li class="checked"><b>Zyllio branding</b></li>
-        </ul>
-        <zyllio-sign-in href="https://www.zyllio.one">Get Started</zyllio-sign-in>
-      </zyllio-price-plan-content>
-
-    </zyllio-price-plan>
-
-    <zyllio-price-plan index="1" slot="content">
-      <h1>Professional</h1>
-      <h2><span class="new-price">$49</span><span class="price">$39</span> / month</h2>
-
-      <zyllio-price-plan-content>
-
-        <h1>Launch your app</h1>
-        <h2>All Starter features</h2>
-        <ul>
-          <li class="checked"><b>5 000 data entries</b></li>
-          <li class="checked"><b>Remove branding</b></li>
-          <li class="checked"><b>Custom domain</b></li>
-          <li class="checked">SEO</li>
-          <li class="checked">Send emails via Gmail</li>
-          <li class="checked">Twilio SMS and WhatsApp</li>
-          <li class="checked">Up to 1 GB storage</li>
-          <li class="checked">Business hours support</li>
-          <li class="addon"><b>Android and iOS publishing</b><span class="addon-badge">Paid option</span></li>
-        </ul>
-        <zyllio-sign-in href="https://www.zyllio.one">Get Started</zyllio-sign-in>
-      </zyllio-price-plan-content>
-
-    </zyllio-price-plan>
-
-    <zyllio-price-plan index="2" slot="content">
-      <h1>Enterprise</h1>
-      <h2><span class="new-price">$89</span><span class="price">$79</span> / month</h2>
-
-      <zyllio-price-plan-content>
-        <h1>Boost your app</h1>
-        <h2>All Professional features</h2>
-        <ul>
-          <li class="checked"><b>50 000 data entries</b></li>
-          <li class="checked"><b>Automations</b></li>
-          <li class="checked">Push notifications</li>
-          <li class="checked">REST API</li>
-          <li class="checked">Send emails via Outlook</li>
-          <li class="checked">Analytics</li>
-          <li class="checked"><b>Monetize your apps</b></li>
-          <li class="checked"><b>Stripe Payments<br>(No transaction fee)</b></li>
-          <li class="checked">Make and Zapier integrations</li>
-          <li class="checked">24/7 support</li>
-          <li class="addon"><b>Android and iOS publishing</b><span class="addon-badge">Paid option</span></li>
-        </ul>
-        <zyllio-sign-in href="https://www.zyllio.one">Get Started</zyllio-sign-in>
-      </zyllio-price-plan-content>
-
-    </zyllio-price-plan>
-
-    <zyllio-price-plan index="3" slot="content" class="enterprise-plus-custom">
-      <h1>Enterprise Plus</h1>
-      <h2><span class="price">$289</span> / month</h2>
-
-      <zyllio-price-plan-content>
-        <h1>Scale up</h1>
-        <h2>All Enterprise features</h2>
-        <ul>
-          <li class="checked"><b>10 million rows</b></li>
-          <li class="checked"><b>SAML2 SSO</b></li>
-          <li class="checked"><b>Offline mode</b></li>
-          <li class="checked"><b>Developer kit</b></li>
-          <li class="checked"><b>SLA</b></li>
-          <li class="addon"><b>Android and iOS publishing</b><span class="addon-badge">Paid option</span></li>
-        </ul>
-        <zyllio-sign-in href="https://www.zyllio.one">Get Started</zyllio-sign-in>
-      </zyllio-price-plan-content>
-
-    </zyllio-price-plan>
-
-
-  </zyllio-section>
-
-  <zyllio-section id="services" layout="column">
-
-    <h1 slot="title">Zyllio Services</h1>
-
-    <zyllio-card class="style1" slot="content">
-      <zyllio-card-text>
-        <h1>Your turnkey app, built by Zyllio experts</h1>
-
-        <br>
-        Do you have an app idea, a specific business need, or a strategic project to launch quickly? With Zyllio
-        Services, our team supports you end to end to turn your needs into a fully operational application.
-
-        <br><br>
-        Our Zyllio experts handle scoping, design, configuration, and delivery of your custom app. You get the
-        power of no-code without having to build everything yourself.
-
-        <br><br>
-        Ideal for creating a first version, accelerating an internal project, digitizing a business process, or
-        launching an application for your teams, partners, or customers.
-
-        <br><br>
-        Are you a no-code agency? <a href="partner.html">Discover our Agency Partner offer</a>.
-
-        <br><br>
-        <zyllio-sign-in id="contact-trigger-pricing" href="#">Contact us</zyllio-sign-in>
-      </zyllio-card-text>
-    </zyllio-card>
-
-  </zyllio-section>
-
-  <zyllio-section id="comparison" layout="column">
-
-    <h1 slot="title">Features comparison</h1>
-
-    <zyllio-pricing-details slot="content">
-
-      <table class="pricing-details">
-        <thead>
-          <tr>
-            <th></th>
-            <th class="plan-header starter-header">Starter</th>
-            <th class="plan-header pro-header">Professional</th>
-            <th class="plan-header enterprise-header">Enterprise</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr class="feature-category">
-            <td colspan="4">Usage</td>
-          </tr>
-          <tr>
-            <td>Users</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-          </tr>
-          <tr>
-            <td>Applications</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-          </tr>
-          <tr>
-            <td>Published apps</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-            <td>Unlimited</td>
-          </tr>
-          <tr class="feature-category">
-            <td colspan="4">Data & Storage</td>
-          </tr>
-          <tr>
-            <td>Data rows</td>
-            <td>100</td>
-            <td>5,000</td>
-            <td>50,000</td>
-          </tr>
-          <tr>
-            <td>File storage</td>
-            <td>100 MB</td>
-            <td>1 GB</td>
-            <td>5 GB</td>
-          </tr>
-          <tr>
-            <td>Components</td>
-            <td>73</td>
-            <td>73</td>
-            <td>73</td>
-          </tr>
-          <tr>
-            <td>Actions</td>
-            <td>60</td>
-            <td>60</td>
-            <td>60</td>
-          </tr>
-          <tr>
-            <td>Plugins</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr class="feature-category">
-            <td colspan="4">Components</td>
-          </tr>
-          <tr>
-            <td>Web embed</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Signature</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Barcode scan</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-
-          <tr class="feature-category">
-            <td colspan="4">Data Sources</td>
-          </tr>
-          <tr>
-            <td>Zyllio tables</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Airtable</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Timetonic</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Google Sheet</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-
-          <tr class="feature-category">
-            <td colspan="4">Integrations</td>
-          </tr>
-          <tr>
-            <td>Integrations</td>
-            <td>4</td>
-            <td>7</td>
-            <td>14</td>
-          </tr>
-          <tr>
-            <td>OpenAI</td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Gmail</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>SMS</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Custom domain</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Automations</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Push notifications</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Stripe</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Zapier</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Make</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>REST API</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-
-          <tr class="feature-category">
-            <td colspan="4">Advanced Features</td>
-          </tr>
-          <tr>
-            <td>Analytics</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Offline mode</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-          <tr>
-            <td>Google fonts</td>
-            <td><span class="cross">-</span></td>
-            <td><span class="cross">-</span></td>
-            <td><span class="check">✓</span></td>
-          </tr>
-
-          <tr class="feature-category">
-            <td colspan="4">Support</td>
-          </tr>
-          <tr>
-            <td>Support level</td>
-            <td>Community</td>
-            <td>Business hours</td>
-            <td>24/7</td>
-          </tr>
-        </tbody>
-      </table>
-    </zyllio-pricing-details>
-  </zyllio-section>
-
-  <zyllio-section id="faq" layout="column">
-
-    <h1 slot="title">Frequently asked questions</h1>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Does Zyllio offer a free plan?</h1>
-
-        <br>
-        Yes, we offer a completely free plan that you can use for as long as you want
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Does Zyllio need my credit card to sign up for the free plan?</h1>
-
-        <br>
-        No, you don't need to enter your credit card information to sign up the free plan
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Is there a minimum commitment period for the subscription?</h1>
-
-        <br>
-        No, our subscription is commitment-free.
-        You can cancel your subscription at any time, with no extra fees or restrictions.
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Can I upgrade to a paid plan later on?</h1>
-
-        <br>
-        Yes, you can upgrade to a paid plan at any time if you need more advanced features or want to remove any
-        limitations that come with the free plan
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Does Zyllio offer unlimited apps?</h1>
-
-        <br>
-        Yes, our product offers unlimited apps with a fair usage policy. The fair usage policy ensures that Zyllio is
-        used reasonably and not abused.
-        This means that we reserve the right to take action if we detect any activity that is deemed excessive, unusual
-        or unauthorized
-
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>What happens on usage limits?</h1>
-
-        <br>
-        When you reach your plan limit, Zyllio limits the amount of data displayed on mobile devices. This means that
-        you will only be able to view a subset of your data, based on the plan you are currently subscribed to
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-    <zyllio-card slot="content">
-      <zyllio-card-text>
-        <h1>Can I publish my Zyllio application on the App Store and Google Play?</h1>
-
-        <br>
-        Yes, Android and iOS publishing is available as a paid add-on with eligible plans.
-
-        <br><br>
-        By default, Zyllio applications are also instantly accessible via an internet link or QR code. This option
-        keeps you independent from the app stores and simplifies the publishing process.
-
-        <br><br>
-        In practice, some clients absolutely want to be on the stores for visibility or brand image reasons. But in
-        many cases, publishing via a link becomes a real advantage: no Apple review delays, instant updates without
-        requiring users to re-download the app, and no 30% commission charged by Apple or Google on payments.
-
-      </zyllio-card-text>
-    </zyllio-card>
-
-  </zyllio-section>
-
-
-  <zyllio-footer>
-    <a href="terms-of-use.html" target="_blank">Terms of use</a> - <a href="privacy.html" target="_blank">Privacy policy</a> - <a href="gdpr.html" target="_blank">GDPR</a> - <a href="legal.html" target="_blank">Legal notice</a> - <a href="affiliate-program.html" target="_blank">Affiliate Program</a>
-  </zyllio-footer>
-
-  <zyllio-contact-modal
-    open-trigger="#contact-trigger-pricing"
-    close-label="Close"
-    placeholder-last-name="Your last name"
-    placeholder-first-name="Your first name"
-    placeholder-email="you@company.com"
-    placeholder-message="I have a question about pricing"
-  >
-    <h2 slot="title">Contact us</h2>
-    <p slot="intro">Questions about pricing? Send us a message.</p>
-    <span slot="label-last-name">Last name</span>
-    <span slot="label-first-name">First name</span>
-    <span slot="label-email">Email</span>
-    <span slot="label-message">Message</span>
-    <span slot="submit-label">Send</span>
-  </zyllio-contact-modal>
-
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Main navigation">
+      <a href="features.html">Product</a>
+      <a class="on" href="pricing.html" aria-current="page">Pricing</a>
+      <a href="partner.html">Agencies</a>
+      <a href="blog.html">Blog</a>
+      <a href="support.html">Support</a>
+      <a href="affiliate.html">Affiliates</a>
+      <a class="m-only" href="pricing-fr.html" hreflang="fr" lang="fr">Version française</a>
+      <a class="m-only" href="https://www.zyllio.one">Log in</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="pricing-fr.html" hreflang="fr" lang="fr" aria-label="Version française"><img src="./flags/fr.png" alt="" width="18" height="12"/>FR</a>
+      <a class="login" href="https://www.zyllio.one">Log in</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Start for free</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Open menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- En-tête -->
+<section class="p-hero" aria-labelledby="page-t">
+  <div class="wrap">
+    <p class="eyebrow">Pricing</p>
+    <h1 id="page-t">Simple pricing, <span class="s">no commitment.</span></h1>
+    <p class="lead">Start for free, no credit card required. Choose a paid plan when your application goes into production.</p>
+  </div>
+</section>
+
+<!-- Offres -->
+<section class="plans-sec" id="offres" aria-label="Plans">
+  <div class="wrap">
+    <div class="plans">
+      <article class="plan rv">
+        
+        <h3>Discovery</h3>
+        <p class="for">To test your project.</p>
+        <div class="amount"><b>€0</b><span>no time limit</span></div>
+        <a class="btn btn-line" href="https://www.zyllio.one">Start for free</a>
+        <p class="base">To get started:</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Unlimited applications and users</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>100 data rows, 100&nbsp;MB of storage</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Google Sheets, Airtable, TimeTonic</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI with OpenAI</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Zyllio branding on the application</span></li></ul>
+      </article>
+      <article class="plan rv" style="--d:.05s">
+        
+        <h3>Professional</h3>
+        <p class="for">For a first application in production.</p>
+        <div class="amount ht"><b>€32<sup>.50</sup></b><span>excl. VAT/mo</span></div>
+        <div class="amount ttc"><b>€39</b><span>incl. VAT/mo</span></div>
+        <a class="btn btn-line" href="https://www.zyllio.one">Choose Professional</a>
+        <p class="base">Everything in Discovery, plus:</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>5,000 rows</b>, 1&nbsp;GB of storage</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>No Zyllio branding</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Custom domain and SEO</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI with Mistral AI</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Emails via Gmail</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>SMS and WhatsApp via Twilio</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Business-hours support</span></li></ul>
+      </article>
+      <article class="plan rv main" style="--d:.1s">
+        <span class="flag">Recommended</span>
+        <h3>Enterprise</h3>
+        <p class="for">To digitize your business processes.</p>
+        <div class="amount ht"><b>€65<sup>.83</sup></b><span>excl. VAT/mo</span></div>
+        <div class="amount ttc"><b>€79</b><span>incl. VAT/mo</span></div>
+        <a class="btn btn-navy" href="https://www.zyllio.one">Choose Enterprise <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="base">Everything in Professional, plus:</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>50,000 rows</b>, 5&nbsp;GB of storage</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>Zyllio agent</b> in ChatGPT, Mistral and Claude</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Automations</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>PDF document generation</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>AI chatbot</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Push notifications</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>REST API, Make and Zapier</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Emails via Outlook, Stripe payments</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>24/7 support</span></li></ul>
+      </article>
+      <article class="plan rv" style="--d:.15s">
+        
+        <h3>Enterprise Plus</h3>
+        <p class="for">For large-scale deployments.</p>
+        <div class="amount ht"><b>€240<sup>.83</sup></b><span>excl. VAT/mo</span></div>
+        <div class="amount ttc"><b>€289</b><span>incl. VAT/mo</span></div>
+        <button class="btn btn-line js-contact" type="button">Request a demo</button>
+        <p class="base">Everything in Enterprise, plus:</p>
+        <ul><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span><b>10 million rows</b></span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>SSO SAML2</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Developer kit</span></li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Service level agreement (SLA)</span></li></ul>
+      </article>
+    </div>
+    <p class="vat"><span class="h">Prices exclude VAT. <button type="button" data-vat="ttc">Show prices incl. VAT</button></span><span class="t">Prices include 20% VAT. <button type="button" data-vat="ht">Show prices excl. VAT</button></span></p>
+    <div class="addon rv">
+      <i aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></svg></i>
+      <p><b>App Store and Google Play publishing</b>: available as a paid add-on on paid plans. Without it, your applications are distributed via link or QR code.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Accompagnement -->
+<section class="help-sec" id="accompagnement" aria-labelledby="help-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Services</p><h2 id="help-t">Need help <span class="s">to move faster?</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Have our experts build your application, or join our partner program.</p>
+    </div>
+    <div class="duo">
+      <article class="rv">
+        <span class="k">Zyllio Services</span>
+        <h3>Your turnkey application</h3>
+        <p>Our experts scope your needs, then design, configure and deliver your application. Ideal for a first version or a strategic project.</p>
+        <button class="btn btn-navy js-contact" type="button">Talk to our team</button>
+      </article>
+      <article class="rv" style="--d:.06s">
+        <span class="k">Agencies &amp; integrators</span>
+        <h3>Partner program</h3>
+        <p>Building applications for your clients? Get Enterprise Plus features, multiple agency seats and priority support.</p>
+        <a class="btn btn-line" href="partner.html">Discover the partner program</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Comparatif -->
+<section class="cmp-sec" id="comparatif" aria-labelledby="cmp-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Comparison</p><h2 id="cmp-t">All plans <span class="s">in detail.</span></h2></div>
+    </div>
+    <div class="cmp rv">
+      <div class="tbl">
+        <table>
+          <caption class="sr">Feature comparison by plan</caption>
+          <thead>
+            <tr><th scope="col"><span class="sr">Feature</span></th><th scope="col">Discovery</th><th scope="col">Professional</th><th scope="col" class="hl">Enterprise</th><th scope="col">Enterprise Plus</th></tr>
+          </thead>
+          <tbody>
+            <tr class="grp"><th colspan="5" scope="colgroup">Usage</th></tr>
+            <tr><th scope="row">Applications and users</th><td>Unlimited</td><td>Unlimited</td><td class="hl">Unlimited</td><td>Unlimited</td></tr>
+            <tr><th scope="row">Data rows</th><td>100</td><td>5,000</td><td class="hl">50,000</td><td>10&nbsp;million</td></tr>
+            <tr><th scope="row">File storage</th><td>100&nbsp;MB</td><td>1&nbsp;GB</td><td class="hl">5&nbsp;GB</td><td>5&nbsp;GB</td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">NoCode Studio</th></tr>
+            <tr><th scope="row">Components</th><td>Nearly&nbsp;100</td><td>Nearly&nbsp;100</td><td class="hl">Nearly&nbsp;100</td><td>Nearly&nbsp;100</td></tr>
+            <tr><th scope="row">Actions</th><td>Over&nbsp;80</td><td>Over&nbsp;80</td><td class="hl">Over&nbsp;80</td><td>Over&nbsp;80</td></tr>
+            <tr><th scope="row">Formulas</th><td>Over&nbsp;60</td><td>Over&nbsp;60</td><td class="hl">Over&nbsp;60</td><td>Over&nbsp;60</td></tr>
+            <tr><th scope="row">Signature, barcode scan, plugins</th><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">Artificial intelligence</th></tr>
+            <tr><th scope="row">OpenAI</th><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Mistral AI</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Zyllio agent (ChatGPT, Mistral, Claude)</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">AI chatbot</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">Data and integrations</th></tr>
+            <tr><th scope="row">Zyllio tables, Google Sheets, Airtable, TimeTonic</th><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Emails via Gmail</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">SMS and WhatsApp via Twilio</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Emails via Outlook</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">REST API, Make and Zapier</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Stripe payments, no commission</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">Automations and documents</th></tr>
+            <tr><th scope="row">Automations</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">PDF document generation</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Push notifications</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">Publication</th></tr>
+            <tr><th scope="row">Link and QR code</th><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">No Zyllio branding</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Custom domain and SEO</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Audience (analytics)</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">App Store and Google Play</th><td><span class="no" aria-label="Not included">–</span></td><td>Add-on</td><td class="hl">Add-on</td><td>Add-on</td></tr>
+            <tr class="grp"><th colspan="5" scope="colgroup">Security and support</th></tr>
+            <tr><th scope="row">Hosting in France</th><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td class="hl"><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">SSO SAML2</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Developer kit</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Service level agreement (SLA)</th><td><span class="no" aria-label="Not included">–</span></td><td><span class="no" aria-label="Not included">–</span></td><td class="hl"><span class="no" aria-label="Not included">–</span></td><td><span class="yes" aria-label="Included"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span></td></tr>
+            <tr><th scope="row">Support</th><td>Community</td><td>Business hours</td><td class="hl">24/7</td><td>24/7</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq-sec" id="faq" aria-labelledby="faq-t">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <p class="eyebrow">Frequently asked questions</p>
+      <h2 id="faq-t">Your questions <span class="s">about our plans.</span></h2>
+      <p class="lead">Another question? Our team replies within 24 business hours.</p>
+      <div class="help"><button class="btn btn-navy btn-sm js-contact" type="button">Contact us</button><a class="btn btn-line btn-sm" href="support.html">Help center</a></div>
+    </div>
+    <div class="faq rv" style="--d:.08s">
+      <details name="faq" open><summary>Is the Discovery plan really free?</summary><p>Yes, with no time limit and no credit card. You build and test your application, then move to a paid plan when you need it.</p></details>
+      <details name="faq"><summary>Is there a minimum term?</summary><p>No. Paid plans are monthly with no commitment. You can change plans or cancel your subscription at any time, free of charge.</p></details>
+      <details name="faq"><summary>Do we get an invoice?</summary><p>Yes, an invoice is issued for every payment. For annual billing or bank transfer payment, contact our team.</p></details>
+      <details name="faq"><summary>What happens if we reach a limit?</summary><p>Your application keeps working, but only part of your data is displayed. Simply upgrade to the next plan to lift the limit.</p></details>
+      <details name="faq"><summary>Can we publish on the App Store and Google Play?</summary><p>Yes, as a paid add-on on paid plans. By default, your applications are available via link or QR code, with immediate updates and no app store commission.</p></details>
+      <details name="faq"><summary>Can you build the application for us?</summary><p>Yes. With Zyllio Services, our experts scope your needs, then design and deliver your application. You can then keep improving it yourself.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html" aria-label="Zyllio, home"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>The French AI + NoCode platform for building your business applications.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio on LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Zyllio community on Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support.html" class="js-contact" aria-label="Contact us"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul><li><a href="index.html#comment">How it works</a></li><li><a href="index.html#agent">Zyllio agent</a></li><li><a href="features.html">Features</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Resources</h4><ul><li><a href="support.html">Support</a></li><li><a href="blog.html">Blog</a></li><li><a href="partner.html">Partner agencies</a></li><li><a href="affiliate.html">Affiliates</a></li></ul></div>
+      <div><h4>Legal</h4><ul><li><a href="terms-of-use.html">Terms of use</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="gdpr.html">GDPR</a></li><li><a href="legal.html">Legal notice</a></li><li><a href="affiliate-program.html">Affiliate program</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. All rights reserved.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Designed and hosted in France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Close"
+  placeholder-last-name="Your last name"
+  placeholder-first-name="Your first name"
+  placeholder-email="you@company.com"
+  placeholder-message="Question about pricing"
+>
+  <h2 slot="title">Contact us</h2>
+  <p slot="intro">Send us a message and we’ll reply within 24 business hours.</p>
+  <span slot="label-last-name">Last name</span>
+  <span slot="label-first-name">First name</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Send</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Prix HT / TTC */
+  var offers = $('#offres'), vatBtns = $$('[data-vat]')
+  var setVat = function (v) {
+    offers.classList.toggle('vat-ttc', v === 'ttc')
+    try { localStorage.setItem('zyllio-vat', v) } catch (e) {}
+  }
+  vatBtns.forEach(function (b) { b.addEventListener('click', function () { setVat(b.getAttribute('data-vat')) }) })
+  try { if (localStorage.getItem('zyllio-vat') === 'ttc') setVat('ttc') } catch (e) {}
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
-
 </html>

@@ -1,168 +1,310 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Programme d'affiliation Zyllio pour partenaires, créateurs de contenu, agences et consultants no-code.">
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Programme d’affiliation | Zyllio</title>
+<meta name="description" content="Recommandez Zyllio et touchez 20 % de commission chaque mois sur les abonnements de vos clients. Inscription gratuite."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/affiliate-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/affiliate.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/affiliate-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/affiliate.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Zyllio"/>
+<meta property="og:locale" content="fr_FR"/>
+<meta property="og:title" content="Programme d’affiliation | Zyllio"/>
+<meta property="og:description" content="Recommandez Zyllio et touchez 20 % de commission chaque mois. Inscription gratuite."/>
+<meta property="og:url" content="https://zyllio.com/affiliate-fr.html"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Programme d’affiliation | Zyllio"/>
+<meta name="twitter:description" content="Recommandez Zyllio et touchez 20 % de commission chaque mois. Inscription gratuite."/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
+<script type="module" src="./components/affiliate-contact-form.component.mjs"></script>
+<style>
+/* ---------- Page Affiliation ---------- */
+.links a.on{color:var(--blue);background:var(--sky-t)}
+/* En-tête de page */
+.p-hero{position:relative;overflow:hidden;text-align:center;margin-top:-76px;padding:150px 0 112px;background:radial-gradient(70% 60% at 50% -5%,#dce8fb 0%,#eef4fd 38%,transparent 72%),#fff}
+.p-hero:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(#16478510 1px,transparent 1px),linear-gradient(90deg,#16478510 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%);mask-image:radial-gradient(ellipse 60% 55% at 50% 10%,#000 20%,transparent 75%)}
+.p-hero .wrap{position:relative;z-index:1}
+.p-hero .eyebrow{justify-content:center}
+.p-hero h1{font-size:clamp(36px,4.6vw,60px);font-weight:800;line-height:1.05;letter-spacing:-.045em;max-width:900px;margin:0 auto 22px}
+.p-hero h1 .s{display:block;padding-bottom:.06em}
+.p-hero .lead{max-width:660px;margin:0 auto;font-size:19px}
+.p-cta{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:34px}
 
-  <title>Zyllio - Affiliation</title>
-  <link rel="icon" type="image/png" href="./image/icon.png" />
-  <link rel="stylesheet" href="main.css">
-  <script type="module" src="./components/components.module.mjs"></script>
+.a-facts{list-style:none;margin:30px 0 0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;font-size:14px;font-weight:600;color:var(--ink2)}
+.a-facts li{display:flex;align-items:center;gap:9px}
+.a-facts svg{width:18px;height:18px;color:var(--ok)}
+
+/* Simulateur */
+.sim-sec{padding:0 0 112px}
+.sim{border-radius:24px;border:1px solid var(--line);background:#fff;box-shadow:0 30px 70px #16478514;overflow:hidden}
+.sim-h{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:6px 20px;padding:28px 32px 8px}
+.sim-h h2{font-size:24px;letter-spacing:-.03em}
+.sim-h p{margin:0;font-size:14.5px;color:var(--muted)}
+.sim-row{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.6fr) minmax(0,.7fr);gap:28px;align-items:center;padding:22px 32px;border-top:1px solid var(--line)}
+.sim-row:first-of-type{border-top:0}
+.sim-plan b{display:block;font-size:17px}
+.sim-plan small{font-size:13.5px;color:var(--muted)}
+.sim-plan small strong{color:var(--ok);font-weight:650}
+.sim-in{display:grid;gap:8px}
+.sim-in label{display:flex;justify-content:space-between;font-size:13.5px;color:var(--muted)}
+.sim-in output{font-weight:700;color:var(--ink);font-variant-numeric:tabular-nums}
+.sim input[type=range]{width:100%;accent-color:var(--blue);cursor:pointer}
+.sim-sub{text-align:right;font-size:17px;font-weight:700;font-variant-numeric:tabular-nums}
+.sim-sub small{display:block;font-size:12px;font-weight:500;color:var(--soft)}
+.sim-total{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px 32px;padding:26px 32px;background:var(--navy);color:#fff}
+.sim-total span{font-size:15px;color:#c9d6ea}
+.sim-total b{display:block;font-size:40px;line-height:1.1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;color:#fff}
+.sim-total .btn{background:#fff;color:var(--navy)}
+.sim-total .btn:hover{background:#eef3fa}
+.sim-year{font-size:14px;color:#c9d6ea}
+
+/* Étapes */
+.how .steps{grid-template-columns:repeat(3,minmax(0,1fr))}
+.faq-sec{background:#fff}
+.faq details p a{color:var(--blue);font-weight:600}
+.terms{margin:16px 0 0;font-size:13px;line-height:1.55;color:var(--soft)}
+.terms a{color:var(--blue);text-decoration:underline;text-underline-offset:2px}
+
+@media (max-width:1080px){
+  .how .steps{grid-template-columns:1fr 1fr}
+}
+@media (max-width:720px){
+  .p-hero{margin-top:-68px;padding:110px 0 64px}
+  .p-hero h1{font-size:clamp(32px,8.6vw,44px)}
+  .p-hero .lead{font-size:17px}
+  .p-cta .btn{width:100%}
+  .a-facts{flex-direction:column;align-items:center;gap:10px}
+  .sim-sec{padding-bottom:80px}
+  .sim-h{padding:24px 20px 4px}
+  .sim-row{grid-template-columns:1fr auto;gap:12px 16px;padding:20px}
+  .sim-in{grid-column:1/-1;grid-row:2}
+  .sim-total{padding:24px 20px}
+  .sim-total .btn{width:100%}
+  .how .steps{grid-template-columns:1fr}
+}
+</style>
 </head>
-
 <body>
+<a class="skip" href="#contenu">Aller au contenu</a>
 
-  <zyllio-nav always-overlaid>
-    <a href="index-fr.html" slot="link">Accueil</a>
-    <a href="features-fr.html" slot="link">Produit</a>
-    <a href="pricing-fr.html" slot="link">Tarifs</a>
-    <a href="partner-fr.html" slot="link">Agence</a>
-    <a href="support-fr.html" slot="link">Support</a>
-    <a href="blog-fr.html" slot="link">Blog</a>
-    <a href="affiliate-fr.html" slot="link">Affiliation</a>
-    <a href="index.html" slot="link"><zyllio-language-selector language="en"></zyllio-language-selector></a>
-    <zyllio-sign-in slot="sign-in" href="https://www.zyllio.one">Se connecter</zyllio-sign-in>
-  </zyllio-nav>
-
-  <br>
-  <br>
-
-  <zyllio-section id="affiliate-hero" layout="column">
-    <zyllio-affiliate-hero slot="content">
-      <span slot="title">Un concept simple,</span>
-      <span slot="highlight">des revenus récurrents.</span>
-      <p slot="description">Recommandez Zyllio à vos clients et partenaires. Gagnez <b style="color:#4f46e5">20% de commission</b> sur leurs abonnements... chaque mois.</p>
-      <a class="cta-primary" id="affiliate-contact-trigger" slot="cta-primary" href="#">S'inscrire gratuitement</a>
-      <a class="cta-secondary" slot="cta-secondary" href="#affiliate-simulator">Calculer mes gains</a>
-    </zyllio-affiliate-hero>
-  </zyllio-section>
-
-  <br>
-
-  <zyllio-section id="affiliate-simulator" layout="column">
-    <zyllio-affiliate-simulator slot="content">
-      <span slot="heading">Gains mensuels par client</span>
-      <span slot="subheading">Des commissions identiques sur tous nos plans.</span>
-      <span slot="plan-starter">Professionel</span>
-      <span slot="plan-business">Entreprise</span>
-      <span slot="plan-agency">Entreprise +</span>
-      <span slot="commission-label">Votre commission (20%) sur le tarif HT :</span>
-      <span slot="price-vat">Prix TTC</span>
-      <span slot="recurring">Récurrent chaque mois</span>
-      <span slot="clients-label">Nombre de clients</span>
-      <span slot="subtotal">Sous-total</span>
-      <span slot="total-label">Total estimé :</span>
-      <span slot="month">mois</span>
-    </zyllio-affiliate-simulator>
-  </zyllio-section>
-
-  <br>
-  
-  <zyllio-section id="affiliate-for" layout="row wrap">
-
-    <h1 slot="title">Pour qui ?</h1>
-
-    <zyllio-card-icon slot="content" class="signature">
-      <h1>Agences</h1>
-    </zyllio-card-icon>
-
-    <zyllio-card-icon slot="content" class="picture">
-      <h1>Freelances</h1>
-    </zyllio-card-icon>
-
-    <zyllio-card-icon slot="content" class="notification">
-      <h1>Formateurs</h1>
-    </zyllio-card-icon>
-
-    <zyllio-card-icon slot="content" class="scan">
-      <h1>Associations</h1>
-    </zyllio-card-icon>
-
-    <zyllio-card-icon slot="content" class="community">
-      <h1>Communautés professionnelles</h1>
-    </zyllio-card-icon>
-
-  </zyllio-section>
-
-  <zyllio-section id="affiliate-faq" layout="column">
-
-    <h1 slot="title">FAQ</h1>
-
-    <zyllio-card class="style1" slot="content">
-      <zyllio-card-text>
-        <h1>Combien coûte l'inscription ?</h1>
-        <p>L'inscription au programme d'affiliation est gratuite.</p>
-
-        <h1>Qui peut postuler ?</h1>
-        <p>Les agences, freelances, formateurs, associations et communautés professionnelles.</p>
-
-        <h1>Quand suis-je payé ?</h1>
-        <p>Virement mensuel sur facture.</p>
-
-        <h1>Comment le suivi de mes recommandations est-il assuré ?</h1>
-        <p>Le suivi est entièrement automatisé. Vous avez deux options pour lier un client à votre compte :</p>
-        <p><b>Le lien affilié :</b> C'est la méthode la plus simple. Le client clique sur votre lien personnalisé. S'il s'abonne, il vous est automatiquement attribué.</p>
-        <p><b>Le code affilié :</b> Vous pouvez également donner un code affilié que le client saisit lors de son inscription.</p>
-        <p><b>Où trouver ces éléments ?</b> Votre lien unique et votre code de suivi sont disponibles à tout moment dans votre tableau de bord partenaire au sein de votre compte Zyllio.</p>
-      </zyllio-card-text>
-    </zyllio-card>
-
-  </zyllio-section>
-
-  <zyllio-section id="affiliate-contact" layout="column">
-
-    <h1 slot="title">Prêt à démarrer ?</h1>
-
-    <div slot="content">
-      Écrivez-nous et nous vous répondrons rapidement avec les prochaines étapes.
-      <br><br>
-      En soumettant votre demande, vous reconnaissez avoir pris connaissance du <a href="affiliate-program-fr.html" target="_blank">Programme d'affiliation</a> et l'accepter.
-      <br><br>
-      <zyllio-sign-in id="affiliate-contact-trigger-bottom" href="#">Demander l'affiliation</zyllio-sign-in>
-      <zyllio-affiliate-contact-form
-        open-trigger="#affiliate-contact-trigger, #affiliate-contact-trigger-bottom"
-        close-label="Fermer le formulaire"
-        placeholder-last-name="Votre nom"
-        placeholder-first-name="Votre prénom"
-        placeholder-email="vous@entreprise.com"
-        placeholder-message="Parlez-nous de votre projet et de votre demande d'affiliation"
-        initial-message="Bonjour équipe Zyllio, je souhaite rejoindre votre programme d'affiliation."
-      >
-        <h2 slot="title">Prêt à démarrer ?</h2>
-        <p slot="intro">Écrivez-nous et nous vous répondrons rapidement avec les prochaines étapes.</p>
-        <span slot="label-last-name">Nom</span>
-        <span slot="label-first-name">Prénom</span>
-        <span slot="label-email">Email</span>
-        <span slot="label-message">Message</span>
-        <span slot="submit-label">Envoyer la demande</span>
-      </zyllio-affiliate-contact-form>
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="features-fr.html">Produit</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="partner-fr.html">Agences</a>
+      <a href="blog-fr.html">Blog</a>
+      <a href="support-fr.html">Support</a>
+      <a class="on" href="affiliate-fr.html" aria-current="page">Affiliation</a>
+      <a class="m-only" href="affiliate.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
+    </nav>
+    <div class="side">
+      <a class="lang" href="affiliate.html" hreflang="en" lang="en" aria-label="English version"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
+  </div>
+</header>
 
-  </zyllio-section>
+<main id="contenu">
 
-  <zyllio-footer>
-    <a href="terms-of-use-fr.html" target="_blank">Conditions d'utilisation</a> - <a href="privacy-fr.html" target="_blank">Politique de confidentialité</a> - <a href="gdpr-fr.html" target="_blank">RGPD</a> - <a href="legal-fr.html" target="_blank">Mentions légales</a> - <a href="affiliate-program-fr.html" target="_blank">Programme d'affiliation</a>
-  </zyllio-footer>
+<!-- En-tête -->
+<section class="p-hero" aria-labelledby="page-t">
+  <div class="wrap">
+    <p class="eyebrow">Programme d’affiliation</p>
+    <h1 id="page-t">Recommandez Zyllio. <span class="s">20&nbsp;% de commission récurrente.</span></h1>
+    <p class="lead">Agences, freelances, formateurs, associations, communautés professionnelles&nbsp;: percevez chaque mois une part des abonnements des clients que vous apportez.</p>
+    <div class="p-cta">
+      <button class="btn btn-navy js-aff" type="button">Demander l’affiliation <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      <a class="btn btn-line" href="#simulateur">Calculer mes gains</a>
+    </div>
+    <ul class="a-facts"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Inscription gratuite</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>20&nbsp;% sur chaque abonnement</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Virement mensuel</li></ul>
+  </div>
+</section>
 
-</body>
+<!-- Simulateur -->
+<section class="sim-sec" id="simulateur" aria-labelledby="sim-t">
+  <div class="wrap">
+    <div class="sim rv">
+      <div class="sim-h"><h2 id="sim-t">Simulez vos gains</h2><p>20&nbsp;% du prix HT, chaque mois, tant que votre client est abonné.</p></div>
+      <div class="sim-row">
+        <div class="sim-plan"><b>Professionnel</b><small>32,50&nbsp;€ HT/mois · <strong>6,50&nbsp;€</strong> pour vous</small></div>
+        <div class="sim-in"><label for="n-pro">Nombre de clients <output id="o-pro" for="n-pro">0</output></label><input id="n-pro" type="range" min="0" max="20" step="1" value="0" data-c="6.5"/></div>
+        <div class="sim-sub" id="s-pro" aria-live="polite">0,00&nbsp;€<small>par mois</small></div>
+      </div>
+      <div class="sim-row">
+        <div class="sim-plan"><b>Entreprise</b><small>65,83&nbsp;€ HT/mois · <strong>13,17&nbsp;€</strong> pour vous</small></div>
+        <div class="sim-in"><label for="n-ent">Nombre de clients <output id="o-ent" for="n-ent">0</output></label><input id="n-ent" type="range" min="0" max="20" step="1" value="0" data-c="13.17"/></div>
+        <div class="sim-sub" id="s-ent" aria-live="polite">0,00&nbsp;€<small>par mois</small></div>
+      </div>
+      <div class="sim-row">
+        <div class="sim-plan"><b>Entreprise Plus</b><small>240,83&nbsp;€ HT/mois · <strong>48,17&nbsp;€</strong> pour vous</small></div>
+        <div class="sim-in"><label for="n-plus">Nombre de clients <output id="o-plus" for="n-plus">0</output></label><input id="n-plus" type="range" min="0" max="20" step="1" value="0" data-c="48.17"/></div>
+        <div class="sim-sub" id="s-plus" aria-live="polite">0,00&nbsp;€<small>par mois</small></div>
+      </div>
+      <div class="sim-total">
+        <div><span>Total estimé par mois</span><b id="sim-total" aria-live="polite">0,00&nbsp;€</b><span class="sim-year" id="sim-year">soit 0,00&nbsp;€ par an</span></div>
+        <button class="btn js-aff" type="button">Demander l’affiliation</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-</html>
+<!-- Fonctionnement -->
+<section class="sec how" id="fonctionnement" aria-labelledby="how-t">
+  <div class="wrap">
+    <div class="head">
+      <div class="rv"><p class="eyebrow">Fonctionnement</p><h2 id="how-t">Trois étapes, <span class="s">sans engagement.</span></h2></div>
+      <p class="lead rv" style="--d:.1s">Le suivi de vos recommandations est entièrement automatisé.</p>
+    </div>
+    <ol class="steps">
+      <li class="rv"><span class="num">1</span><h3>Vous vous inscrivez</h3><p>Gratuitement, en nous envoyant votre demande d’affiliation.</p></li>
+      <li class="rv" style="--d:.08s"><span class="num">2</span><h3>Vous recommandez</h3><p>Partagez votre lien personnalisé ou votre code affilié, disponibles dans votre compte Zyllio.</p></li>
+      <li class="rv" style="--d:.16s"><span class="num">3</span><h3>Vous êtes rémunéré</h3><p>20&nbsp;% des abonnements de vos clients, versés chaque mois par virement.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq-sec" id="faq" aria-labelledby="faq-t">
+  <div class="wrap faq-grid">
+    <div class="faq-side rv">
+      <p class="eyebrow">Questions fréquentes</p>
+      <h2 id="faq-t">Vos questions <span class="s">sur l’affiliation.</span></h2>
+      <p class="lead">Une autre question&nbsp;? Notre équipe répond sous 24 heures ouvrées.</p>
+      <div class="help"><button class="btn btn-navy btn-sm js-aff" type="button">Demander l’affiliation</button><button class="btn btn-line btn-sm js-contact" type="button">Nous écrire</button></div>
+      <p class="terms">En envoyant votre demande, vous reconnaissez avoir pris connaissance du <a href="affiliate-program-fr.html">programme d’affiliation</a> et l’accepter.</p>
+    </div>
+    <div class="faq rv" style="--d:.08s">
+      <details name="faq" open><summary>Combien coûte l’inscription&nbsp;?</summary><p>Rien. L’inscription au programme d’affiliation est gratuite.</p></details>
+      <details name="faq"><summary>Qui peut devenir affilié&nbsp;?</summary><p>Les agences, les freelances, les formateurs, les associations et les communautés professionnelles.</p></details>
+      <details name="faq"><summary>Comment mes recommandations sont-elles suivies&nbsp;?</summary><p>Automatiquement. Votre client s’inscrit avec votre lien personnalisé, ou saisit votre code affilié à l’inscription. Votre lien et votre code sont disponibles à tout moment dans votre compte Zyllio.</p></details>
+      <details name="faq"><summary>Quand suis-je payé&nbsp;?</summary><p>Chaque mois, par virement, sur présentation de votre facture.</p></details>
+      <details name="faq"><summary>Quelle différence avec l’offre Partenaire Agence&nbsp;?</summary><p>L’affiliation vous rémunère pour recommander Zyllio. L’<a href="partner-fr.html">offre Partenaire Agence</a> s’adresse aux agences qui conçoivent les applications de leurs clients avec Zyllio.</p></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support-fr.html" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="index-fr.html#comment">Comment ça marche</a></li><li><a href="index-fr.html#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<zyllio-affiliate-contact-form
+  open-trigger=".js-aff"
+  close-label="Fermer le formulaire"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Présentez-vous et dites-nous comment vous souhaitez recommander Zyllio"
+  initial-message="Bonjour, je souhaite rejoindre le programme d’affiliation Zyllio."
+>
+  <h2 slot="title">Demander l’affiliation</h2>
+  <p slot="intro">Présentez-vous, nous vous répondons sous 24 heures ouvrées avec les prochaines étapes.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer la demande</span>
+</zyllio-affiliate-contact-form>
 
 <script>
-  (function(){
-    const modal = document.querySelector('zyllio-affiliate-contact-form')
-    if (!modal) return
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-    const openModal = (e) => {
-      e && e.preventDefault()
-      try { modal.open() } catch (err) { /* ignore */ }
-    }
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
 
-    const top = document.getElementById('affiliate-contact-trigger')
-    const bottom = document.getElementById('affiliate-contact-trigger-bottom')
-    if (top) top.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
-    if (bottom) bottom.addEventListener('click', (e)=>{ e.preventDefault(); e.stopImmediatePropagation(); openModal(e) }, true)
-  })()
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Simulateur de gains */
+  var fmt = function (n) { return n.toLocaleString('fr-FR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + '\u00a0€' }
+  var ranges = $$('#simulateur input[type=range]')
+  var updateSim = function () {
+    var total = 0
+    ranges.forEach(function (r) {
+      var k = r.id.slice(2), n = +r.value, sub = n * +r.getAttribute('data-c')
+      total += sub
+      $('#o-' + k).textContent = n
+      $('#s-' + k).firstChild.nodeValue = fmt(sub)
+    })
+    $('#sim-total').textContent = fmt(total)
+    $('#sim-year').textContent = 'soit ' + fmt(total * 12) + ' par an'
+  }
+  ranges.forEach(function (r) { r.addEventListener('input', updateSim) })
+  if (ranges.length) { ranges[1].value = 3; updateSim() }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
 </script>
+</body>
+</html>

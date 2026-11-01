@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Conditions générales d'utilisation et de vente de Zyllio.">
-  <title>Conditions générales d'utilisation et de vente — Zyllio</title>
-  <link rel="icon" type="image/png" href="./image/icon.png">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="legal-document.css">
+<meta charset="utf-8"/>
+<script>
+/* Langue : mémorise le choix fait avec le sélecteur de langue */
+(function(){var k='zyllio-lang';document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[hreflang]');if(a)try{localStorage.setItem(k,a.hreflang)}catch(x){}})})()
+</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Conditions générales d'utilisation et de vente | Zyllio</title>
+<meta name="description" content="Conditions générales d'utilisation et de vente de Zyllio."/>
+<meta name="theme-color" content="#ffffff"/>
+<link rel="preload" href="./fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="canonical" href="https://zyllio.com/terms-of-use-fr.html"/>
+<link rel="alternate" hreflang="en" href="https://zyllio.com/terms-of-use.html"/>
+<link rel="alternate" hreflang="fr" href="https://zyllio.com/terms-of-use-fr.html"/>
+<link rel="alternate" hreflang="x-default" href="https://zyllio.com/terms-of-use.html"/>
+<link rel="icon" type="image/png" href="./image/icon.png"/>
+<link rel="stylesheet" href="./site.css"/>
+<link rel="stylesheet" href="./legal-page.css"/>
+<script type="module" src="./components/contact-modal.component.mjs"></script>
 </head>
 <body>
-  <header class="legal-header">
-    <a class="legal-brand" href="index-fr.html" aria-label="Accueil Zyllio"><img src="./image/logo-light.png" alt="Zyllio"></a>
-    <nav aria-label="Documents légaux">
-      <a href="terms-of-use-fr.html" aria-current="page">Conditions</a>
-      <a href="privacy-fr.html">Confidentialité</a>
-      <a href="gdpr-fr.html">RGPD</a>
-      <a href="affiliate-program-fr.html">Affiliation</a>
-      <a href="legal-fr.html">Mentions légales</a>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top" id="top">
+  <div class="wrap nav">
+    <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="100" height="50"/></a>
+    <nav class="links" id="links" aria-label="Navigation principale">
+      <a href="features-fr.html">Produit</a>
+      <a href="pricing-fr.html">Tarifs</a>
+      <a href="partner-fr.html">Agences</a>
+      <a href="blog-fr.html">Blog</a>
+      <a href="support-fr.html">Support</a>
+      <a href="affiliate-fr.html">Affiliation</a>
+      <a class="m-only" href="terms-of-use.html" hreflang="en" lang="en">English version</a>
+      <a class="m-only" href="https://www.zyllio.one">Se connecter</a>
     </nav>
-  </header>
-  <main class="legal-shell">
-    <nav class="legal-toc" aria-label="Sommaire"><strong>Sommaire</strong><a href="#1-identite-de-zyllio">1. Identité de Zyllio</a><a href="#2-objet-et-champ-d-application">2. Objet et champ d'application</a><a href="#3-acceptation-des-conditions">3. Acceptation des Conditions</a><a href="#4-description-du-service">4. Description du service</a><a href="#5-creation-et-securite-du-compte">5. Création et sécurité du compte</a><a href="#6-regles-d-utilisation">6. Règles d'utilisation</a><a href="#7-commande-prix-et-paiement">7. Commande, prix et paiement</a><a href="#8-duree-renouvellement-et-resiliation-de-l-abonnement">8. Durée, renouvellement et résiliation de l'abonnement</a><a href="#9-droit-de-retractation-des-consommateurs">9. Droit de rétractation des consommateurs</a><a href="#10-propriete-intellectuelle">10. Propriété intellectuelle</a><a href="#11-donnees-personnelles-et-confidentialite">11. Données personnelles et confidentialité</a><a href="#12-suspension-et-resiliation-par-zyllio">12. Suspension et résiliation par Zyllio</a><a href="#13-disponibilite-maintenance-et-evolution">13. Disponibilité, maintenance et évolution</a><a href="#14-responsabilite">14. Responsabilité</a><a href="#15-services-et-liens-tiers">15. Services et liens tiers</a><a href="#16-modification-des-conditions">16. Modification des Conditions</a><a href="#17-droit-applicable-et-reglement-des-litiges">17. Droit applicable et règlement des litiges</a><a href="#18-dispositions-generales">18. Dispositions générales</a><a href="#19-nous-contacter">19. Nous contacter</a></nav>
-    <article class="legal-document"><h1>Conditions générales d&#39;utilisation et de vente</h1>
-<p class="legal-meta"><strong>Dernière mise à jour :</strong> 22 septembre 2026  <br><strong>Entrée en vigueur :</strong> 22 septembre 2026</p>
+    <div class="side">
+      <a class="lang" href="terms-of-use.html" hreflang="en" lang="en" aria-label="English version"><img src="./flags/en.png" alt="" width="18" height="12"/>EN</a>
+      <a class="login" href="https://www.zyllio.one">Se connecter</a>
+      <a class="btn btn-navy btn-sm" href="https://www.zyllio.one">Commencer gratuitement</a>
+      <button class="burger" id="burger" type="button" aria-controls="links" aria-expanded="false" aria-label="Ouvrir le menu"><svg class="b" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg class="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="contenu">
+
+<section class="l-head" aria-labelledby="page-t">
+  <div class="wrap">
+    <nav class="l-docs" aria-label="Documents légaux"><a href="terms-of-use-fr.html" aria-current="page">Conditions d’utilisation</a><a href="privacy-fr.html">Confidentialité</a><a href="gdpr-fr.html">Traitement des données (DPA)</a><a href="affiliate-program-fr.html">Programme d’affiliation</a><a href="legal-fr.html">Mentions légales</a></nav>
+    <h1 id="page-t">Conditions générales d&#39;utilisation et de vente</h1>
+    <p class="l-meta"><strong>Dernière mise à jour :</strong> 22 septembre 2026  <br><strong>Entrée en vigueur :</strong> 22 septembre 2026</p>
+  </div>
+</section>
+
+<div class="wrap l-shell">
+  <nav class="l-toc" aria-label="Sommaire">
+    <strong>Sommaire</strong><a href="#1-identite-de-zyllio">1. Identité de Zyllio</a><a href="#2-objet-et-champ-d-application">2. Objet et champ d'application</a><a href="#3-acceptation-des-conditions">3. Acceptation des Conditions</a><a href="#4-description-du-service">4. Description du service</a><a href="#5-creation-et-securite-du-compte">5. Création et sécurité du compte</a><a href="#6-regles-d-utilisation">6. Règles d'utilisation</a><a href="#7-commande-prix-et-paiement">7. Commande, prix et paiement</a><a href="#8-duree-renouvellement-et-resiliation-de-l-abonnement">8. Durée, renouvellement et résiliation de l'abonnement</a><a href="#9-droit-de-retractation-des-consommateurs">9. Droit de rétractation des consommateurs</a><a href="#10-propriete-intellectuelle">10. Propriété intellectuelle</a><a href="#11-donnees-personnelles-et-confidentialite">11. Données personnelles et confidentialité</a><a href="#12-suspension-et-resiliation-par-zyllio">12. Suspension et résiliation par Zyllio</a><a href="#13-disponibilite-maintenance-et-evolution">13. Disponibilité, maintenance et évolution</a><a href="#14-responsabilite">14. Responsabilité</a><a href="#15-services-et-liens-tiers">15. Services et liens tiers</a><a href="#16-modification-des-conditions">16. Modification des Conditions</a><a href="#17-droit-applicable-et-reglement-des-litiges">17. Droit applicable et règlement des litiges</a><a href="#18-dispositions-generales">18. Dispositions générales</a><a href="#19-nous-contacter">19. Nous contacter</a>
+  </nav>
+  <article class="l-doc">
 <h2 id="1-identite-de-zyllio">1. Identité de Zyllio</h2>
 <p>Les présentes conditions générales d&#39;utilisation et de vente (les « Conditions ») sont proposées par <strong>Zyllio</strong>, SASU immatriculée sous le numéro SIREN 994 131 274, dont le siège social est situé 24 rue des Fleurs, 91470 Limours, France (ci-après « Zyllio » ou « nous »).</p>
 <p>Vous pouvez nous joindre à l&#39;adresse <strong>contact@zyllio.com</strong>.</p>
@@ -106,7 +142,94 @@
 <p>Les Conditions constituent l&#39;accord entre les parties sur leur objet, sous réserve des conditions particulières, bons de commande et accords de traitement de données applicables.</p>
 <h2 id="19-nous-contacter">19. Nous contacter</h2>
 <p>Pour toute question sur les Conditions, l&#39;abonnement ou la résiliation :</p>
-<p><strong>Zyllio</strong>  <br>24 rue des Fleurs<br>91470 Limours, France<br>contact@zyllio.com</p></article>
-  </main>
+<p><strong>Zyllio</strong>  <br>24 rue des Fleurs<br>91470 Limours, France<br>contact@zyllio.com</p>
+  </article>
+</div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index-fr.html" aria-label="Zyllio, accueil"><img src="./image/logo-light.png" alt="Zyllio" width="112" height="56" loading="lazy"/></a>
+        <p>La plateforme française IA + NoCode pour créer vos applications métier.</p>
+        <div class="social">
+          <a href="https://www.linkedin.com/company/zyllio/" target="_blank" rel="noopener" aria-label="Zyllio sur LinkedIn"><img src="./image/icons/linkedin.png" alt="" loading="lazy"/></a>
+          <a href="https://join.slack.com/t/zyllio-studio/shared_invite/zt-1etbsnzqp-S5UecnkGZVzn0YmYO9yFJw" target="_blank" rel="noopener" aria-label="Communauté Zyllio sur Slack"><img src="./image/icons/slack.png" alt="" loading="lazy"/></a>
+          <a href="support-fr.html" class="js-contact" aria-label="Nous écrire"><img src="./image/icons/email.png" alt="" loading="lazy"/></a>
+        </div>
+      </div>
+      <div><h4>Produit</h4><ul><li><a href="index-fr.html#comment">Comment ça marche</a></li><li><a href="index-fr.html#agent">Agent Zyllio</a></li><li><a href="features-fr.html">Fonctionnalités</a></li><li><a href="pricing-fr.html">Tarifs</a></li></ul></div>
+      <div><h4>Ressources</h4><ul><li><a href="support-fr.html">Support</a></li><li><a href="blog-fr.html">Blog</a></li><li><a href="partner-fr.html">Agences partenaires</a></li><li><a href="affiliate-fr.html">Affiliation</a></li></ul></div>
+      <div><h4>Légal</h4><ul><li><a href="terms-of-use-fr.html">Conditions d’utilisation</a></li><li><a href="privacy-fr.html">Confidentialité</a></li><li><a href="gdpr-fr.html">RGPD</a></li><li><a href="legal-fr.html">Mentions légales</a></li><li><a href="affiliate-program-fr.html">Programme d’affiliation</a></li></ul></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 Zyllio. Tous droits réservés.</span><span><img src="./flags/fr.png" alt="" width="20" height="14"/>Conçu et hébergé en France</span></div>
+  </div>
+</footer>
+
+<zyllio-contact-modal
+  open-trigger=".js-contact"
+  close-label="Fermer"
+  placeholder-last-name="Votre nom"
+  placeholder-first-name="Votre prénom"
+  placeholder-email="vous@entreprise.com"
+  placeholder-message="Bonjour — j'ai une question"
+>
+  <h2 slot="title">Contactez-nous</h2>
+  <p slot="intro">Envoyez un message et nous vous répondrons sous 24 heures ouvrées.</p>
+  <span slot="label-last-name">Nom</span>
+  <span slot="label-first-name">Prénom</span>
+  <span slot="label-email">Email</span>
+  <span slot="label-message">Message</span>
+  <span slot="submit-label">Envoyer</span>
+</zyllio-contact-modal>
+
+<script>
+(function () {
+  document.documentElement.classList.add('js')
+  var $ = function (s, c) { return (c || document).querySelector(s) }
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)) }
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+  /* Navigation */
+  var top = $('#top'), burger = $('#burger'), links = $('#links')
+  var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 8) }
+  onScroll(); window.addEventListener('scroll', onScroll, { passive: true })
+  var setMenu = function (open) {
+    links.classList.toggle('open', open)
+    burger.setAttribute('aria-expanded', String(open))
+    burger.setAttribute('aria-label', open ? 'Fermer le menu' : 'Ouvrir le menu')
+  }
+  burger.addEventListener('click', function () { setMenu(!links.classList.contains('open')) })
+  $$('a', links).forEach(function (a) { a.addEventListener('click', function () { setMenu(false) }) })
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setMenu(false) })
+
+  /* Apparition au défilement */
+  var rv = $$('.rv')
+  if ('IntersectionObserver' in window && !reduce) {
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target) } })
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' })
+    rv.forEach(function (el) { io.observe(el) })
+  } else rv.forEach(function (el) { el.classList.add('in') })
+
+  /* Sommaire : section en cours */
+  var tocLinks = $$('.l-toc a')
+  if ('IntersectionObserver' in window && tocLinks.length) {
+    var heads = tocLinks.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)) }).filter(Boolean)
+    var tio = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return
+        tocLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + e.target.id) })
+      })
+    }, { rootMargin: '-90px 0px -70% 0px' })
+    heads.forEach(function (h) { tio.observe(h) })
+  }
+
+  /* Contact : la modale gère l'ouverture, on évite le saut d'ancre */
+  $$('a.js-contact').forEach(function (a) { a.addEventListener('click', function (e) { e.preventDefault() }) })
+})()
+</script>
 </body>
 </html>
