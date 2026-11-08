@@ -8,6 +8,7 @@
 .rn-improve{background:var(--paper2);color:var(--ink2)}
 .rn-fix{background:#e8f5ee;color:#1f6b43}
 .rn-change{background:#fdf3e1;color:#8a5a12}
+.rn-site{background:#f1ecfb;color:#5b3a9e}
 .l-doc .rn-week ul ul{margin:6px 0 4px}
 .l-toc .rn-month{margin:14px 0 4px;padding-left:12px;font-size:12px;font-weight:650;color:var(--ink2)}
 @media (max-width:900px){
