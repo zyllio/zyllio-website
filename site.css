@@ -377,6 +377,8 @@ h3{font-size:20px;line-height:1.25;letter-spacing:-.025em}
 .who span{display:block;font-size:13.5px;color:var(--soft)}
 .feature-q .who span{color:#a9bcd8}
 .feature-q .who img{box-shadow:0 0 0 3px #ffffff2e}
+.who .ava{width:46px;height:46px;border-radius:50%;flex:none;display:grid;place-items:center;background:#fff;color:var(--navy);font-weight:700;font-size:15px;letter-spacing:.02em}
+.feature-q .who .ava{box-shadow:0 0 0 3px #ffffff2e}
 .qcards{columns:2;column-gap:22px}
 .qcard{break-inside:avoid;margin:0 0 22px;background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px}
 .qcard .org{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--orange-d);margin-bottom:12px}
